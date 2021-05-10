@@ -1,4 +1,4 @@
-# Website
+# Website [![docbuilder](https://github.com/IRHPC/irhpc.github.io/actions/workflows/docbuilder.yml/badge.svg)](https://github.com/IRHPC/irhpc.github.io/actions/workflows/docbuilder.yml)
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
