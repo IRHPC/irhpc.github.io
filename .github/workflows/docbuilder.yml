@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   gh-release:
     if: github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
