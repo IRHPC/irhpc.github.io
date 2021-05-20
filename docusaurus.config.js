@@ -17,8 +17,9 @@ module.exports = {
     navbar: {
       title: 'HPC Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'IRHPC Logo',
         src: 'img/logo.svg',
+        href: '/',
       },
       items: [
         {
