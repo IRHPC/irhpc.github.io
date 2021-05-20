@@ -7,8 +7,12 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'irhpc', // Usually your GitHub org/user name.
-  projectName: 'irphc.github.io', // Usually your repo name.
+  organizationName: 'irhpc',
+  projectName: 'irphc.github.io',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'is'],
+  },
   themeConfig: {
     navbar: {
       title: 'HPC Docs',
@@ -28,6 +32,9 @@ module.exports = {
           href: 'https://ihpc.is/',
           label: 'Older Site',
           position: 'right',
+        },
+        {
+          type: 'localeDropdown',
         },
       ],
     },
