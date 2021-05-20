@@ -20,7 +20,12 @@ Congratulations on getting to login node! **Do nothing** without reading the [co
 
 # Login Node Etiquette
 
-Get started by **creating a new site**.
+The login node is a shared resource between all of the users. It controls the entire cluster, including SLURM which runs jobs and the queues.
+
+That is why it should only be used for the following simple tasks:
+- Submit jobs
+- Edit scripts and files
+- Prepare / delete data (scp, cp, mv, rm etc.)
 
 Or **try Docusaurus immediately** with **[new.docusaurus.io](https://new.docusaurus.io)**.
 
