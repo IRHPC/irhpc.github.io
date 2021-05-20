@@ -2,11 +2,23 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Logging In
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## Externally
+For users outside the University Network, we access the clusters via the `krafla` front-facing node:
 
-## Getting Started
+```bash
+uglaUser="rog68"
+ssh $uglaUser@krafla.rhi.hi.is
+# Now on the network
+ssh elja.hi.is # or garpur or jotunn
+```
+
+## First steps
+
+Congratulations on getting to login node! **Do nothing** without reading the [common etiquette section](common/etiquette).
+
+# Login Node Etiquette
 
 Get started by **creating a new site**.
 
