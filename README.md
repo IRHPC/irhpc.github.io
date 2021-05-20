@@ -6,25 +6,18 @@ This repository supersedes the [previous site](https://github.com/IRHPC/irhpc.gi
 
 ## Installation
 
-```console
+```bash
 npm install
 ```
 
 ## Local Development
 
-```console
-npm run start
+```bash
+npm run start # English
+npm run start -- --locale is # Icelandic
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```console
-npm run build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ## License
 [MIT](LICENSE)
