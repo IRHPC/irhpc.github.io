@@ -1,3 +1,7 @@
+---
+slug: getting_started
+---
+
 # Getting Started
 
 Thanks for thinking of contributing to the documentation. We will describe some common workflows for the same.
@@ -15,6 +19,7 @@ The entire stack is:
 - **Do use** explicit `00_name` instead of using the `sidebar_position` key in the header
   - This is harder to keep track of locally but makes subsequent usage easier
   - Also prevents clashes
+- **Do use** the `slug` header and call it `name`
 - **Do not** use `.mdx` files
   - Harder to work with
 

@@ -19,6 +19,6 @@ Congratulations on getting to login node!
 
 :::caution
 
-**Do nothing** without reading the [common etiquette section](common/02_etiquette).
+**Do nothing** without reading the [common etiquette section](common/etiquette).
 
 :::
