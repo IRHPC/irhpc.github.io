@@ -18,7 +18,7 @@ Til hamingju með að fá að innskráningu hnút!
 
 :::caution
 
-**Ekki gera neitt** án þess að lesa [sameiginlega siðareglur](common/etiquette).
+**Ekki gera neitt** án þess að lesa [sameiginlega siðareglur](common/02_etiquette).
 
 :::
 
