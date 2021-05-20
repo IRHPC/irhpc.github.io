@@ -19,7 +19,7 @@ module.exports = {
       logo: {
         alt: 'IRHPC Logo',
         src: 'img/logo.svg',
-        href: '/',
+        href: 'https://irhpc.github.io',
       },
       items: [
         {
@@ -106,6 +106,11 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        sitemap: {
+        changefreq: 'weekly',
+        priority: 0.5,
+        trailingSlash: false,
+      },
       },
     ],
   ],
