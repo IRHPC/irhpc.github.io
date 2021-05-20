@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>HPC Documentation Blog</title>
+        <link>https://irhpc.github.io/announcements</link>
+        <description>HPC Documentation Blog</description>
+        <lastBuildDate>Thu, 20 May 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Zeroing in on Nix]]></title>
+            <link>https://irhpc.github.io/is/announcements/zero-nix</link>
+            <guid>zero-nix</guid>
+            <pubDate>Thu, 20 May 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[We have decided to use nix as the main packaging manager.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Hello]]></title>
+            <link>https://irhpc.github.io/is/announcements/hello-world</link>
+            <guid>hello-world</guid>
+            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to this list of announcements. This list of announcements is created with Docusaurus 2 alpha.]]></description>
+        </item>
+    </channel>
+</rss>
