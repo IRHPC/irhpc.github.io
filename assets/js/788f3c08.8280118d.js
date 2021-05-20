@@ -1,0 +1,1 @@
+(self.webpackChunkhpcdocs=self.webpackChunkhpcdocs||[]).push([[802],{6353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Zeroing in on Nix","permalink":"/blog/zero-nix"},{"title":"Hello","permalink":"/blog/hello-world"},{"title":"Hola","permalink":"/blog/hola"}]}')}}]);
