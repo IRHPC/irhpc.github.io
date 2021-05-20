@@ -14,7 +14,7 @@ ssh $uglaUser@krafla.rhi.hi.is
 ssh elja.hi.is # eða garpur eða jotunn
 ```
 
-Congratulations on getting to login node!
+Til hamingju með að fá að innskráningu hnút!
 
 :::caution
 
