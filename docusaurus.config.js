@@ -23,7 +23,7 @@ module.exports = {
           position: 'left',
           label: 'User Docs',
         },
-        {to: '/blog', label: 'Announcements', position: 'left'},
+        {to: '/announcements', label: 'Announcements', position: 'left'},
         {
           href: 'https://ihpc.is/',
           label: 'Older Site',
@@ -64,8 +64,8 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Announcements',
+              to: '/announcements',
             },
             {
               label: 'GitHub',
@@ -83,13 +83,14 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
             'https://github.com/irhpc/irhpc.github.io/edit/main/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
+          id: 'announcements',
+          routeBasePath: 'announcements',
+          path: './announcements',
           editUrl:
             'https://github.com/irhpc/irhpc.github.io/edit/main/',
         },
