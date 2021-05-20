@@ -7,11 +7,32 @@ jobs:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Checkout stuff
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v2
         with:
           node-version: '14.x'
-      - name: Build
+    # Kanged from https://github.com/xiaomengxin-112/74690/blob/main/.github/workflows/main.yml
+      - name: Get npm cache directory
+        id: npm-cache
+        run: |
+          echo "::set-output name=dir::$(npm config get cache)"
+      - name: restore npm cache
+        uses: actions/cache@v2
+        id: use-npm-cache
+        with:
+          path: ${{ steps.npm-cache.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: restore npm dependencies
+        uses: actions/cache@v2
+        id: use-npm-depends
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-depends-${{ hashFiles('**/package-lock.json') }}
+      - name: Build site
         run: |
           if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
