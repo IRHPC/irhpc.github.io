@@ -1,3 +1,7 @@
+---
+slug: doc_types
+---
+
 # Types of Documentation
 
 We welcome contributions and edits of all kinds, however, primarily we are interested in:
