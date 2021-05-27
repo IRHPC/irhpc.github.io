@@ -19,4 +19,4 @@ Recall that we have more information with `srun --help`, along with the manpages
 
 ### Request Nodes
 
-With `sallocate` we do not get shifted to the node, this is useful for callbacks.
+With `salloc` we do not get shifted to the node, this is useful for callbacks.
