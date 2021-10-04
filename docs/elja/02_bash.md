@@ -9,12 +9,13 @@ A basic familiarity with Bash shell (Linux) commands is required for interacting
 
 ## Common commands
 
-| Command      | Description |
-| ----------- | ----------- |
-| cp file1 file2      | copy file1 and call it file2       |
-| mv file1 file2   | move or rename file1 to file2        |
-| rm file      | delete file       |
-| rmdir dir/   | delete directory        |
+| Command          | Description                                                     |
+|------------------|-----------------------------------------------------------------|
+| `cp file1 file2` | Copy `file1` and rename it to `file2`                           |
+| `mv file1 file2` | Move or rename `file1` to `file2`                               |
+| `rm file`        | Deletes a file                                                  |
+| `rmdir dir/`     | Removes an **empty** directory                                  |
+| `-r`             | The `-r` flag will allow `cp` and `rm` to work with directories |
 
 A comprehensive list of commands, tips and tricks can be found elsewhere.
 
