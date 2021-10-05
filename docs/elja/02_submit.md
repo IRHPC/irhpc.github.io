@@ -32,7 +32,7 @@ To cancel a job type
 scancel <jobid>
 ```
 
-Your `jobid`'s are revealed like this
+The IDs of your jobs can be revealed like this
 
 ```bash
 squeue -u <uname>
