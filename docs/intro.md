@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Acquiring Access
 
-The resources provided by the Icelandic high performance computing centre (IHPC/IREI) is available to 
+The resources provided by the Icelandic high performance computing centre (IHPC/IREI) are available to 
 Icelandic universities and governmental research institutes. Scientists in independent 
 research instututes may also gain access, provided their research is funded by public grants.
 
