@@ -6,7 +6,7 @@ slug: submit_jobs
 
 ## Batch jobs
 
-The command `sbatch` is used to submit jobs to the `slurm` queue
+The command `sbatch` is used to submit jobs to the `SLURM` queue
 
 ```bash
 sbatch submit_script
