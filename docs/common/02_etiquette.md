@@ -17,7 +17,7 @@ That is why it should only be used for the following simple tasks:
 - Edit scripts and files
 - Prepare / delete data (scp, cp, mv, rm etc.)
 - Run effortless scripts (no computations)
-- Compile software
+- Compile small software packages (e.g. an in-house code)
 
 # Resource Management
 
