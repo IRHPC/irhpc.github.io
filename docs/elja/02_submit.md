@@ -6,7 +6,7 @@ slug: submit_jobs
 
 ## Batch jobs
 
-The command `sbatch` is used to submit jobs to the `slurm` queue
+The command `sbatch` is used to submit jobs to the `SLURM` queue
 
 ```bash
 sbatch submit_script
@@ -32,7 +32,7 @@ To cancel a job type
 scancel <jobid>
 ```
 
-Your `jobid`'s are revealed like this
+The IDs of your jobs can be revealed like this
 
 ```bash
 squeue -u <uname>

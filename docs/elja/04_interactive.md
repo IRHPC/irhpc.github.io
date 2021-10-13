@@ -13,4 +13,5 @@ srun --job-name "InteractiveJob" --cpus-per-task 24 --mem-per-cpu 1500 --time 24
 ```
 
 requests an interactive session and is allocated when the requested resources are available.
-The `slurm` queue rules and limits still apply to `srun`.
+
+The `SLURM` queue rules and limits still apply here.
