@@ -17,15 +17,18 @@ For more detailed information for a specific partition
 scontrol show partition <partition-name>
 ```
 
-## Available Compute Nodes
+## Available Partitions / Compute Nodes
 
-| Count | CPU Name | Cores/Node | Memory/Node (Gib) | Features        |
+| Count |  Name | Cores/Node | Memory/Node (Gib) | Features        |
 |-------|----------|------------|-------------------|-----------------|
-| 28    | Intel48  | 48         |                   |                 |
-| 28    | Intel64  | 64         |                   |                 |
-| 3     | SA100    | 64         |                   | Single A100 GPU |
-| 1     | DA100    | 64         |                   | Double A100 GPU |
+| 28    | Intel48  | 48         | 192      |                 |
+| 44    | Intel64  | 64         | 256      |                 |
+| 1     | Himem    | 64         | 2048              |                 |
+| 3     | gpu-1xA100    | 64         | 192                  | Nvidia A100 Tesla GPU |
+| 5     | gpu-2xA100    | 64         | 192                  | Dual Nvidia A100 Tesla GPU |
 
 ## Job Limits
+
+Each partition is limited to max five (5) day timelimit for a job.
 
 ## Storage

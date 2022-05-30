@@ -26,5 +26,11 @@ Host *
 For Linux (and Windows with WSL 2) machines, `which xauth` will provide the path for the `XAuthLocation` variable. Now the user is free to connect directly:
 
 ```bash
-sssh someone@something.ip.address # Reads the ssh configuration
+ssh someone@something.ip.address # Reads the ssh configuration
 ```
+
+A quick test to see if X forwarding is working is to type
+```bash                                       
+xclock
+```
+which should open up a small clock gui showing the local time.
