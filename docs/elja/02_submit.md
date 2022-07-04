@@ -39,6 +39,15 @@ A batch submit script usually starts like this
 #SBATCH --error=slurm_job_errors.log   # Logs if job crashes
 ```
 
+Hyper-threading of the intel based CPUs is on by default, hence it is
+is highly recommended to include these commands in your submit (or .bashrc) script
+to suppress the hyper-threading (unless your software supports and is correctly compiled with openmp)
+
+```bash                                                                 
+export omp_num_threads=1
+export mkl_num_threads=1
+```
+
 To cancel a job type
 
 ```bash
