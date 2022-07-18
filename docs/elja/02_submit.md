@@ -31,9 +31,9 @@ A batch submit script usually starts like this
 #!/bin/bash
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=<Your E-mail> # for example uname@ugla.is
-#SBATCH --partition=Intel48
-#SBATCH -N 2      # Minimum of 1 node
-#SBATCH -n 96     # 48 MPI processes per node, 96 tasks in total, appropriate for Intel48
+#SBATCH --partition=48cpu_192mem  # request node from a specific partition
+#SBATCH -N 2      # number of nodes
+#SBATCH -n 96     # 48 MPI processes per node, 96 tasks in total
 #SBATCH --time=0-04:00:00 # run for 4 hours maximum (1-00:00:00 is equivalent to 1 Day)
 #SBATCH --output=slurm_job_output.log   
 #SBATCH --error=slurm_job_errors.log   # Logs if job crashes
