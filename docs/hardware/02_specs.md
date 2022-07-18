@@ -4,6 +4,8 @@ slug: hardwarespec
 
 # Hardware Specifications
 
+In total there are 4736 cores available, including 8 Nvidia A100 Tesla GPU cards.
+
 28 x standard compute nodes:
 - Partition : 48cpu_192mem
 - 2 x Intel(R) Xeon(R) Gold 6248R CPU, 2 x 24 @ 3.00 GHz

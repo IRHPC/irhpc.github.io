@@ -17,10 +17,11 @@ For more detailed information for a specific partition
 scontrol show partition <partition-name>
 ```
 
-In total there are 4736 cores available, including 8 Nvidia A100 Tesla GPU cards. Elja
-hosts two compute clusters: HPC and HTC-Mimir.
+The login and control nodes of Elja
+host two compute clusters: HPC-Elja and HTC-Mimir. Partitions and groups
+are used to separate the two.
 
-### HPC : Available Partitions / Compute Nodes
+### HPC-Elja : Available Partitions / Compute Nodes
 
 | Count |  Name | Cores/Node | Memory/Node (Gib) | Features        |
 |-------|----------|------------|-------------------|-----------------|
@@ -29,11 +30,11 @@ hosts two compute clusters: HPC and HTC-Mimir.
 | 3     | gpu-1xA100    | 64 (2x32)     | 192 (188)   | Nvidia A100 Tesla GPU |
 | 5     | gpu-2xA100    | 64 (2x32)     | 192 (188)   | Dual Nvidia A100 Tesla GPU |
 
-#### HPC : Job Limits
+#### HPC-Elja : Job Limits
 
-Each partition has a max seven (**7**) day timelimit. Additionally, the queues **any_cpu** and **long** are provided, which have a one (**1**) and fourteen (**14**) day timelimits. 
-
-### HPC : SLURM Configuration
+Each partition has a max seven (**7**) day timelimit. Additionally, the queues **any_cpu** and **long** are provided: 
+- **any_cpu**, all cpu nodes, one (**1**) day timelimit 
+- **long**, ten 48cpu and ten 64cpu nodes, fourteen (**14**) day timelimit
 
 ### HTC-Mimir : Available Partitions / Compute Nodes
 | Count |  Name | Cores/Node | Memory/Node (Gib) | Features        |
@@ -43,10 +44,14 @@ Each partition has a max seven (**7**) day timelimit. Additionally, the queues *
 
 #### HTC-Mimir : Job Limits
 
-Either partition has a max fifteen (**15**) day timelimit. 
+Either partition has a fourteen (**14**) day timelimit. 
 
-### HTC-Mimir : SLURM Configuration
+### SLURM Configuration
+
+SLURM is configured such that **3.94**GB of memory is allocated per core.
 
 ### Available Memory
 
 On each node 2-4 Gib RAM are reserved for the operating system images (hence the true value is in the paranthesis).
+
+
