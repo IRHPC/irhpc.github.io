@@ -13,7 +13,7 @@ The expert panel of the IHPC/IREI grants access, and it is provided by two diffe
 1. by cooperation through the Rannís Infrastructure Fund (the Icelandic Centre for research).
 2. by application. The formal application can be sent to "help@hi.is".
 
-See more details [here](/files/rulesandreg-v1-2.pdf). A formal application should include a description of the project, the estimated time for completion and the type of software and resource required to complete the project. 
+See more details [here](./files/rulesandreg-v1-2.pdf). A formal application should include a description of the project, the estimated time for completion and the type of software and resource required to complete the project. 
 
 # Logging In
 
