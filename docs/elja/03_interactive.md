@@ -9,7 +9,7 @@ directly from the command line on a node (e.g. for data analysis and manipulatio
 For example:
 
 ```bash
-$ srun --job-name "InteractiveJob" --cpus-per-task 24 --mem-per-cpu 3900 --time 1-00:00:00 --pty bash
+[..]$ srun --job-name "InteractiveJob" --cpus-per-task 24 --mem-per-cpu 3900 --time 1-00:00:00 --pty bash
 ```
 
 The SLURM scheduler will allocate the requested resource (if available), in this example 24 proccessors and 3900MB of RAM memory per processor, from the default partition. The run will last for 1 day (0-00:00:00 : D-HH:MM:SS). 
@@ -25,19 +25,19 @@ The `SLURM` queue rules and limits still apply here.
 When the interactive session stars you will be logged into a compute node:
 
 ```bash
-[<uname>@compute-##]$
+[<uname>@compute-xx]$
 ```
 
 To request a particular partition (pname):
 
 ```bash
-$ srun --job-name "InteractiveJob" --partition <pname> --cpus-per-task 32 --mem-per-cpu 3900 --time 1-00:00:00 --pty bash
+[..]$ srun --job-name "InteractiveJob" --partition <pname> --cpus-per-task 32 --mem-per-cpu 3900 --time 1-00:00:00 --pty bash
 ```
 
 After you have completed your work in your interactive session, please end the session to make the resource available to other users:
 
 ```bash
-[<uname>@compute-##]$ exit
+[<uname>@compute-xx]$ exit
 ``` 
 
 # Maintained Interactive Sessions
@@ -48,13 +48,13 @@ In order to maintain an interactive session you can make use of [tmux](https://w
 First activate **tmux**:
 
 ```bash              
-$ tmux                                          
+[..]$ tmux                                          
 ``` 
 
 and start an interactive session:
 
 ```bash                          
-$ srun --job-name “InteractiveJob” --cpus-per-task 32 --mem-per-cpu 3900 --time 1-00:00:00 --pty bash                                          
+[..]$ srun --job-name “InteractiveJob” --cpus-per-task 32 --mem-per-cpu 3900 --time 1-00:00:00 --pty bash                                          
 ``` 
 
 You interactive session is now attached to **tmux**. 
@@ -66,13 +66,13 @@ Your job will still be running.
 To activate the session again after logging in to Elja:
 
 ```bash
-$ tmux attach
+[..]$ tmux attach
 ```
 
 When you are done working (and you have ended the interactive session) please remember to also end the tmux session like this:
 
 ```bash
-$ tmux kill-session
+[..]$ tmux kill-session
 ```
 
 # Multiple Interactive Sessions
@@ -81,32 +81,32 @@ You can start new or multiple **tmux** sessions, and it is suggested to give eac
 Here we start a session called **inter-1**
 
 ```bash
-$ tmux new -s inter-1
+[..]$ tmux new -s inter-1
 ``` 
 
 followed by an interactive run. 
 After closing or **detaching** you can connect to the named session again like this:
                                                                                
 ```bash                                                                             
-$ tmux attach-session -t inter-1                                                               
+[..]$ tmux attach-session -t inter-1                                                               
 ``` 
 
 When you are done with the work (and ended the srun), you can end a named session like this:
 ```bash                                                                                     
-$ tmux kill-session -t inter-1                           
+[..]$ tmux kill-session -t inter-1                           
 ```
 
 :::note
 When you are finished with running your job interactively 
 (whether using **tmux** or not) on a compute node it is important to end the interactive session:
 ```bash
-[<uname>@compute-##]$ exit
+[<uname>@compute-xx]$ exit
 ```
 
 If you are unsure of how to connect back to the node you can 
 always list your active jobs like this:
 ```bash
-$ squeue -u <uname>
+$ squeue -u $USER
 JOBID PARTITION     NAME    USER    ST  TIME  NODES NODELIST(REASON)
 11729 48cpu_192 Interact   <uname>  R   2:10      1 compute-17
 ```

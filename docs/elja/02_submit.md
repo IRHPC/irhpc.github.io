@@ -13,16 +13,16 @@ Basic common commands are summarized below.
 |-----------------------------|--------------------------------------|
 | `sbatch`                    | submit a batch job script            |
 | `srun`                      | run a parallel job                   |
-| `squeue` (-a, -u \<uname\>) | show queue status                    |
+| `squeue` (-a, -u $USER) | show queue status                    |
 | `sinfo`                     | view info about nodes and partitions |
-| `scancel` \<jobid\>         | cancel a job                         |
+| `scancel` **JOBID**         | cancel a job                         |
 
 ## Batch jobs
 
 The command `sbatch` is used to submit jobs to the `SLURM` queue
 
 ```bash
-sbatch submit_script
+[..]$ sbatch submit_script
 ```
 
 A batch submit script usually starts like this
@@ -35,7 +35,7 @@ A batch submit script usually starts like this
 #SBATCH --nodes=2                 # number of nodes
 #SBATCH --ntasks-per-node=48      # 48 cores per node (96 in total)
 #SBATCH --mem-per-cpu=3900        # MB RAM per cpu core
-#SBATCH --time=0-04:00:00         # run for 4 hours maximum (D-HR:MN:SC)
+#SBATCH --time=0-04:00:00         # run for 4 hours maximum (DD-HH:MM:SS)
 #SBATCH --hint=nomultithread      # Suppress multithread
 #SBATCH --output=slurm_job_output.log   
 #SBATCH --error=slurm_job_errors.log   # Logs if job crashes
@@ -63,11 +63,11 @@ export MKL_NUM_THREADS=1
 After submitting a job you can view the current status and jobids' like this
 
 ```bash
-$ squeue -u <uname>
+[..]$ squeue -u $USER
 ```
 
 To cancel a job type
 
 ```bash
-$ scancel <jobid>
+[..]$ scancel JOBID
 ```

@@ -17,7 +17,7 @@ A basic familiarity with Bash shell (Linux) commands is required for interacting
 | `rmdir dir/`     | Removes an **empty** directory                                  |
 | `-r`             | The `-r` flag will allow `cp` and `rm` to work with directories |
 
-A comprehensive list of commands, tips and tricks can be found elsewhere.
+Some additional useful commands can be found [here](https://www.educative.io/blog/bash-shell-command-cheat-sheet).
 
 ## Editing files
 

@@ -4,13 +4,13 @@ sidebar_position: 2
 
 # General
 
-The application, resource and user policies are outlined in three documents. These are the Rules and regulations of the IHPC, Resource policies and User agreement documents.
-
-The policies regarding the useage of the HPC resource are reviewed once a year by the steering committee.
+The application, resource and user policies are outlined in three documents. 
+These are the Rules and Regulations of the IHPC, Resource Policies and User 
+Agreement documents.
 
 ## Rules and Regulations
 
-The rules and regulation cover:
+The [rules and regulation](./files/rulesandreg-v1-2.pdf) cover:
 - Who get access
 - Management of accounts 
 - Data and storage
@@ -19,21 +19,22 @@ The rules and regulation cover:
 
 ## Resource Policies
 
-Resource policies are implemented in order to facilitate fair and efficient use of the HPC resource. They cover
+[Resource policies](./files/respol-v1-4.pdf) are implemented in order to facilitate fair and efficient use of the HPC resource. They cover
 - Etiquette on the login-node
-- Local disk spaces: /home/ and /scratch/
+- Local disk spaces: **/home/** and **/scratch/**
 - Deletion of account and data
 - Job scheduler
 - System maintenance
 
 ## User Agreement
 
-The user agreement is in place to enforce good behaviour on the sharged resource. It covers
+The [user agreement](./files/useragree-v1-3.pdf) is in place to enforce good etiquette on the sharged resource. It covers
 - Responsible use
 - Use of resource for research only
-- To not access data outside of /home/
+- To not access data outside of **/home/**
 - Safeguarding credentials
 
 ## Current version
 
-The lates versions of these documents can be found here.
+The policies regarding the usage of the HPC resource are reviewed 
+once a year by the steering committee.

@@ -21,19 +21,17 @@ See more details [here](/files/rulesandreg-v1-2.pdf). A formal application shoul
 We log into the Elja front-facing node:
 
 ```bash
-uglaUser="rog68"
-# Now on the network
-ssh $uglaUser@elja.hi.is
+$ ssh uname@elja.hi.is
 # Or if you are juggling many .ssh keys
-ssh -i ~/.ssh/id_elja $uglaUser@elja.hi.is
+$ ssh -i ~/.ssh/id_elja uname@elja.hi.is
 ```
 
 Congratulations on getting to login node! 
 
-See the section on SSH keys and Connecting for further instructions.
+See the section on SSH keys and Connecting for instructions.
 
 :::caution
 
-**Do nothing** without reading the [common etiquette section](common/etiquette).
+**Do nothing** without reading the [User Agreement](./files/useragree-v1-3.pdf) and [common etiquette section](common/etiquette).
 
 :::
