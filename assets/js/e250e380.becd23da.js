@@ -1,1 +1,0 @@
-(self.webpackChunkhpcdocs=self.webpackChunkhpcdocs||[]).push([[243],{5736:function(n){"use strict";n.exports=JSON.parse('{"allTagsPath":"/announcements/tags","slug":"admin","name":"admin","count":2,"permalink":"/announcements/tags/admin"}')}}]);
