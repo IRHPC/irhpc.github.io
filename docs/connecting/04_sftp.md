@@ -9,6 +9,13 @@ The SSH key can similarly be used to connect with SSH-file-transfer-protocol
 software like [FileZilla](https://filezilla-project.org/) 
 or [Cyberduck](https://cyberduck.io/).
 
+:::caution
+**As a courtesy to other users, do not transfer many large files at the same time. Try
+only to transfer the data that you intend to use at any given time, and remember to
+remove the data and files you are finished working with. You are sharing the bandwith 
+and disk space with your fellow colleagues and other scientists.** 
+:::
+
 ## FileZilla
 
 Open up **FileZilla** and enter your username and "sftp://elja.hi.is" as host:
