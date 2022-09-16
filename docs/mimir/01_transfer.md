@@ -39,7 +39,7 @@ Contact the system administrator if you need to securely share data between cert
 :::caution
 **Elja is not a data storage device! There is a finite amount of disk space.** 
 As a courtesy to the other users of Elja please remove large data sets after they have been 
-processed. Large data which is left untouched for six (**6**) months will be deleted.
+processed. Large data which is left untouched for **TBD** months will be deleted.
 :::
 
 ## Transferring Data from Mimir-I to Mimir-II
