@@ -106,7 +106,7 @@ When you are finished with running your job interactively
 If you are unsure of how to connect back to the node you can 
 always list your active jobs like this:
 ```bash
-$ squeue -u $USER
+[..]$ squeue -u $USER
 JOBID PARTITION     NAME    USER    ST  TIME  NODES NODELIST(REASON)
 11729 48cpu_192 Interact   <uname>  R   2:10      1 compute-17
 ```

@@ -4,7 +4,7 @@ slug: hardwarespec
 
 # Hardware Specifications
 
-In total there are 4736 cores available, including 8 Nvidia A100 Tesla GPU cards.
+In total there are 6528 cores available, including 13 Nvidia A100 Tesla GPU cards. It stands currently at **628 TFLOPS**
 
 28 x standard compute nodes:
 - Partition : 48cpu_192mem
@@ -13,11 +13,18 @@ In total there are 4736 cores available, including 8 Nvidia A100 Tesla GPU cards
 - Infiniband (4 x EDR) Mellanox, 100 Gb/s
 - 3.5 TB /scratch/ disk
 
-44 x standard compute nodes:
+64 x standard compute nodes:
 - Partition : 64cpu_256mem, mimir
 - 2 x Intel(R) Xeon(R) Platinum 8358 CPU, 2 x 32 @ 2.60 GHz
 - 256 (16 x 16) GB DDR4 @ 2667 MHz
 - Infiniband (4 x EDR) Mellanox, 100 Gb/s
+- 3.5 TB /scratch/ disk
+
+4 x AMD compute nodes:
+- Partition : 128cpu_256mem
+- 2 x AMD EPYC<sup>TM</sup> 7713 CPU, 2 x 64 @ 2.00 GHz
+- 256 (16 x 16) GB DDR4, 2933 MHz
+- Infiniband (4 x EDR) Mellanox, 100 GB/s
 - 3.5 TB /scratch/ disk
 
 1 x high-memory compute node:
