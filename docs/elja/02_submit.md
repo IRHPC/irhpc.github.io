@@ -64,10 +64,14 @@ After submitting a job you can view the current status and jobids' like this
 
 ```bash
 [..]$ squeue -u $USER
+JOBID PARTITION     NAME    USER    ST  TIME  NODES NODELIST(REASON)
+11729 48cpu_192 Interact   <uname>  R   2:10      1 compute-17
 ```
 
-To cancel a job type
+You can cancel a job using the JOBID number. In this example
 
 ```bash
-[..]$ scancel JOBID
+[..]$ scancel 11729
 ```
+
+IF your job requires a lot of input data, or if it generates a lot of output it is advisable to make use of the **/scratch/** disk available on the compute nodes. See the next [section](scratch_disk).

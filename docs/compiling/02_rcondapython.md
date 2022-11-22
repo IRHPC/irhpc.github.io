@@ -171,7 +171,7 @@ The ordering of the library paths is important, since it will first look in your
 To install a package via CRAN to this library type, for example :
 
 ```bash
-> install.packages("vioplot", repos="http://cran.r-project.org", lib="/hpdata/Mimir/<uname>/.local/R/library")
+> install.packages("vioplot", repos="http://cran.r-project.org", lib="/hpcdata/Mimir/<uname>/.local/R/library")
 ```
 
 To load the package type:

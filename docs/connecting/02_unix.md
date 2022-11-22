@@ -53,6 +53,30 @@ After sourcing the "~/.bashrc" you can log in like this:
 [..]$ elja                          
 ``` 
 
+Alternatively you can add a **config** file to your **.ssh** directory
+
+```bash                                                               
+[..]$ touch ~/.ssh/config
+[..]$ chmod 600 ~/.ssh/config
+``` 
+
+then add information about **Elja** to the config file
+
+```bash                                                               
+[..]$ cat >> ~/.ssh/config << EOF
+> Host Elja
+>    HostName elja.hi.is
+>    User <uname>
+>    Port 22
+>    IdentityFile ~/.ssh/id_elja
+EOF
+``` 
+
+You can now log in via
+```bash
+[..]$ ssh Elja
+```
+
 :::note
 **These instruction will not work for Windows command prompt.**
 :::

@@ -25,8 +25,9 @@ are used to separate the two.
 
 | Count |  Name | Cores/Node | Memory/Node (Gib) | Features        |
 |-------|----------|------------|-------------------|-----------------|
-| 28    | 48cpu_192mem  | 48 (2x24)     | 192 (188)      |                 |
-| 35    | 64cpu_256mem  | 64 (2x32)     | 256 (252)     |                 |
+| 28    | 48cpu_192mem  | 48 (2x24)     | 192 (188)      | Intl Gold 6248R                |
+| 55    | 64cpu_256mem  | 64 (2x32)     | 256 (252)     | Intl Platinum 8358               |
+| 4    | 128cpu_256mem  | 128 (2x64)     | 256 (252)     | AMD EPYC 7713                |
 | 3     | gpu-1xA100    | 64 (2x32)     | 192 (188)   | Nvidia A100 Tesla GPU |
 | 5     | gpu-2xA100    | 64 (2x32)     | 192 (188)   | Dual Nvidia A100 Tesla GPU |
 
