@@ -17,7 +17,7 @@ See more details [here](./files/rulesandreg-v1-2.pdf). A formal application shou
 
 # Logging In
 
-After being granted access you will be prompted to generate an SSH key. See the [Connecting & SSH keys](docs/connecting/general) section. When the SSH key is active the system administrators will let you know, and then you can log into the system.
+After being granted access you will be prompted to generate an SSH key. See the [Connecting & SSH keys](./connecting/01_general.md) section. When the SSH key is active the system administrators will let you know, and then you can log into the system.
 
 ## Externally
 We log into the Elja front-facing node:
@@ -32,6 +32,6 @@ Congratulations on getting to the login node!
 
 :::caution
 
-**Do nothing** without reading the [User Agreement](./files/useragree-v1-3.pdf) and [common etiquette section](docs/common/etiquette).
+**Do nothing** without reading the [User Agreement](./files/useragree-v1-3.pdf) and [common etiquette section](./common/02_etiquette.md).
 
 :::
