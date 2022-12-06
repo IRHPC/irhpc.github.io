@@ -34,18 +34,18 @@ Example of bash lines for **/scratch/users/** are provided below. The following 
 scratchlocation=/scratch/users
 
 # Create a user directory if it does not exist
-if [! -d $scratchlocation/$USER]; then
+if [ ! -d $scratchlocation/$USER]; then
     mkdir -p $scratchlocation/$USER
 fi
 
 # Create a temporary directory with a unique identifier associated with your jobid
-tdir=$(mktemp -d $scratchlocation/$USER/$SLURM_JOB_ID)
+tdir=$(mktemp -d $scratchlocation/$USER/$SLURM_JOB_ID_XXXX)
 
 # Go to the temporary directory
 cd $tdir
 
 # Exit if tdir does not exist
-if [! -d “$tdir”]; then
+if [ ! -d “$tdir”]; then
     echo "Temporary scratch directory does not exist ..."
     echo "Something is wrong, contact support."
     exit
