@@ -39,7 +39,7 @@ if [ ! -d $scratchlocation/$USER ]; then
 fi
 
 # Create a temporary directory with a unique identifier associated with your jobid
-tdir=$(mktemp -d $scratchlocation/$USER/$SLURM_JOB_ID_XXXX)
+tdir=$(mktemp -d $scratchlocation/$USER/$SLURM_JOB_ID-XXXX)
 
 # Go to the temporary directory
 cd $tdir
