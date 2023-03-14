@@ -80,3 +80,18 @@ You can now log in via
 :::note
 **These instruction will not work for Windows command prompt.**
 :::
+
+## Errors
+
+### Permission denied
+If you get a ```permisison denied``` error when trying to connect to Elja you can do the following to solve this issue:
+
+you need to first be located where the ***.ssh*** directory is located. You can check on the folders in the directory that you are in by typing ```ls``` in your terminal.
+
+After you've locate your ***.ssh*** directory you can fix your issue by simply typing:
+
+```bash
+$ chmod 644 .ssh/knownhosts
+```
+
+this changes the access to the ```knownhosts``` file located in the .ssh directory. Now you can try connecting to Elja again and the connection should now work.
