@@ -7,7 +7,7 @@ slug : AlphaFold
 ## 0. Introduction
 In short AlphaFold is groundbreaking AI system that is making research faster in the field of bioinformatics. To use AlphaFold the system first takes in a sequence of an amino acid and will then predict three dimensional structure of a protein and does so extremely efficiently.
 
-Read more on the AlphaFold official (website)[https://www.deepmind.com/research/highlighted-research/alphafold].
+Read more on the AlphaFold official [website](https://www.deepmind.com/research/highlighted-research/alphafold).
 
 This section on AlphaFold will go through how to use AlphaFold on Elja.
 
@@ -17,9 +17,9 @@ This section on AlphaFold will go through how to use AlphaFold on Elja.
 
 ### 1.1 Installation
 
-There are many ways to get AlphaFold installed. The installation method that was used to install AlphaFold on Elja was cloning the following github (repository)[https://github.com/deepmind/alphafold.git] developed by Deepmind (creators of AlphaFold).
+There are many ways to get AlphaFold installed. The installation method that was used to install AlphaFold on Elja was cloning the following github [repository](https://github.com/deepmind/alphafold.git) developed by Deepmind (creators of AlphaFold).
 
-In that repository is a [**Docker**](https://Docker.com) file but [**Docker**](https://Docker.com) will not be implemented on the HPC environment due to **security issues**. What was then decided was to add another git repository into the system called **AlphaFold_non_docker** which can be cloned from the following github (repository)[https://github.com/kalininalab/alphafold_non_docker]. 
+In that repository is a [**Docker**](https://Docker.com) file but [**Docker**](https://Docker.com) will not be implemented on the HPC environment due to **security issues**. What was then decided was to add another git repository into the system called **alphafold_non_docker** which can be cloned from the following github [repository](https://github.com/kalininalab/alphafold_non_docker). 
 
 ---
 
