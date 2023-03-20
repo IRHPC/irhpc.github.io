@@ -31,6 +31,8 @@ are used to separate the two.
 | 3     | gpu-1xA100    | 64 (2x32)     | 192 (188)   | Nvidia A100 Tesla GPU |
 | 5     | gpu-2xA100    | 64 (2x32)     | 192 (188)   | Dual Nvidia A100 Tesla GPU |
 
+Core to true (memory) ratio equates to **3.9Gb** per core.
+
 #### HPC-Elja : Job Limits
 
 Each partition has a max seven (**7**) day timelimit. Additionally, the queues **any_cpu** and **long** are provided: 
@@ -42,6 +44,8 @@ Each partition has a max seven (**7**) day timelimit. Additionally, the queues *
 |-------|----------|------------|-------------------|-----------------|
 | 9    | mimir  | 64 (2x32)       | 256 (252)     |                 |
 | 1     | mimir-himem    | 64 (2x32)       | 2048 (2044)             |                 |
+
+Core to true (memory) ratio equates to **3.9Gb** per core on the **mimir** partition, and **31Gb** on the mimir-himem partition.
 
 #### HTC-Mimir : Job Limits
 
