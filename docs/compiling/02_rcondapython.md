@@ -11,8 +11,12 @@ It is important to run all package compilations on the **log-in node** before de
 ## Conda
 
 ```bash
-[..]$ module load Anaconda3
+[..]$ module load Anaconda3/2022.05
 ```
+
+:::note
+An older version of Anaconda3 (2021.11) is still available. It is recommended to switch to the newer version as soon as possible. It will be removed in May 2023.
+:::
 
 ### One time setup
 
@@ -94,6 +98,38 @@ If you are not using a particular environment anymore please remove it like this
 
 This removes the installed binaries, and saves up space for other users.
 
+### Switching to a new Conda Version
+
+The conda initialization writes a small snippet of code into your **.basrhc** which looks like this
+```bash
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/hpcapps/lib-mimir/software/Anaconda3/2021.11/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/hpcapps/lib-mimir/software/Anaconda3/2021.11/etc/profile.d/conda.sh" ]; then
+        . "/hpcapps/lib-mimir/software/Anaconda3/2021.11/etc/profile.d/conda.sh"
+    else
+        export PATH="/hpcapps/lib-mimir/software/Anaconda3/2021.11/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+```
+
+To switch to the new version **Anaconda3/2022.05** simply change these lines in your **.basrhc** to
+```bash
+else
+    if [ -f "/hpcapps/lib-mimir/software/Anaconda3/2022.05/etc/profile.d/conda.sh" ]; then
+        . "/hpcapps/lib-mimir/software/Anaconda3/2022.05/etc/profile.d/conda.sh"
+    else
+        export PATH="/hpcapps/lib-mimir/software/Anaconda3/2022.05/bin:$PATH"
+    fi
+fi
+```
+
+Now **log out** and **log in** again to implement the changes.
 
 ## Python
 
