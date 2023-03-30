@@ -4,6 +4,10 @@ slug : rcondapython
 
 # Conda, Python & R
 
+:::note
+It is important to run all package compilations on the **log-in node** before deploying these environments on the **compute nodes**.
+:::
+
 ## Conda
 
 ```bash
