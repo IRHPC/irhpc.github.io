@@ -103,14 +103,240 @@ Named collection list :
 
 ## libsci-gcc
 
-The libsci-gcc tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications. It starts with GCC-11.2.0, and is located in /hpcapps/libsci-gcc/ 
+The libsci-gcc tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications. It starts with GCC-11.2.0, and is located in ```/hpcapps/libsci-gcc/```.
 
 ### Precompiled software
 
 GCC/OpenMPI
- - OpenBLAS, Lapack
- - Scalapack, FFTW
- - Libxc
- - Python
+
+<center>
+
+|  Modules                             | Version         | Toolchain                |
+| ------------------------------------ | --------------- |------------------------- |
+|ASE                                   |    3.2.2        | system                   |
+|ASE                                   |3.23.0b1         |  dev                     |
+|Autotools                             |20210726         | GCCcore-11.2.0           |
+|Brotli                                |1.0.9            | GCCcore-11.2.0           |
+| DBus                                 |1.13.18          | GCCcore-11.2.0           |
+| EasyBuild                            |4.5.4            |                          |
+|Eigen                                 |    3.4.0        | GCCcore-11.2.0           |
+|FFTW                                  |    3.3.10       | gompi-2021b              |
+| FLTK                                 |1.3.7            |  GCCcore-11.2.0          |
+|GCC                                   |11.2.0           |                          |
+| GCCcore                              |11.2.0           |                          |
+| GPAW                                 |22.8.0           |    foss-2021b            |
+|Go                                    |    1.20.2       |system                    |
+| Gurobi                               |10.0.0           |                          |
+|OpenBLAS                              |    0.3.18       |GCC-11.2.0                |
+|OpenMPI                               |4.1.1            |GCC-11.2.0                |
+|PISM                                  |     2.0.6       |System                    |
+|Python                                |    3.9.6        |GCCcore-11.2.0            |
+|SQLite                                |    3.36         |GCCcore-11.2.0            |
+|ScaLAPACK                             |    2.1.0        |gompi-2021-fb             |
+|VASP                                  |    6.3.2        |foss-2021b                |
+|VASP                                  |    6.3.2        |nvhpc                     |
+|VaspBeef                              |    6.3.2        |foss-2021b                |
+|Xauth                                 |    1.0.9        |                          |
+|foss                                  |2021b            |                          |
+|gompi                                 |2021b            |                          |
+| intltool                             |0.51.0           |GCCcore-11.2.0            |
+|libbeef                               |    6.3.2        | system                   |
+|libxc                                 |    5.1.6        |GCC-11.2.0                |
+| nodejs                               |14.17.6          |GCCcore-11.2.0            |
+|petsc                                 |    3.18         |system                    |
+|pkgconf                               |    1.8.0        |GCCcore-11.2.0            |
+|udunits                               |    2.2.28       | system                   |
+| util-linux                           |2.37             |            GCCcore-11.2.0|
+| xprop                                |1.2.5            |GCCcore-11.2.0            |
+|zstd                                  |    1.5.0        |GCCcore-11.2.0            |
+
+</center>
 
 Python includes Numpy and Scipy linked to OpenBLAS and FFTW.
+
+
+## libbio-gpu
+This libbio-gpu tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications it starts with GCC-11.3.0 and is located in ```/hpcapps/libbio-gpu```.
+
+### Precompiled software
+GCC/OpenMPI
+
+<center>
+
+|  Modules                             | Version         | Toolchain                   |
+| ------------------------------------ | --------------- |--------------------------   |
+| AlphaFold                             |2.3.0            |                     system |
+| aria2                                 |1.36.0           |                     system |
+| BLIS                                  |0.9.0            |                 GCC-11.3.0 |
+| Bazel                                 |5.1.1            |             GCCcore-11.3.0 |
+| Biopython                             |1.80             |                 foss-2022a |
+| BLIS                                  |0.9.0            |                 GCC-11.3.0 |
+| CMake                                 |3.23.1           |             GCCcore-11.3.0 |
+| CUDA                                  |11.7.0           |                            |
+| Doxygen                               |1.9.1            |             GCCcore-11.3.0 |
+| EasyBuild                             |4.6.2            |                            |
+| FFTW.MPI                              |3.3.10           |                gompi-2022a |
+| FFTW                                  |3.3.10           |             GCCcore-11.3.0 |
+| FFmpeg                                |4.4.2            |             GCCcore-11.3.0 |
+| FLEXIBLAS                             |3.2.0            |             GCCcore-11.3.0 |
+| FriBidi                               |1.0.12           |             GCCcore-11.3.0 |
+| GCC                                   |11.3.0           |                            | 
+| GCCcore                               |11.3.0           |                            | 
+| Kalign                                |3.3.2            |             GCCcore-11.3.0 |
+| NCCL                                  |2.12.12          | GCCcore-11.3.0-CUDA-11.7.0 |
+| NVHPC                                 |22.5             |                            |
+| ORCA                                  |5.0.3            |                            |
+| OpenBLAS                              |0.3.20           |                 GCC-11.3.0 |
+| OpenMM                                |7.7.0            |                  CUDA-11.7 |
+| OpenMPI                               |4.1.4            |                GCC-11.3.0  |
+| PyTorch                               |1.12.0           |     foss-2022a-CUDA-11.7.0 |
+| Python                                |3.10.4           |             GCCcore-11.3.0 |
+| QuantumEspresso                       |7.1              |                 foss-2022a |
+| SWIG                                  |4.0.2            |             GCCcore-11.3.0 |
+| ScaLAPACK                             |2.2.0            |             gompi-2022a-fb |
+| TensorRT                              |8.4.3.1          |                  CUDA-11.7 |
+| Tkinter                               |3.10.4           |             GCCcore-11.3.0 |
+| X11                                   |20220504         |             GCCcore-11.3.0 |
+| aria2                                 |1.36.0           |                            |
+| crest                                 |2.12             |                 foss-2022a |
+| cuDNN                                 |8.4.1.50         |                CUDA-11.7.0 |
+| foss                                  |2022a            |                            |
+| gettext                               |0.21             |             GCCcore-11.3.0 |
+| gompi                                 |2022a            |                            |
+| hh-suite                              |3.3.0            |              GCCcore-11.3.0| 
+| hmmer                                 |3.3.2            |              GCCcore-11.3.0|
+| libiconv                              |1.17             |              GCCcore-11.3.0|
+| libtool                               |2.4.7            |              GCCcore-11.3.0|
+| ncurses                               |6.3              |              GCCcore-11.3.0|
+| protobuf                              |3.22             |                         dev|
+| rpmrebuild                            |2.11             |                            |
+| xtb                                   |6.5.1            |                  foss-2022a|
+
+</center>
+
+## lib-mimir
+The libsci-mimir tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications. It starts with GCC-11.2.0, and is located in ```/hpcapps/lib-mimir/```. 
+
+### Precompiled software
+
+<center>
+
+|  Modules                             | Version         | Toolchain                   |
+| ------------------------------------ | --------------- |--------------------------   |
+|Anaconda3                             |2021.11          |                             |
+| Anaconda3                            |2022.05          |                             |
+| BCFtools                             |1.14             |GCC-11.2.0                   |
+|BEDTools                              |2.30.0           |GCC-11.2.0                   |
+|BamTools                              |2.5.2            |GCC-11.2.0                   |
+| Biopython                            |1.79             |                   foss-2021b|
+| Bowtie2                              |2.4.4            |GCC-11.2.0                   |
+|CMake                                 |3.22.1           |GCCcore-11.2.0               |
+| CellRanger                           |7.0.0            |                             |
+| Dorado                               |0.1.1            |                             |
+| EasyBuild                            |4.6.0            |                             |
+| FastQC                               |0.11.9           |Java-11                      |
+| GNU-parallel                         |20221022         |                             |
+| HISAT2                               |2.2.1            |gompi-2021b                  |
+| HTSlib                               |1.14             |GCC-11.2.0                   |
+| Java                                 |11.0.2           |                             |
+| Java                                 |15.0.1           |                             |
+| MACS2                                |2.2.7.1          |foss-2021b                   |
+| MIB                                  |glnx64           |                             |
+| Perl                                 |5.34.0           |GCCcore-11.2.0               |
+| R                                    |4.1.2            |foss-2021b                   |
+| SAMtools                             |1.15             |GCC-11.2.0                   |
+| SEACR                                |1.3              |                             |
+| SRA-Toolkit                          |3.0.0            |                             |
+| TrimGalore                           |0.6.7            |                             |
+|  VCFtools                            |0.1.16           |GCC-11.2.0                   |
+| bcl-convert                          |3.6.3            |                             |
+| bcl2fastq2                           |2.20.0           |GCC-11.2.0                   |
+| bzip2                                |1.0.8            |GCCcore-11.2.0               |
+|cutadapt                              |4.1              |                             |
+|deepTools                             |3.5.1            |foss-2021b                   |
+| file                                 |5.41             |GCCcore-11.2.0               |
+| kallisto                             |0.48.0           |                             |
+| matplotlib                           |3.4.3            |foss-2021b                   |
+|  megalodon                           |2.3.0            |                             |
+| minimap2                             |2.24             |GCCcore-11.2.0               |
+| modbam2bed                           |0.6.2            |                             |
+|nanopolish                            |0.14.0           |                             |
+|ont-guppy                             |6.2.1            |                             |
+| picard                               |2.26.10          |Java-15                      |
+| remora                               |1.1.1            |                             |
+| stacks                               |2.62             |                             |
+| subread-featureCounts                |2.0.3            |                             |
+|wigToBigWig                           |4                |                             |
+
+</center>
+
+## lib-COMSOL
+The libsci-COMSOL tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications, and is located in ```/hpcapps/lib-COMSOL/```. 
+
+
+### Precompiled software
+<center>
+
+|  Modules                             | Version         | Toolchain                   |
+| ------------------------------------ | --------------- |--------------------------   |
+|COMSOL                                |6.1              |                             |
+
+</center>
+
+
+## libsci-amd
+The libsci-amd tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications. It starts with GCC-11.2.0, and is located in ```/hpcapps/libsci-amd/```. 
+
+### Precompiled software
+
+<center>
+
+|  Modules                             | Version         | Toolchain                   |
+| ------------------------------------ | --------------- |--------------------------   |
+|EasyBuild                             |4.6.2            |                             |
+
+</center>
+
+## libsci-intel
+The libsci-intel tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications. It starts with GCC-11.2.0, and is located in ```/hpcapps/libsci-intel/```. 
+
+### Precompiled software
+
+<center>
+
+|  Modules                             | Version         | Toolchain                   |
+| ------------------------------------ | --------------- |--------------------------   |
+| Automake                             |1.16.5           |               GCCcore-12.2.0|
+| Autotools                            |20220317         |               GCCcore-12.2.0|
+| EasyBuild                            |4.7.0            |                             |
+| GCCcore                              |12.2.0           |                             |
+| Perl                                 |5.36.0           |               GCCcore-12.2.0|
+| expat                                |2.4.9            |               GCCcore-12.2.0|
+| groff                                |1.22.4           |               GCCcore-12.2.0|
+| iimpi                                |2022b            |                             |
+| imkl                                 |2022.2.1         |                             |
+| impi                                 |2021.7.1         |     intel-compilers-2022.2.1|
+| intel-compilers                      |2022.2.1         |                             |
+| libreadline                          |8.2              |               GCCcore-12.2.0|
+| libtool                              |2.4.7            |               GCCcore-12.2.0|
+| ncurses                              |6.3              |               GCCcore-12.2.0|
+| numactl                              |2.0.16           |               GCCcore-12.2.0|
+| pkgconf                              |1.9.3            |               GCCcore-12.2.0|
+|zlib                                  |1.2.12           |               GCCcore-12.2.0|
+
+</center>
+
+
+## libsci-nvhpc
+The libsci-nvhpc tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications. It starts with GCC-11.2.0, and is located in ```/hpcapps/libsci-nvhpc/```. 
+
+### Precompiled software
+
+<center>
+
+
+|  Modules                             | Version         | Toolchain                   |
+| ------------------------------------ | --------------- |--------------------------   |
+|VASP                                  |6.3.2            |                        nvhpc|
+
+</center>
