@@ -101,6 +101,9 @@ Named collection list :
   1) default  2) env1
 ```
 
+### Pre-built environments
+Some package environments are loaded in by default, others need to be loaded in manually. See the list of pre-built package environments described below. 
+
 ## libsci-gcc
 
 The libsci-gcc tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications. It starts with GCC-11.2.0, and is located in ```/hpcapps/libsci-gcc/```.
@@ -157,6 +160,17 @@ Python includes Numpy and Scipy linked to OpenBLAS and FFTW.
 
 ## libbio-gpu
 This libbio-gpu tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications it starts with GCC-11.3.0 and is located in ```/hpcapps/libbio-gpu```.
+
+To load in the package environment type
+
+```bash 
+[..]$ module use /hpcapps/libbio-gpu/modules/all
+```
+
+The modules are now available and can be viewed by typing
+```bash 
+[..]$ module avail
+```
 
 ### Precompiled software
 GCC/OpenMPI
@@ -270,35 +284,19 @@ The libsci-mimir tree provides a compilation of free and open source software pr
 
 </center>
 
-## lib-COMSOL
-The libsci-COMSOL tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications, and is located in ```/hpcapps/lib-COMSOL/```. 
-
-
-### Precompiled software
-<center>
-
-|  Modules                             | Version         | Toolchain                   |
-| ------------------------------------ | --------------- |--------------------------   |
-|COMSOL                                |6.1              |                             |
-
-</center>
-
-
-## libsci-amd
-The libsci-amd tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications. It starts with GCC-11.2.0, and is located in ```/hpcapps/libsci-amd/```. 
-
-### Precompiled software
-
-<center>
-
-|  Modules                             | Version         | Toolchain                   |
-| ------------------------------------ | --------------- |--------------------------   |
-|EasyBuild                             |4.6.2            |                             |
-
-</center>
-
 ## libsci-intel
 The libsci-intel tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications. It starts with GCC-11.2.0, and is located in ```/hpcapps/libsci-intel/```. 
+
+To load in the package environment type
+
+```bash 
+[..]$ module use /hpcapps/libsci-intel/modules/all
+```
+
+The modules are now available and can be viewed by typing
+```bash 
+[..]$ module avail
+```
 
 ### Precompiled software
 
@@ -323,6 +321,19 @@ The libsci-intel tree provides a compilation of free and open source software pr
 | numactl                              |2.0.16           |               GCCcore-12.2.0|
 | pkgconf                              |1.9.3            |               GCCcore-12.2.0|
 |zlib                                  |1.2.12           |               GCCcore-12.2.0|
+
+</center>
+
+## libsci-amd
+The libsci-amd tree provides a compilation of free and open source software providing commonly used numerical libraries for scientific software and applications. It starts with GCC-11.2.0, and is located in ```/hpcapps/libsci-amd/```. 
+
+### Precompiled software
+
+<center>
+
+|  Modules                             | Version         | Toolchain                   |
+| ------------------------------------ | --------------- |--------------------------   |
+|EasyBuild                             |4.6.2            |                             |
 
 </center>
 
