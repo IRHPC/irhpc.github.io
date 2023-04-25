@@ -7,6 +7,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  trailingSlash: false,
   organizationName: 'irhpc',
   projectName: 'irphc.github.io',
   i18n: {
@@ -109,7 +110,6 @@ module.exports = {
         sitemap: {
         changefreq: 'weekly',
         priority: 0.5,
-        trailingSlash: false,
       },
       },
     ],
