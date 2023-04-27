@@ -7,7 +7,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  trailingSlash: false,
+  // trailingSlash: false,
   organizationName: 'irhpc',
   projectName: 'irphc.github.io',
   i18n: {
