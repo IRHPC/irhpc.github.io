@@ -8,7 +8,7 @@ Congratulations on getting an account on one of the IRHPC clusters. The document
 
 - Never give your login password or SSH key to anyone else
 
-- Never connect to Elja through an unsecure public network (see [here](./connecting/01_general.md))
+- Never connect to Elja through an unsecure public network (see [here](../connecting/01_general.md))
 
 
 # Login Node
@@ -43,7 +43,7 @@ IF you require disk space to store large amounts of data (more than **1 Tb**) fo
 
 # Scratch Disk
 
-Each compute node has a dedicated **/scratch/** disk (see [here](./hardware/02_specs.md) for hardware specs). It is a local disk which is intended for the **temporary** storage of data to be processed, and writing of output. This disk facilitates fast **I/O** (input/output) when running jobs. Users have read/write privilages here
+Each compute node has a dedicated **/scratch/** disk (see [here](../hardware/02_specs.md) for hardware specs). It is a local disk which is intended for the **temporary** storage of data to be processed, and writing of output. This disk facilitates fast **I/O** (input/output) when running jobs. Users have read/write privilages here
 
 **/scratch/users/**
 
