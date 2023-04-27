@@ -43,7 +43,7 @@ $ srun --job-name "Jupyterlab" --partition <pname> --cpus-per-task 24 --mem-per-
 ```
 
 :::note
-It is important to adjust the number of cores (and memory per core) according to your needs! Don't allocate unnecessary processing power. See [here](./hardware/01_partitions.md) for partitions and specs.
+It is important to adjust the number of cores (and memory per core) according to your needs! Don't allocate unnecessary processing power. See [here](../hardware/01_partitions.md) for partitions and specs.
 :::
 
 Activate the **jupyterlab** environment
