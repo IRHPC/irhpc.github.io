@@ -9,16 +9,31 @@
     <icon>https://irhpc.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Zeroing in on Nix]]></title>
-        <id>zero-nix</id>
+        <id>https://irhpc.github.io/announcements/zero-nix</id>
         <link href="https://irhpc.github.io/announcements/zero-nix"/>
         <updated>2021-05-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We have decided to use nix as the main packaging manager.]]></summary>
+        <content type="html"><![CDATA[<p>We have decided to use <code>nix</code> as the main packaging manager.</p>]]></content>
+        <author>
+            <name>Rohit Goswami</name>
+            <uri>https://rgoswami.me</uri>
+        </author>
+        <category label="packaging" term="packaging"/>
+        <category label="admin" term="admin"/>
+        <category label="announcements" term="announcements"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello]]></title>
-        <id>hello-world</id>
+        <id>https://irhpc.github.io/announcements/hello-world</id>
         <link href="https://irhpc.github.io/announcements/hello-world"/>
         <updated>2019-05-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to this list of announcements. This list of announcements is created with Docusaurus 2 alpha.]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to this list of announcements. This list of announcements is created with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer"><strong>Docusaurus 2 alpha</strong></a>.</p><p>We will make announcements periodically here.</p>]]></content>
+        <author>
+            <name>Rohit Goswami</name>
+            <uri>https://rgoswami.me</uri>
+        </author>
+        <category label="admin" term="admin"/>
+        <category label="announcements" term="announcements"/>
     </entry>
 </feed>

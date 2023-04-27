@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhpcdocs=self.webpackChunkhpcdocs||[]).push([[6231],{5267:e=>{e.exports=JSON.parse('{"permalink":"/is/announcements/tags/packaging","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

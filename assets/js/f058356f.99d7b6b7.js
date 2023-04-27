@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkhpcdocs=self.webpackChunkhpcdocs||[]).push([[1183],{7903:a=>{a.exports=JSON.parse('{"allTagsPath":"/announcements/tags","slug":"packaging","name":"packaging","count":1,"permalink":"/announcements/tags/packaging"}')}}]);

@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>HPC Documentation Blog</title>
-        <link>https://irhpc.github.io/announcements</link>
+        <link>https://irhpc.github.io/is/announcements</link>
         <description>HPC Documentation Blog</description>
         <lastBuildDate>Thu, 20 May 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <language>is</language>
         <item>
             <title><![CDATA[Zeroing in on Nix]]></title>
             <link>https://irhpc.github.io/is/announcements/zero-nix</link>
-            <guid>zero-nix</guid>
+            <guid>https://irhpc.github.io/is/announcements/zero-nix</guid>
             <pubDate>Thu, 20 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[We have decided to use nix as the main packaging manager.]]></description>
+            <content:encoded><![CDATA[<p>We have decided to use <code>nix</code> as the main packaging manager.</p>]]></content:encoded>
+            <category>packaging</category>
+            <category>admin</category>
+            <category>announcements</category>
         </item>
         <item>
             <title><![CDATA[Hello]]></title>
             <link>https://irhpc.github.io/is/announcements/hello-world</link>
-            <guid>hello-world</guid>
+            <guid>https://irhpc.github.io/is/announcements/hello-world</guid>
             <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[Welcome to this list of announcements. This list of announcements is created with Docusaurus 2 alpha.]]></description>
+            <content:encoded><![CDATA[<p>Welcome to this list of announcements. This list of announcements is created with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer"><strong>Docusaurus 2 alpha</strong></a>.</p><p>We will make announcements periodically here.</p>]]></content:encoded>
+            <category>admin</category>
+            <category>announcements</category>
         </item>
     </channel>
 </rss>
