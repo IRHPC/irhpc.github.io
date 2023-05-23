@@ -17,7 +17,7 @@ TF2-gpu is packaged in a conda environment. In order to use the conda environmen
 ```bash
 [..]$ module use /hpcapps/libbio-gpu/modules/all/
 [..]$ ml load tf2-gpu
-[..]$ conda activate /hpcapps/conda_env/Tensorflow-GPU/2.4.1
+[..]$ conda activate /hpcapps/conda_env/TF2-gpu/2.4.1
 ```
 
 ---
@@ -48,7 +48,7 @@ Copy the flollowing SBATCH script into the **slurm_mnist** directory
 
 module use /hpcapps/libbio-gpu/modules/all
 module load tf2-gpu
-conda activate /hpcapps/conda_env/Tensorflow-GPU/2.4.1
+conda activate /hpcapps/conda_env/TF2-gpu/2.4.1
 
 scratchlocation=/scratch/users
 
@@ -113,7 +113,7 @@ Load in the modules and activate the TF2-gpu environment
 ```bash
 [..]$ module use /hpcapps/libbio-gpu/modules/all/
 [..]$ ml load tf2-gpu
-[..]$ conda activate /hpcapps/conda_env/Tensorflow-GPU/2.4.1
+[..]$ conda activate /hpcapps/conda_env/TF2-gpu/2.4.1
 ```
 
 Navigate into the **slurm_mnist** directory
