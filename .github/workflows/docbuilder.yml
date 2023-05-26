@@ -1,6 +1,14 @@
 name: docbuilder
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+      - test-build
+  pull_request:
+    branches:
+      - main
+      - test-build
 
 jobs:
   gh-release:
