@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main
-      - test-build
+      - test-branch
   pull_request:
     branches:
       - main
-      - test-build
+      - test-branch
 
 jobs:
   gh-release:
