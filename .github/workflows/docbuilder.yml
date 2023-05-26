@@ -1,6 +1,14 @@
 name: docbuilder
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+      - test-branch
+  pull_request:
+    branches:
+      - main
+      - test-branch
 
 jobs:
   gh-release:
@@ -35,6 +43,8 @@ jobs:
           npm i
           npm run build
       - name: Deploy
+      # Only run this on the main branch
+        if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
