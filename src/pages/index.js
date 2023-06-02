@@ -4,19 +4,11 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
+import HomepageFeatures from '../components/HomepageFeatures/HomepageFeatures';
 
-// //autoNavigate user from front page to docs/intro section of website 
-// function autoNavigate(){
-//   const section = "docs/intro";
-
-//   document.body.style.visibility = "hidden"; //The front page is displayed in a split second before being navigated to intro/doc (we want to hide it)
-//   window.location.href = section; //navigation
-// }
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
-  // autoNavigate();
 
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
