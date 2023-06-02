@@ -1,3 +1,5 @@
+const { right } = require('trim');
+
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'HPC Documentation',
@@ -16,7 +18,7 @@ module.exports = {
   },
   themeConfig: {
     navbar: {
-      title: 'HPC Docs',
+      title: '',
       logo: {
         alt: 'IRHPC Logo',
         src: 'img/logo.svg',
@@ -29,7 +31,10 @@ module.exports = {
           position: 'left',
           label: 'User Docs',
         },
-        {to: '/announcements', label: 'Announcements', position: 'left'},
+        { 
+          to: '/announcements', 
+          label: 'Announcements', 
+          position: 'left'},
         {
           href: 'https://ihpc.is/',
           label: 'Older Site',
