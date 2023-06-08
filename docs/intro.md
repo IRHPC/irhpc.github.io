@@ -38,8 +38,11 @@ Congratulations on getting to the login node!
 
 # Acknowledgement
 
-We kindly request users to acknowledge the resources and user support provided by the Icelandic Research electronic-Infrastructure (IREI) in publications. An example is provided below
+We kindly request users to acknowledge the resource and user support provided by the Icelandic Research electronic-Infrastructure (IREI) in publications. An example is provided below
 
 :::note Acknowledgement
 Computer resources, data storage and user support are provided by the Division of Information Technology of the University of Iceland through the Icelandic Research e-Infrastructure project, funded by the Icelandic Centre of Research infrastructure fund.
 :::
+
+Similarly, it will be beneficial to all parties involved for us to be notified of any publications published which makes use of the resources. A notification should be sent to "help@hi.is" with title "Elja Publication".
+
