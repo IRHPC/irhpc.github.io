@@ -44,13 +44,21 @@ especially not the 'admins'.**
 The public key needs to be shared with the admins, 
 and a copy of it is made in your directory on the cluster.
 
-### Connecting with PuTTy
+### Credentials in PuTTy
 
 Open up PuTTy and navigate to **Connection > SSH > Auth** on the left in the category panel. 
 Press "Browse" next to the empty field below "Private key for authentication:" and select 
 your private key (e.g. the \*.ppk generated with PuTTygen):
 
 ![Example PuTTy](../assets/putty.png)
+
+:::note
+In later versions of PuTTy the "Private key for authentication" field can be found in **Connection > SSH > Auth > Credentials**. See image below.
+:::
+
+![Example_PuTTy](../assets/PuttyVNew.png)
+
+### Storing the Session and Connecting
 
 Navigate back to **Session** on the left and fill in "Host name" as "elja.hi.is". Type a name into
 The administrator needs a copy of the public key to grant you access to the login node. 
