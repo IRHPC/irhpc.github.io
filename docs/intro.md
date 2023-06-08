@@ -35,3 +35,11 @@ Congratulations on getting to the login node!
 **Do nothing** without reading the [User Agreement](./files/useragree-v1-3.pdf) and [common etiquette section](./common/02_etiquette.md).
 
 :::
+
+# Acknowledgement
+
+We kindly request users to acknowledge the resources and user support provided by the Icelandic Research electronic-Infrastructure (IREI) in publications. An example is provided below
+
+:::note Acknowledgement
+Computer resources, data storage and user support are provided by the Division of Information Technology of the University of Iceland through the Icelandic Research e-Infrastructure project, funded by the Icelandic Centre of Research infrastructure fund.
+:::
