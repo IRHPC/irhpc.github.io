@@ -2,7 +2,7 @@
 slug : rcondapython
 ---
 
-# Conda, Python & R
+# Conda, Python, R & Go
 
 :::note
 It is important to run all package compilations on the **log-in node** before deploying these environments on the **compute nodes**.
@@ -241,3 +241,61 @@ Open the R console and load the package with the following command:
 ```
 
 
+## Go
+
+### Loading Go
+The current version of Go on Elja is 1.20.2. To load the Go module you will simply have to type in the following in the command line
+
+```bash
+[..] $ ml load Go
+```
+### Setting up your Go-workspace
+
+Create a 'goWorkspace' in your home directory
+
+```bash
+[..] $ mkdir goWorkspace
+```
+
+To be able to run your go project you will need to specify your own GOPATH to your 'goWorkspace'
+
+```bash
+[..] $ export GOPATH=/users/home/$USER/goWorkspace/ 
+```
+
+In your goWorkspace directory create three directories "bin", "src" and "pkg"
+
+```bash
+[..] $ cd goWorkspace
+[..] $ mkdir bin src pkg
+```
+Now you have setup your own Go-workspace!
+
+### Creating your first Go Program
+Your go projects should be located in your **src** directory. Lets start creating a go module in **src** called "**myProject**".
+
+```bash
+[..] $ cd src/
+[..] $ mkdir myProject 
+[..] $ cd myProject 
+[..] $ go mod init myProject
+```
+a **go.mod** will be created for your module. The **go.mod** will work as a dependency managment tool for your go project.
+
+
+### go get
+
+```bash
+[..] $ go get $package_name
+```
+***go get*** downloads and installs packages and their dependencies from remote repositories. The downloaded packages are stored in the workspace's **pkg** and **src** directories.
+
+:::note
+You will have to be in a project directory to use **go get**
+:::
+### go install
+
+```bash
+[..] $ go install $package_name
+```
+By using ***go install*** you create a binary file in **bin** and package located in **pkg/mod/**
