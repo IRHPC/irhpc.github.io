@@ -290,12 +290,31 @@ a **go.mod** will be created for your module. The **go.mod** will work as a depe
 ```
 ***go get*** downloads and installs packages and their dependencies from remote repositories. The downloaded packages are stored in the workspace's **pkg** and **src** directories.
 
-:::note
-You will have to be in a project directory to use **go get**
-:::
+
+to get modules from github you will have to turn GO111MODULE off. you can do so by doing the following: 
+
+```bash
+[..] $ export GO111MODULE="off"
+```
+
+to make Go look for go.mod file in the current directory or subdirectory you will have to turn GO111MODULE to "on" like so:
+
+
+```bash
+[..] $ export GO111MODULE="on"
+```
+
+Another ooption is to make ```GO111MODULE="auto"```. This option will make Go automatically enable Go modules if a "go.mod" files is found  in the current directory or its parent directory.
+
+```bash
+[..] $ export GO111MODULE="auto"
+```
+
 ### go install
 
 ```bash
 [..] $ go install $package_name
 ```
 By using ***go install*** you create a binary file in **bin** and package located in **pkg/mod/**
+
+
