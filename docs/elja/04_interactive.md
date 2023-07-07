@@ -9,10 +9,18 @@ directly from the command line on a node (e.g. for data analysis and manipulatio
 For example:
 
 ```bash
-[..]$ srun --job-name "InteractiveJob" --cpus-per-task 24 --mem-per-cpu 3900 --time 1-00:00:00 --pty bash
+[..]$ srun --job-name "InteractiveJob" --partition 48cpu_192mem --cpus-per-task 24 --mem-per-cpu 3900 --time 1-00:00:00 --pty bash
 ```
 
-The SLURM scheduler will allocate the requested resource (if available), in this example 24 proccessors and 3900MB of RAM memory per processor, from the default partition. The run will last for 1 day (0-00:00:00 : D-HH:MM:SS). 
+The SLURM scheduler will allocate the requested resource (if available), in this example 24 proccessors from a compute node in the **48cpu_192mem** partition, and 3900MB of RAM memory per processor. The run will last for 1 day (0-00:00:00 : D-HH:MM:SS). 
+
+To see which paritions are available to you type:
+
+```bash
+[..]$ sinfo
+```
+
+A description of the partitions can be found in [Partitions & Hardware](/docs/hardware/parthardw).
 
 :::note
 
@@ -22,17 +30,13 @@ It is important to always define --mem-per-cpu, and it is recommended to set it 
 
 The `SLURM` queue rules and limits still apply here.
 
-When the interactive session stars you will be logged into a compute node:
+When the interactive session starts you will be logged into a compute node:
 
 ```bash
 [<uname>@compute-xx]$
 ```
 
-To request a particular partition (pname):
-
-```bash
-[..]$ srun --job-name "InteractiveJob" --partition <pname> --cpus-per-task 32 --mem-per-cpu 3900 --time 1-00:00:00 --pty bash
-```
+## Closing the Session
 
 After you have completed your work in your interactive session, please end the session to make the resource available to other users:
 
@@ -54,7 +58,7 @@ First activate **tmux**:
 and start an interactive session:
 
 ```bash                          
-[..]$ srun --job-name “InteractiveJob” --cpus-per-task 32 --mem-per-cpu 3900 --time 1-00:00:00 --pty bash                                          
+[..]$ srun --job-name “InteractiveJob” --partition <partition-name> --cpus-per-task 32 --mem-per-cpu 3900 --time 1-00:00:00 --pty bash                                          
 ``` 
 
 You interactive session is now attached to **tmux**. 
