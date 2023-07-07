@@ -2,7 +2,7 @@ const { right } = require('trim');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'IHPC Documentation',
+  title: 'HPC Documentation',
   tagline: 'For Icelandic National Computing resources',
   url: 'https://irhpc.github.io',
   baseUrl: '/',
@@ -30,12 +30,12 @@ module.exports = {
           docId: 'intro',
           position: 'left',
           label: 'User Docs',
-          to: '/docs/intro'
         },
         { 
           to: '/announcements', 
           label: 'Announcements', 
-          position: 'left'},
+          position: 'left'
+        },
         {
           href: 'https://ihpc.is/',
           label: 'Older Site',
