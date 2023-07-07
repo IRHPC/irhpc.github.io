@@ -34,7 +34,8 @@ module.exports = {
         { 
           to: '/announcements', 
           label: 'Announcements', 
-          position: 'left'},
+          position: 'left'
+        },
         {
           href: 'https://ihpc.is/',
           label: 'Older Site',
