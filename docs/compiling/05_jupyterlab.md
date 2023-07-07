@@ -34,7 +34,7 @@ In this example **Python** and **tsne** python package are built in the **jupyte
 [..]$ conda install -c conda-forge tsne
 ```
 
-### 2) Open an Interactive Session and Deploy Jupterlab Notebook
+### 2) Open an Interactive Session and Deploy Jupyterlab Notebook
 
 In this example 24 cores of a compute node from partition **<pname\>** is requested with 3.9**Gb** per core.
 
