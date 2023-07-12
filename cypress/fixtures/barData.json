@@ -1,0 +1,168 @@
+{
+  "navBar": {
+    "items": [
+      {
+        "label": "",
+        "to": "https://irhpc.github.io/"
+      },
+      {
+        "label": "User Docs",
+        "to": "http://localhost:3000/docs/intro"
+      },
+      {
+        "label": "Announcements",
+        "to": "http://localhost:3000/announcements"
+      },
+      {
+        "label": "Older Site",
+        "to": "https://ihpc.is/"
+      },
+      {
+        "label": "English",
+        "to": "http://localhost:3000/"
+      },
+      {
+        "label": "Íslenska",
+        "to": "http://localhost:3000/is/"
+      }
+    ]
+  },
+
+
+    "sideBar": {
+      "items": [
+        {
+          "label": "Acquiring Access",
+          "to": ""
+        },
+
+        {
+          "label": "terminology",
+          "to": "http://localhost:3000/docs/common/terminology"
+        },
+        {
+          "label": "etiquette",
+          "to": "http://localhost:3000/docs/common/etiquette"
+        },
+        {
+          
+          "label": "bash",
+          "to": "http://localhost:3000/docs/elja/bash"
+        },
+        {
+          
+          "label": "submit_jobs",
+          "to": "http://localhost:3000/docs/elja/submit_jobs"
+        },
+        {
+          
+          "label": "scratch_disk",
+          "to": "http://localhost:3000/docs/elja/scratch_disk"
+        },
+        {
+          
+          "label": "interactive_session",
+          "to": "http://localhost:3000/docs/elja/interactive_session"
+        },
+        {
+          "label": "visualization",
+          "to": "http://localhost:3000/docs/elja/visualization"
+        },
+        {
+          "label": "policies",
+          "to": ""
+        },
+
+        {
+          "label": "parthardw",
+          "to": "http://localhost:3000/docs/hardware/parthardw"
+        },
+        {
+          "label": "hardwarespec",
+          "to": "http://localhost:3000/docs/hardware/hardwarespec"
+        },
+        {
+          
+          "label": "storage",
+          "to": "http://localhost:3000/docs/hardware/storage"
+        },
+        {
+          "label": "datatransfer",
+          "to": "http://localhost:3000/docs/mimir/datatransfer"
+        },
+        {
+          "label": "easybuild",
+          "to": "http://localhost:3000/docs/compiling/easybuild"
+        },
+        {
+          "label": "rcondapython",
+          "to": "http://localhost:3000/docs/compiling/rcondapython"
+        },
+        {
+          "label": "environment",
+          "to": "http://localhost:3000/docs/compiling/environment"
+        },
+        {
+          "label": "AlphaFold",
+          "to": "http://localhost:3000/docs/compiling/AlphaFold"
+        },
+        {
+          "label": "jupyterlab",
+          "to": "http://localhost:3000/docs/compiling/jupyterlab"
+        },
+        {
+          "label": "Metaerg",
+          "to": "http://localhost:3000/docs/compiling/Metaerg"
+        },
+        {
+          "label": "TensorFlow-GPU",
+          "to": "http://localhost:3000/docs/compiling/TensorFlow-GPU"
+        },
+        {
+          "label": "nix_start",
+          "to": "http://localhost:3000/docs/compiling/nix_start"
+        },
+        {
+          "label": "nix_resources",
+          "to": "http://localhost:3000/docs/compiling/nix_resources"
+        },
+        {
+          "label": "connectingssh",
+          "to": "http://localhost:3000/docs/connecting/connectingssh"
+        },
+        {
+          "label": "unixconnecting",
+          "to": "http://localhost:3000/docs/connecting/unixconnecting"
+        },
+        {
+          "label": "windowsconnecting",
+          "to": "http://localhost:3000/docs/connecting/windowsconnecting"
+        },
+        {
+          "label": "sftpconnecting",
+          "to": "http://localhost:3000/docs/connecting/sftpconnecting"
+        },
+        {
+          "label": "getting_started",
+          "to": "http://localhost:3000/docs/documentation/getting_started"
+        },
+        {
+          "label": "doc_types",
+          "to": "http://localhost:3000/docs/documentation/doc_types"
+        },
+        {
+          "label": "hosting",
+          "to": "http://localhost:3000/docs/documentation/hosting"
+        },
+        {
+          "label": "connectingssh",
+          "to": "http://localhost:3000/docs/snippets/slurm"
+        },
+        {
+          "label": "unixconnecting",
+          "to": "http://localhost:3000/docs/snippets/nix_snippets"
+        }
+      ]
+    }
+  }
+  
