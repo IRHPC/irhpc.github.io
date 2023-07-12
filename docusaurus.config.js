@@ -22,7 +22,7 @@ module.exports = {
       logo: {
         alt: 'IRHPC Logo',
         src: 'img/logo.svg',
-        href: 'https://irhpc.github.io',
+        href: '/',
       },
       items: [
         {
