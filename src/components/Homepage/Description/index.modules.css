@@ -40,3 +40,10 @@
       transform: translateX(0);
     }
   }
+
+
+  @media screen and (max-width: 650px) {
+    .msgBubble {
+      width: 100%;
+    }
+  }
