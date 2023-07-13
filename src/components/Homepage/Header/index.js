@@ -11,7 +11,7 @@ export default function HomepageHeader() {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className={clsx("hero__title",styles.title)}>{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <p className={clsx("hero__subtitle", styles.underTitle)}>{siteConfig.tagline}</p>
 
         </div>
         <a href="https://www.freepik.com/free-photo/website-hosting-concept-with-circuits_26412535.htm#query=server&position=9&from_view=search&track=sph" className={styles.IMGlicense}>Freepik</a>

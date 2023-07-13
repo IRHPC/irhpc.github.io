@@ -12,10 +12,21 @@
     background-image: url(../../../../static/img/banners/homepagebackground.jpg);
     background-size: cover;
   }
+
+  
   
   @media screen and (max-width: 966px) {
     .heroBanner {
-      padding: 2rem;
+      padding: 0rem 0;
+    }
+
+    .title {
+      margin-left:  0rem;
+      font-size: xx-large;
+    }
+
+    .underTitle {
+      font-size: medium;
     }
   }
   
