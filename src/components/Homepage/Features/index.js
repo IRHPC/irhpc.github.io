@@ -15,10 +15,10 @@ const FeatureList = [
     logo:  <FontAwesomeIcon icon={faDatabase} size={iconSizes} color={iconColors} />,
     description: (
       <>
-      Elja Users have their own personal storage located on a  separate disk that is shared between users. 
-      There the users can store data in TB's for a limited duration.
+      Access is provided to a fast I/O, secure and multitier 
+      NFS server for the storage and analysis of large data (>TB).
       <br></br>
-      <strong>read more  <a href='/docs/MIMIR/datatransfer'> here </a></strong>
+      <strong>Read more  <a href='/docs/MIMIR/datatransfer'> here </a></strong>
       </>
     ),
   },
@@ -29,9 +29,9 @@ const FeatureList = [
     description: (
       <>
        In total there are 6528 cores available, including 13 Nvidia A100 Tesla GPU cards. 
-       It stands currently at 628 and are enough to calculate your data at an extremely fast speed.
+       It stands currently at 628 tera-flops.
        <br></br>
-       <strong>read more  <a href='/docs/hardware/hardwarespec'> here</a>.</strong>
+       <strong>Read more  <a href='/docs/hardware/hardwarespec'> here</a>.</strong>
       </>
 
     ),
@@ -42,9 +42,11 @@ const FeatureList = [
     logo: <FontAwesomeIcon  icon={faServer} size={iconSizes} color={iconColors} />,
     description: (
       <>
-      The HPC cluster runs on a Linux operating system where it uses Bash shell scripts and interactive commands to communicate with the cluster. 
+      The HPC cluster is managed by a Linux operating system. 
+      Bash shell scripting and interactive commands are used 
+      to work on the cluster and with the SLURM queueing service.
       <br></br>
-      <strong>read more  <a href='/docs/elja/bash'> here</a>.</strong>
+      <strong>Read more  <a href='/docs/elja/bash'> here</a>.</strong>
       </>
     ),
   },
@@ -54,7 +56,9 @@ const FeatureList = [
     logo: <FontAwesomeIcon icon={faComments} size={iconSizes} color={iconColors} />,
     description: (
       <>
-        Contact us by writing a formal application to <a><strong>help@hi.is</strong></a> and we will write you back to you as soon as possible.
+        Contact us by writing a formal application to 
+        <a><strong>help@hi.is</strong></a> and we will write 
+        back to you as soon as possible.
         <br></br>
         <strong>Requirements for applying can be found <a href= '/docs/intro'>here</a></strong>
        </>
@@ -66,9 +70,10 @@ const FeatureList = [
     logo: <FontAwesomeIcon icon={faRocket} size={iconSizes} color={iconColors} />,
     description: (
       <>
-        The HPC cluster provides a high variety of programming languages, programs and software environments
+        A high variety of compilers, numerical libraries and software environments
+        are provided and maintained.
         <br></br>
-       <strong>read more  <a href='/docs/compiling/easybuild'> here</a>.</strong>
+       <strong>Read more  <a href='/docs/compiling/easybuild'> here</a>.</strong>
       </>
 
     ),
@@ -79,7 +84,7 @@ const FeatureList = [
     logo: <FontAwesomeIcon icon={faBook} size={iconSizes} color={iconColors} />,
     description: (
       <>
-       Learn more by reading through our provided documentation
+       Learn more by reading through the documentation
        <br></br>
        <strong>starting<a href='/docs/intro'> here</a>.</strong>
       </>

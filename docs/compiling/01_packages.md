@@ -10,7 +10,7 @@ This page outlines the software stacks available to the users and the module man
 The available EasyBuild stack dependancies are linked against the OS libraries and drivers using [EasyBuild](https://docs.easybuild.io/en/latest/). A stack tree starts with a compiler environment (i.e. GCC-version). 
 The stacks are managed with the module manager [Lmod](https://docs.easybuild.io/en/latest/). In general it is enough to load a software module to make the software ready for use. Loading in the module correctly append the necessary binary paths and loads all dependencies.
 
-In order to make user of a compiler environment to compile your own software several modules may have to be loaded at once. 
+In order to make use of a compiler environment to compile your own software several modules may have to be loaded at once. 
 See [here](./03_devenvironment.md) for compiling / development instructions.
 
 ## Using Lmod
@@ -34,7 +34,7 @@ For a complete list, which includes dependencies of all of the software, type:
 [..]$ module --show-hidden avail
 ```
 
-This command can also be used to list specific sofwtare and all available versions, for example:
+This command can also be used to list specific software and all available versions, for example:
 
 ```bash
 [..]$ module avail Anaconda3
@@ -72,7 +72,7 @@ To unload a module type:
 [..]$ module unload Anaconda3
 ```
 
-If you wish to clear your the whole list of currently loaded modules type:
+If you wish to clear your whole list of currently loaded modules type:
 
 ```bash
 [..]$ module purge
