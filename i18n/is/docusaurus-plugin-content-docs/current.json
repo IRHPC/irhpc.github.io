@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Næsta",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Elja Usage": {
+    "message": "Notkun Elju",
+    "description": "The label for category Elja Usage in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Partitions and Hardware": {
+    "message": "Skilrúm og Búnaður",
+    "description": "The label for category Partitions and Hardware in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Mimir-II Users": {
+    "message": "Mimir-II notendur",
+    "description": "The label for category Mimir-II Users in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Software": {
+    "message": "Hugbúnaður",
+    "description": "The label for category Software in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Connecting & SSH keys": {
+    "message": "SSH Lyklar & Tengingar",
+    "description": "The label for category Connecting & SSH keys in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contributing Docs": {
+    "message": "Leggja til skjölun",
+    "description": "The label for category Contributing Docs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Snippets": {
+    "message": "Dæmi",
+    "description": "The label for category Snippets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Common Rules": {
+    "message": "Sameginlegar Reglur",
+    "description": "The label for category Common Rules in sidebar tutorialSidebar"
+  }
+}
