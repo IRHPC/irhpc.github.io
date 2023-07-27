@@ -5,7 +5,7 @@ slug : rcondapython
 # Conda, Python, R & Go
 
 :::note
-It is important to run all package compilations on the **log-in node** before deploying these environments on the **compute nodes**.
+Það er mikilvægt að setja samann alla pakka á **innskráningarhnúti** áður en umhverfið er sett upp á **reiknihnúta**
 :::
 
 ## Conda
@@ -15,10 +15,10 @@ It is important to run all package compilations on the **log-in node** before de
 ```
 
 :::note
-An older version of Anaconda3 (2021.11) is still available. It is recommended to switch to the newer version as soon as possible. It will be removed in May 2023.
+Eldri útgáfa af Anaconda3 (2021.11) er en í boði. Það er mælt með að skipta yfir í nýrr útgáfu sem allra fyrst. Það verður fjarlægt í Maí 2023.
 :::
 
-### One time setup
+### Uppsetning í fyrsta skipti
 
 ```bash
 [..]$ conda config --add channels defaults
@@ -27,53 +27,49 @@ An older version of Anaconda3 (2021.11) is still available. It is recommended to
 [..]$ conda init
 ```
 
-Log out and log in to Elja again. Your conda is now ready.
+Skráðu þig út og aftur inn á Elju. Conda umhverfið þitt er nú tilbúið.
 
-Create environments (and install packages):
+Búðu til umhverfi (og settu upp pakka):
 
-For example:
-
+Til dæmis:
 ```bash 
 [..]$ conda create -y -p /hpcdata/Mimir/<uname>/env_mimir bowtie2
 ```
 
-This will create an environment called “env\_mimir” and install 
-bowtie2 (and some dependencies). 
-All binaries go into **/hpcdata/Mimir/<uname\>/env\_mimir**
+Þetta mun búa til umhverfi sem kallast "env\_mimir" og setja upp bowie2 (og háða pakka).
+Allar tvíundaskrár fara í **/hpcdata/Mimir/<uname\>/env\_mimir**
 
-When installation is complete activate your environment:
+Þegar uppsetningin er búin getur þú virkjað umhverfið þitt:
 
 ```bash
 [..]$ conda activate /hpcdata/Mimir/<uname>/env_mimir
 ```
 
-This environment contains bowtie2:
+Þetta umhverfi inniheldur bowtie2:
 
 ```bash
 (../<uname>/env_mimir) [..]$ bowtie2 --version
 /hpcdata/Mimir/<uname>/env_mimir/bin/bowtie2-align-s version 2.4.5
 ```
-
-You can install additional packages into this environment:
+Þú getur sett upp aðra pakka í þetta umhverfi:
 
 ```bash
 (../<uname>/env_mimir) [..]$ conda install -c bioconda macs2
 ```
 
-After the installation the environment contains macs2 in addition to bowtie2:
+Eftir uppsetninguna mun umhverfið innihalda macs2 ásamt bowtie2:
 
 ```bash
 (../<uname>/env_mimir) [..]$ macs2 --version
 macs2 2.2.7.1
 ```
-
-To leave the environment type:
+Til að fara úr umhverfinu slærðu inn:
 
 ```bash
 (../<uname>/env_mimir) [..]$ conda deactivate
 ```
 
-You can always start a new environment and install different packages into it, e.g.:
+þú getur alltaf byrjað á nýju umhverfi og sett upp aðra pakka ínn í það t.d.:
 
 ```bash
 [..]$ conda create -y -p /hpcdata/Mimir/<uname>/env_mimir2
@@ -88,19 +84,19 @@ You can always start a new environment and install different packages into it, e
                                Last update: 11 05 2020
 ```
 
-This allows you to have separate environments for different tasks. 
+Þetta gerir þér kleift að aðskilja umhverfin eftir mismunandi verkefnum.
 
-If you are not using a particular environment anymore please remove it like this:
+Ef þú ert ekki áð nota ákveðið umhverfi þá byðjum við þig vinsamlegast um að fjarlægja það svona:
 
 ```bash
 [..]$ conda env remove --name env_name
 ```
 
-This removes the installed binaries, and saves up space for other users.
+Þetta fjarlægir allara uppsettar tvíundarskrár, og býr til pláss fyrir aðra notendur.
 
-### Switching to a new Conda Version
+### Fara yfir í aðra Conda útgáfu. 
+Conda frumstillingin skrifar lítinn kóðabút inn í **.basrhc** þinn sem lítur svona út
 
-The conda initialization writes a small snippet of code into your **.basrhc** which looks like this
 ```bash
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -118,7 +114,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 ```
 
-To switch to the new version **Anaconda3/2022.05** simply change these lines in your **.basrhc** to
+Til að skipta yfir í nýju útgáfuna **Anaconda3/2022.05** skaltu einfaldlega breyta þessum línum í **.bashrc** skránni þinni:
 ```bash
 else
     if [ -f "/hpcapps/lib-mimir/software/Anaconda3/2022.05/etc/profile.d/conda.sh" ]; then
@@ -129,12 +125,12 @@ else
 fi
 ```
 
-Now **log out** and **log in** again to implement the changes.
+Núna skaltu **skrá þig út** og **skrá þig inn** aftur til að virkja breytingarnar.
 
 ## Python
 
-A specialized version of Python - Biopython - is available for use on Elja. 
-The base version of Python is 3.9.6. It includes pip 21.2.2.
+Sérhæfð útgáfa af Python - Biopython - er fáanleg til notkunar á Elju.
+Grunnútgáfan af Python er 3.9.6. Það inniheldur pip 21.2.2.
 
 ```bash
 [..]$ module load Biopython
@@ -143,14 +139,13 @@ Python 3.9.6
 [..]$ $ pip --version
 pip 21.2.2
 ```
-
-In order to install your own Python packages with pip the flag --user must be included to install the packages locally (in your homespace), for example:
+Til þess að setjua upp þína eigin Python pakka með pip þá þarftu að nota flaggið `--user` svo pakkarnir verði settir upp á þínu heimasvæði, til dæmis:
 
 ```bash
 [..]$ pip install --user alfpy
 ```
 
-The Python package alfpy is installed, and is located in **/users/home/<uname\>/.local/lib/python3.9/site-packages/**:
+Python pakkinn alfpy var nú settur upp, og er staðsettur í **/users/home/<uname\>/.local/lib/pytho3.9/site-packages/**:
 
 ```bash
 [..]$ python
@@ -162,22 +157,20 @@ The Python package alfpy is installed, and is located in **/users/home/<uname\>/
 ## R
 
 :::note
-**Mimir users!**
-It is recommended that the user creates a directory called “.local/R/library” in their /hpcdata/Mimir/<uname\> directory. 
+**Mimir notendur!**
+Það er mælt með að notendur búi til skrá sem heitir "./local/R/library" í /hpcdata/Mimir/<uname\> skránni sinni.
 :::
 
 ```bash
 [..]$ mkdir -p /hpcdata/Mimir/<uname>/.local/R/library
 ```
-
-and uses this directory to install additional R packages via CRAN. For R packages installed with release binaries (.tar.gz files for example), another directory is created:
+Notið þessa skrá til ád setja upp viðbótar R pakka með CRAN. Fyrir R pakka setta upp með útgáfu tvíundaskrám (.tar.gz skrár til dæmis), er búinn til önnur skrá:
 
 ```bash
 [..]$ mkdir -p /hpcdata/Mimir/<uname>/.local/R_libs
 ```
 
-To make use of these directory it is further recommented to create 
-a small bash script (for example .bashrc\_R) which includes these lines:
+Til þess að nota þessa skrá er einnig mælt með að búa til litla bash skriftu (til dæmis .bashrc\_R) sem inniheldur þessar línur:
 
 ```bash
 [..]$ cat >> ~/.bashrc_R << EOF
@@ -190,9 +183,7 @@ a small bash script (for example .bashrc\_R) which includes these lines:
 > fi
 > EOF
 ```
-
-Sourcing this bash script loads in the R module, 
-and appends your local directory to the R-library list.
+Þegar þessi bash skrifta er virkjuð hleður hún inn R einingunum og bætir staðbundinni skrá þinni í R-library listann.
 
 ```bash
 [..]$ R --version
@@ -205,36 +196,33 @@ Platform: x86_64-pc-linux-gnu (64-bit)
 [2] "/hpcdata/Mimir/<uname>/.local/R_libs"
 [3] "/hpcapps/lib-mimir/software/R/4.1.2-foss-2021b/lib64/R/library"
 ```
+Uppröðun skráarsafns leiðanna er mikilvæg, þar sem það mun first leita í staðbundnum skráarsöfnunum þínum þegar R pakka er hlaðið inn.
 
-The ordering of the library paths is important, since it will first look in your local libraries when loading an R packages.
-
-To install a package via CRAN to this library type, for example :
+Til þess að setja upp pakka í gegnum CRAN í þetta safn sláðu þá inn, sem dæmi:
 
 ```bash
 > install.packages("vioplot", repos="http://cran.r-project.org", lib="/hpcdata/Mimir/<uname>/.local/R/library")
 ```
 
-To load the package type:
+Til að hlaða inn pakka slærðu inn:
 
 ```bash
 > library("vioplot")
 ```
 
-To install R packages from a source directory (release binaries), we first download the package. For example:
+Til að setja upp R pakka úr upprunaskrá (útgáfu tvíundarskrám), sækjum við fyrst pakkann. Til dæmis:
 
 ```bash
 [..]$ wget http://cran.r-project.org/src/contrib/Archive/ggplot2/ggplot2_2.0.0.tar.gz
 ```
-
-Run the command below to install the package to your “R\_libs” directory. 
-If we do not specify the path, installation will fail since by default the 
-package will be installed in root directory which you do not have write priviliges to.
+Keyrðu skipunina hér að neðan til að setja upp pakkann í "R\_libs" möppuna þína.
+Ef við tilgreinum ekki slóðina mun uppsetning mistakast þar sem sjálfgefi reynir R að setja pakkan upp í rótarskránni sem þú hefur ekki skrifréttindi í. 
 
 ```bash
 [..]$ R CMD INSTALL --library=/hpcdata/Mimir/<uname>/.local/R_libs ggplot2_2.0.0.tar.gz
 ```
 
-Open the R console and load the package with the following command:
+Opnaðu R stjórnborðið og hlaðið pakkanum með eftirfarandi skipun:
 
 ```bash
 > library("ggplot2") 
