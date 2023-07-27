@@ -1,10 +1,9 @@
 ---
 slug: hardwarespec
 ---
+# Vélbúnaðarforskriftir
 
-# Hardware Specifications
-
-In total there are 6528 cores available, including 13 Nvidia A100 Tesla GPU cards. It stands currently at **628 TFLOPS**
+Alls eru 6528 kjarnar í boði, þar á meðal 13 Nvidia A100 Tesla GPU kort. Að svo stöddu stendur það í **628 TFLOPS**
 
 28 x standard compute nodes:
 - Partition : 48cpu_192mem
