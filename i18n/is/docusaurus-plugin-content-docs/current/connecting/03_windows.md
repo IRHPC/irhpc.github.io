@@ -18,12 +18,12 @@ FileZilla eða Cyberduck.
 
 Byrjaðu PuTTygen - veldu lykiltegund RSA og fjölgaðu bitafjölda í 4096:
 
-![Dæmi PuTTygen](../assets/puttygen.png)
+![Dæmi PuTTygen](../../../../../docs/assets/puttygen.png)
 
 Ýttu á ```Generate``` og hreyfðu músarbendilinn í kring.
 Eftir að þú hefur búið til lykil mun skjárinn líta svona út:
 
-![Dæmi 2 PuTTygen](../assets/puttygen2.png)
+![Dæmi 2 PuTTygen](../../../../../docs/assets/puttygen2.png)
 
 Opinberi lykillinn er sýndur í textareitnum.
 Annað hvort afritaðu hann inn í textaskrá,
@@ -51,24 +51,24 @@ Opnaðu PuTTy og farðu í **Connection > SSH > Auth** vinstra megin í flokkasp
 Ýttu á "Browse" við hliðina á auða reitnum fyrir neðan "Private key for authentication:" og veldu
 einkalykillinn þinn (t.d. \*.ppk sem er búinn til með PuTTygen):
 
-![Example PuTTy](../assets/putty.png)
+![Example PuTTy](../../../../../docs/assets/putty.png)
 
 :::note
 Í síðari útgáfum af PuTTy má finna reitinn „Private key for authentication“ í **Connection > SSH > Auth > Credentials**. Sjá mynd hér að neðan.
 :::
 
-![Example_PuTTy](../assets/PuttyVNew.png)
+![Example_PuTTy](../../../../../docs/assets/PuttyVNew.png)
 
 ### Geyma lotuna og tengjast
 
 Farðu aftur í **Session** vinstra megin og fylltu út "Host name" sem "elja.hi.is". Sláðu inn nafn í tóma „Vistar lotur“ reitinn (til dæmis elja) og ýttu á „Vista“. PuTTy mun geyma upplýsingar um hýsingaraðila og tengja við einkalykil
 Kerfisstjórinn þarf afrit af opinbera lyklinum til að veita þér aðgang að innskráningarhnútnum.
 
-![Example 2 PuTTy](../assets/putty2.png)
+![Example 2 PuTTy](../../../../../docs/assets/putty2.png)
 
 Ýttu nú á "Open". Þú verður nú tengdur (ýttu á "Accept" ef beðið er um það) við innskráningarhnútinn. Eftir að þú hefur slegið inn notandanafnið þitt í skipanalínuna ætti skjárinn þinn að líta svona út:
 
-![Example 3 PuTTy](../assets/putty3.png)
+![Example 3 PuTTy](../../../../../docs/assets/putty3.png)
 
 Þú ert núna skráður inn! Verið velkomin á Elju.
 

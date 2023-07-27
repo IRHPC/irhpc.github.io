@@ -21,17 +21,17 @@ og pláss á plássi með félögum þínum og öðrum vísindamönnum.**
 
 Opnaðu **FileZilla** og sláðu inn notendanafnið þitt og "sftp://elja.hi.is" sem host:
 
-![Example FileZilla](../assets/filezilla.png)
+![Example FileZilla](../../../../../docs//assets/filezilla.png)
 
 Opnaðu stillingavalmyndina í **Edit > Settings**. Farðu í **Connection > FTP > SFTP**.
 Ýttu á „Add key file“ og veldu einkalykilinn (t.d. \*.ppk sem er búið til með PuTTygen):
 
-![Example 2 FileZilla](../assets/filezilla2.png)
+![Example 2 FileZilla](../../../../../docs/assets/filezilla2.png)
 
 Ýttu á "Quickconnect" og veldu "Always trust the host" þegar beðið er um það.
 Vel heppnuð tenging lítur svona út (fyrir prófnotanda **fjarlægt**):
 
-![Example 3 FileZilla](../assets/filezilla3.png)
+![Example 3 FileZilla](../../../../../docs/assets/filezilla3.png)
 
 ## Cyberduck
 
@@ -42,17 +42,17 @@ að minnsta kosti þessa útgáfu eða síðar (sumar fyrri útgáfur eiga í va
 
 Opnaðu Cyberduck og ýttu á "Open Connection" efst í vinstra horninu. Fylltu út reitina svona:
 
-![Example Cyberduck](../assets/cyberduck.png)
+![Example Cyberduck](../../../../../docs/assets/cyberduck.png)
 
 
 Fyrir notendur **Mimir-II**; þú getur farið beint í **/hpcdata/Mimir/USERNAME** möppuna þína svona:
 
-![Example 2 Cyberduck](../assets/cyberduck2.png)
+![Example 2 Cyberduck](../../../../../docs/assets/cyberduck2.png)
 
 Ýttu á connect.
 
 Vel heppnuð tenging lítur svona út:
 
-![Example 3 Cyberduck](../assets/cyberduck3.png)
+![Example 3 Cyberduck](../../../../../docs/assets/cyberduck3.png)
 
 
