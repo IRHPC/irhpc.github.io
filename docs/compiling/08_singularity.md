@@ -5,7 +5,7 @@ slug : singularity
 # Singularity
 
 :::note
-Some software will work better in other environments for example [AlphaFold](./04_AlphaFold.md)
+Some software will work better in other environments for example [AlphaFold](AlphaFold)
 :::
 
 ## What is Singularity?
