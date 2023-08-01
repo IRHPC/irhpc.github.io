@@ -1,7 +1,6 @@
 import React from 'react';
 import HomepageDescription from "../Description";
 import HomepageFeatures from "../Features";
-import LatestAnnouncement from '../latestAnnouncement';
 
 const HTMLcomment1 =<> 
 <strong>I</strong>celandic <strong>H</strong>igh <strong>P</strong>erformance <strong>C</strong>omputing Centre (IHPC/IREI) 
@@ -28,7 +27,6 @@ const  HomepageItems = () => {
         <>
             {descriptions}
             <HomepageFeatures/>
-            <LatestAnnouncement/>
         </>
         
     )
