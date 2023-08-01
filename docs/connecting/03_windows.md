@@ -60,9 +60,8 @@ In later versions of PuTTy the "Private key for authentication" field can be fou
 
 ### Storing the Session and Connecting
 
-Navigate back to **Session** on the left and fill in "Host name" as "elja.hi.is". Type a name into
+Navigate back to **Session** on the left and fill in "Host name" as "elja.hi.is". Type a name into the empty "Saved Sessions" field (for example elja) and press "Save". PuTTy will store the host information and link to the private key
 The administrator needs a copy of the public key to grant you access to the login node. 
-the empty "Saved Sessions" field (for example elja) and press "Save". PuTTy will store the host information and link to the private key :
 
 ![Example 2 PuTTy](../assets/putty2.png)
 

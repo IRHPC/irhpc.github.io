@@ -28,7 +28,7 @@ The [rules and regulation](./files/rulesandreg-v1-2.pdf) cover:
 
 ## User Agreement
 
-The [user agreement](./files/useragree-v1-3.pdf) is in place to enforce good etiquette on the sharged resource. It covers
+The [user agreement](./files/useragree-v1-3.pdf) is in place to enforce good etiquette on the shared resource. It covers
 - Responsible use
 - Use of resource for research only
 - To not access data outside of **/home/**

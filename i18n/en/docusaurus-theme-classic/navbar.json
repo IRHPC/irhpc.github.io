@@ -1,0 +1,18 @@
+{
+  "logo.alt": {
+    "message": "IRHPC Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.User Docs": {
+    "message": "User Docs",
+    "description": "Navbar item with label User Docs"
+  },
+  "item.label.Announcements": {
+    "message": "Announcements",
+    "description": "Navbar item with label Announcements"
+  },
+  "item.label.Older Site": {
+    "message": "Older Site",
+    "description": "Navbar item with label Older Site"
+  }
+}
