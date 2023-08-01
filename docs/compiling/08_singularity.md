@@ -20,7 +20,7 @@ To use singularity on **Elja** you must first start an interactive session:
 ```bash
 $ srun --job-name "Singularity Job" --partition 48cpu_192mem --time 01:00:00 --pty bash 
 ```
-To learn more about interactive sessions see [here](../elja/04_interactive.md).
+To learn more about interactive sessions see [here](../elja/interactive_session).
 
 ### Getting images
 
@@ -403,8 +403,8 @@ Example:
 #SBATCH --error=slurm_job_errors.log   # Logs if job crashes
 
 # Singularity command line options
-singularity exec lolcow_latest.sif cowsay
-# or use run instead of exec.
+singularity pull library://sylabsed/examples/lolcow:latest
+singularity run lolcow_latest.sif
 ```
 
 If the above batch-job script is named singularity_job.sbatch, for instance, the job is submitted as usual with sbatch.
