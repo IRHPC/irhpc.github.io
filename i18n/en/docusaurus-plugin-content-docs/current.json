@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Common Rules": {
+    "message": "Common Rules",
+    "description": "The label for category Common Rules in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Elja Usage": {
+    "message": "Elja Usage",
+    "description": "The label for category Elja Usage in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Partitions and Hardware": {
+    "message": "Partitions and Hardware",
+    "description": "The label for category Partitions and Hardware in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Mimir-II Users": {
+    "message": "Mimir-II Users",
+    "description": "The label for category Mimir-II Users in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Software": {
+    "message": "Software",
+    "description": "The label for category Software in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Connecting & SSH keys": {
+    "message": "Connecting & SSH keys",
+    "description": "The label for category Connecting & SSH keys in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contributing Docs": {
+    "message": "Contributing Docs",
+    "description": "The label for category Contributing Docs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Snippets": {
+    "message": "Snippets",
+    "description": "The label for category Snippets in sidebar tutorialSidebar"
+  }
+}
