@@ -14,7 +14,7 @@
             <guid>https://irhpc.github.io/announcements/zero-nix</guid>
             <pubDate>Thu, 20 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[We have decided to use nix as the main packaging manager.]]></description>
-            <content:encoded><![CDATA[<p>We have decided to use <code>nix</code> as the main packaging manager.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<snippet>We have decided to use `nix` as the main packaging manager.</snippet>]]></content:encoded>
             <category>packaging</category>
             <category>admin</category>
             <category>announcements</category>
