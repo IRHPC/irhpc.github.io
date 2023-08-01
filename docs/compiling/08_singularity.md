@@ -10,7 +10,8 @@ Some software will work better in other environments for example [AlphaFold](./0
 
 ## What is Singularity?
 Singularity is a container platform, similar to Docker. It allows our users to create and run containers in a way that all the software pieces of the package can be reproduced. 
-Users can build a container on ther local computer and then run it on Elja or pull existing images from the [Singularity Library](https://cloud.sylabs.io/library) or [Docker Hub](https://hub.docker.com) 
+Users can build a container on their local computer and then run it on Elja or pull existing images from the [Singularity Library](https://cloud.sylabs.io/library) or [Docker Hub](https://hub.docker.com)
+
 ## Singularity basic usage
 
 Singularity offers a docker like container system. 
@@ -22,6 +23,7 @@ $ srun --job-name "Singularity Job" --partition 48cpu_192mem --time 01:00:00 --p
 To learn more about interactive sessions see [here](../elja/04_interactive.md).
 
 ### Getting images
+
 Once you are in an interactive session you can use the ```singularity``` command:
 ```bash
 $ singularity --version
@@ -33,14 +35,13 @@ There are both native Singularity images, those are provided on Singularities Co
 $ singularity pull library://sylabsed/linux/alpine
 ```
 
-You can also ```pull``` docker images, from the [Docker Hub](https://hub.docker.com/) in that case ```pull``` downlads the image file from docker and combines them in layers which al combined into a usabale Singularity file
+You can also ```pull``` docker images, from the [Docker Hub](https://hub.docker.com/) in that case ```pull``` downloads the image file from docker and combines them in layers which are combined into a usabale Singularity file
 
 ```bash
 $ singularity pull docker://godlovedc/lolcow
 ```
 
-Pulling docker images reduces reproducibility. If you were to pull a docker image today and then wait six months and pull again, your are not guaranteed to get the same image. If any of the source layers has changed in the image will be altered. If reproducibility is a priority for you, try building your images from the Container Library.
-
+Pulling docker images reduces reproducibility. If you were to pull a docker image today and then wait six months and pull again, your are not guaranteed to get the same image. If any of the source layers has changed the image will be altered. If reproducibility is a priority for you, try building your images from the Container Library.
 
 You can also use the ```build``` command to domwnload pre-built images from an external resource. When using build you must specify a name for your container like so:
 
@@ -215,6 +216,7 @@ cat /scratch/$USER/data/text.txt | singularity exec lolcow_latest.sif cowsay
 ```
 
 ## Building custom images
+
 In this section, we will go over on how you can build a brand new custom container.
 
 :::note
@@ -249,7 +251,7 @@ MirrorURL: http://ftp.us.debian.org/debian/
     apt-get -y --allow-unauthenticated install vim
 ```
 
-Using this definition file as as tarting point, we can startto build our lolcow.img container. The build command requires ```sudo``` privileges.
+Using this definition file as as starting point, we can start to build our lolcow.img container. The build command requires ```sudo``` privileges.
 
 ```bash
 $ sudo singularity build --sandbox lolcow lolcow.def
@@ -298,7 +300,7 @@ Singularity> fortune | cowsay | lolcat
 ```
 Note: If you receive warnings from Perl language about locale being incorrect, you can fix them with ```export LC_ALL=C```.
 
-Now we can build the final SIF file. For debigging shelling into you Singularity container and amking changes is fine, but in the end you want all these changes to be in your definition file. Keeping the changes in the definition file wil make the container reproducable.
+Now we can build the final SIF file. For debugging shelling into you Singularity container and amking changes is fine, but in the end you want all these changes to be in your definition file. Keeping the changes in the definition file wil make the container reproducable.
 
 Let's update the definition file with the changes we made.
 ```bash
@@ -348,7 +350,7 @@ $ singularity run lolcow.sif
 ```
 
 #### Moving containers to Elja
-We have our working cointer and want to start running it on the HPC cluster. To do this we will have to use SCP
+We have our working container and want to start running it on the HPC cluster. To do this we will have to use SCP
 
 ```bash
 $ scp -i ~/.ssh/<Your private SSH key> /path/to/containers/lolcow.sif <username>@elja.hi.is:~/containers     
