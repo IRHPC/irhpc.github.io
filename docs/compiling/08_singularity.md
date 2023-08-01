@@ -5,7 +5,7 @@ slug : singularity
 # Singularity
 
 :::note
-Some software will work better in other environments for example [AlphaFold](./04_AlphaFold.md)
+Some software will work better in other environments for example [AlphaFold](AlphaFold)
 :::
 
 ## What is Singularity?
@@ -19,7 +19,7 @@ To use singularity on **Elja** you must first start an interactive session:
 ```bash
 $ srun --job-name "Singularity Job" --partition 48cpu_192mem --time 01:00:00 --pty bash 
 ```
-To learn more about interactive sessions see [here](../elja/04_interactive.md).
+To learn more about interactive sessions see [here](../elja/interactive_session).
 
 ### Getting images
 Once you are in an interactive session you can use the ```singularity``` command:
