@@ -7,7 +7,7 @@ slug: scratch_disk
 Fast **I/O** (input/output) is facilitated with use of the local scratch disks available on the compute nodes.
 
 :::note
-**IMPORTANT:** It is important to make efficient use of Elja and to not slow down the network traffic on the cluster. Hence, it is advisable to copy the data and input for your job over to the local scratch disk on the compute nodes (**/scratch/users/**) and launch the program from there. If this step is omitted then the program will run remotely on the compute nodes but will constantly read/write from/to the submit directory on the **NFS** server. This creates a lot of network traffic and slows doen the use of Elja for everybody. It will also slow down the job itself.
+**IMPORTANT:** It is important to make efficient use of Elja and to not slow down the network traffic on the cluster. Hence, it is advisable to copy the data and input for your job over to the local scratch disk on the compute nodes (**/scratch/users/**) and launch the program from there. If this step is omitted then the program will run remotely on the compute nodes but will constantly read/write from/to the submit directory on the **NFS** server. This creates a lot of network traffic and slows down the use of Elja for everybody. It will also slow down the job itself.
 :::
 
 ## Using /scratch/users/ with SBATCH
