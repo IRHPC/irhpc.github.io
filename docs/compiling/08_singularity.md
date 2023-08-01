@@ -20,7 +20,7 @@ To use singularity on **Elja** you must first start an interactive session:
 ```bash
 $ srun --job-name "Singularity Job" --partition 48cpu_192mem --time 01:00:00 --pty bash 
 ```
-To learn more about interactive sessions see [here](../elja/04_interactive.md).
+To learn more about interactive sessions see [here](../elja/interactive_session).
 
 ### Getting images
 
