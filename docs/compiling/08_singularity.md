@@ -403,8 +403,8 @@ Example:
 #SBATCH --error=slurm_job_errors.log   # Logs if job crashes
 
 # Singularity command line options
-singularity exec lolcow_latest.sif cowsay
-# or use run instead of exec.
+singularity pull library://sylabsed/examples/lolcow:latest
+singularity run lolcow_latest.sif
 ```
 
 If the above batch-job script is named singularity_job.sbatch, for instance, the job is submitted as usual with sbatch.
