@@ -12,13 +12,23 @@ fast I/O networking, data storage solutions. </>
 const HTMLcomment2 = <>IHPC/IREI is the Icelandic Research e-Infrastructure project, 
                      funded by the Icelandic Centre of Research infrastructure fund </>
 
+
+const HTMLComments = [HTMLcomment1,HTMLcomment2];
+
 const  HomepageItems = () => {
+
+    const waitTime = 750;
+    let count = 0;
+    const descriptions = HTMLComments.map((comment) => (
+      <HomepageDescription key={count} text={comment} wait={count++ * waitTime} />
+    ));
+    
     return (
-    <>
-    <HomepageDescription text={HTMLcomment1} wait={0}/>
-    <HomepageDescription text={HTMLcomment2} wait={750} />
-    <HomepageFeatures/>
-    </>
+        <>
+            {descriptions}
+            <HomepageFeatures/>
+        </>
+        
     )
 }
 
