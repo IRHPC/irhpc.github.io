@@ -36,7 +36,7 @@ Heimaskráin þín sem er tengd notendanafninu þínu - **<uname\>** - er hýst 
 
 **/users/home/<uname\>**
 
-Plássið á NFS þjóninum er sameiginleg auðlind. Það er ekki ætlað til geymslu stórra gagna. Það er ráðlagt að eyða eða flytja reglulega skrár eða gögn sem eru ekki notuð fyrir störf úr heimaskránni þinni yfir á annað drif utan NFS netþjónsins til geymslu, svo sem einkatölvuna þína. Sjá [hér](../elja/01_bash.md) fyrir frekari upplýsingar og leiðbeiningar.
+Plássið á NFS þjóninum er sameiginleg auðlind. Það er ekki ætlað til geymslu stórra gagna. Það er ráðlagt að eyða eða flytja reglulega skrár eða gögn sem eru ekki notuð fyrir störf úr heimaskránni þinni yfir á annað drif utan NFS netþjónsins til geymslu, svo sem einkatölvuna þína. Sjá [hér](elja/bash) fyrir frekari upplýsingar og leiðbeiningar.
 
 :::note
 ***EF*** þú þarft pláss til að geyma mikið magn af gögnum (meira en **1 Tb**) fyrir framtíðar störf, eða ef störf þín búa til mikið magn af gögnum sem krefjast frekari vinnslu skaltu hafa samband við [support](mailto:help@hi.is)
