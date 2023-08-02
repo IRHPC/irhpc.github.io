@@ -18,10 +18,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Ignore Cypress-related files and directories
-cypress/
-cypress.config.js
-# node_modules/ # already is mentioned in dependencies, but if that is removed then have it here
-package-lock.json
-package.json
