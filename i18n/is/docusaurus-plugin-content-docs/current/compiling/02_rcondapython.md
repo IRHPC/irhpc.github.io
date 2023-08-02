@@ -231,36 +231,36 @@ Opnaðu R stjórnborðið og hlaðið pakkanum með eftirfarandi skipun:
 
 ## Go
 
-### Loading Go
-The current version of Go on Elja is 1.20.2. To load the Go module you will simply have to type in the following in the command line
+### Hlaða inn Go
+Núverandi útgáfa af Go á Elju er 1.20.2. Til að hlaða inn Go einingunni þarftu einfaldlega að slá in eftirfarandi:
 
 ```bash
 [..] $ ml load Go
 ```
-### Setting up your Go-workspace
+### Uppsetning á Go-vinnusvæði
 
-Create a 'goWorkspace' in your home directory
+Búðu til möppuuna 'goWorkspace' á heimasvæðinu þínu
 
 ```bash
 [..] $ mkdir goWorkspace
 ```
 
-To be able to run your go project you will need to specify your own GOPATH to your 'goWorkspace'
+Til þess að geta keyrt Go verkefnin þín þarftu að tilgreina þitt eigið `GOPATH` fyrir vinnsvæðið þitt
 
 ```bash
 [..] $ export GOPATH=/users/home/$USER/goWorkspace/ 
 ```
 
-In your goWorkspace directory create three directories "bin", "src" and "pkg"
+Í 'goWorkspace' möppuni þinni býrðu til þrjár möppur 'bin', 'src' og 'pkg'
 
 ```bash
 [..] $ cd goWorkspace
 [..] $ mkdir bin src pkg
 ```
-Now you have setup your own Go-workspace!
+Nú er Go-vinnusvæðið þitt tilbúið í notkun!
 
-### Creating your first Go Program
-Your go projects should be located in your **src** directory. Lets start creating a go module in **src** called "**myProject**".
+### Fyrsta Go forritið þitt
+Go verkefnin þín ættu að vera staðsett í **src** möppuni. Byrjum á að búa til Go einingu í **src** nefnda **'myProject'**
 
 ```bash
 [..] $ cd src/
@@ -268,31 +268,27 @@ Your go projects should be located in your **src** directory. Lets start creatin
 [..] $ cd myProject 
 [..] $ go mod init myProject
 ```
-a **go.mod** will be created for your module. The **go.mod** will work as a dependency managment tool for your go project.
+**go.mod** skrá verður búin til fyrir eininguna. **go.mod** mun virka sem ávanastjórnunartæki fyrir Go verkefnið þitt
 
-
-### go get
+### farðu og fáðu (go get)
 
 ```bash
 [..] $ go get $package_name
 ```
-***go get*** downloads and installs packages and their dependencies from remote repositories. The downloaded packages are stored in the workspace's **pkg** and **src** directories.
+**go get** halar niður og setur upp pakka og allar þeirra þarfir frá ytri geymslu.  Pakkarnir sem hlaðið er niður eru geymdir í **pkg** og **src** möppum vinnusvæðisins.
 
-
-to get modules from github you will have to turn GO111MODULE off. you can do so by doing the following: 
+Til að sækja möppur af github þarftu að slökkva á `GO111MODULE`. Þetta er hægt með eftirfarandi skipun:
 
 ```bash
 [..] $ export GO111MODULE="off"
 ```
-
-to make Go look for go.mod file in the current directory or subdirectory you will have to turn GO111MODULE to "on" like so:
-
+Til þess að láta Go leita af `go.mod` skrá í núverandi möppu, eða undirmöppum, þarftu að hafa kveikt á `GO111MODULE`:
 
 ```bash
 [..] $ export GO111MODULE="on"
 ```
 
-Another ooption is to make ```GO111MODULE="auto"```. This option will make Go automatically enable Go modules if a "go.mod" files is found  in the current directory or its parent directory.
+Einnig er hægt að hafa `GO111MODULE="auto"`. Þetta lætur Go virkja Go einingar sjálfvirkt ef að `go.mod` skrá er finnst í núverandi, eða ytri, möppum.
 
 ```bash
 [..] $ export GO111MODULE="auto"
@@ -303,6 +299,4 @@ Another ooption is to make ```GO111MODULE="auto"```. This option will make Go au
 ```bash
 [..] $ go install $package_name
 ```
-By using ***go install*** you create a binary file in **bin** and package located in **pkg/mod/**
-
-
+Með því að nota ***go install*** býrðu til tvíundarskrá í **bin** og pakka sem staðsettur er í **pkg/mod/**
