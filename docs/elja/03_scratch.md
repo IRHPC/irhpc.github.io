@@ -72,7 +72,7 @@ cp $tdir/myoutputfiles $SLURM_SUBMIT_DIR/
 rm -rf $tdir
 
 ```
-An example **SBATCH** script for a typical Python job is provided [here](../files/py_submit.txt). Similar commands can be used when the user is in an [interactive session](interactive_session).
+An example **SBATCH** script for a typical Python job is provided [here](../files/py_submit.txt). Similar commands can be used when the user is in an [interactive session](04_interactive.md).
 
 
 
@@ -85,7 +85,7 @@ The example here assumes the user is working on an **interactive session** and i
 ```
 
 
-Example of bash lines for **/scratch/users/** are provided below while on an **Interactive Session**. An example on how to connect to an interactive session  can be found [here](interactive_session)
+Example of bash lines for **/scratch/users/** are provided below while on an **Interactive Session**. An example on how to connect to an interactive session  can be found [here](04_interactive.md)
 
 ```bash
 $ export scratchlocation=/scratch/users 
