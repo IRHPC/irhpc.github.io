@@ -45,7 +45,7 @@ $ ml load AlphaFold/2.3.1
 ```
 ## Keyrðu AlphaFold á Elju
 
-Til að keyra AlphaFold á Elju geturðu annað hvort keyrt [gagnvirka lotu](../elja/04_interactive.md) eða keyrt [lotuvinnu](../elja/02_submit.md).
+Til að keyra AlphaFold á Elju geturðu annað hvort keyrt [gagnvirka lotu](../elja/interactive_session) eða keyrt [lotuvinnu](../elja/submit_jobs).
 
 ### Að hefja gagnvirka lotu
 
