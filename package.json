@@ -22,7 +22,6 @@
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^7.0.0",
     "clsx": "^1.1.1",
-    "cypress": "^12.17.3",
     "file-loader": "^6.2.0",
     "got": "^11.8.5",
     "react": "^17.0.1",
