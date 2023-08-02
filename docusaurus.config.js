@@ -1,5 +1,3 @@
-const { right } = require('trim');
-
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'HPC Documentation',

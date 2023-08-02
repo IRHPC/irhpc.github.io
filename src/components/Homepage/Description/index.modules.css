@@ -8,7 +8,7 @@
   
   
     background-color: #12648a;
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
     
     margin-top: 3rem;
     padding: 1rem 1rem;
@@ -24,7 +24,10 @@
     animation-fill-mode: forwards;
   }
   
-  
+.msgBubble .annoucement {
+  background-color: #128a52;
+}
+
 .text{
   white-space: pre-line;
 }

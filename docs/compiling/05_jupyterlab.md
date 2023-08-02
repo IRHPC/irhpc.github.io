@@ -34,7 +34,7 @@ In this example **Python** and **tsne** python package are built in the **jupyte
 [..]$ conda install -c conda-forge tsne
 ```
 
-### 2) Open an Interactive Session and Deploy Jupterlab Notebook
+### 2) Open an Interactive Session and Deploy Jupyterlab Notebook
 
 In this example 24 cores of a compute node from partition **<pname\>** is requested with 3.9**Gb** per core.
 
@@ -43,7 +43,7 @@ $ srun --job-name "Jupyterlab" --partition <pname> --cpus-per-task 24 --mem-per-
 ```
 
 :::note
-It is important to adjust the number of cores (and memory per core) according to your needs! Don't allocate unnecessary processing power. See [here](../hardware/01_partitions.md) for partitions and specs.
+It is important to adjust the number of cores (and memory per core) according to your needs! Don't allocate unnecessary processing power. See [here](hardware/01_partitions.md) for partitions and specs.
 :::
 
 Activate the **jupyterlab** environment
