@@ -2,8 +2,8 @@
 slug : environment
 ---
 
-# Programming and Development Environments
+# Forritunar- og þróunarumhverfi
 
-This page outlines programming and development environments available 
-through the `nix` package manager or `lmod`. The environments can be used
-to compile your C, C++ or Fortran codes.
+Þessi síða sýnir forritunar- og þróunarumhverfi í boði
+í gegnum `nix` pakkastjórann eða `lmod`. Hægt er að nota umhverfið
+til að setja saman C, C++ eða Fortran kóðana þína.
