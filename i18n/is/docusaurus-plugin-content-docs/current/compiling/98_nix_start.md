@@ -3,10 +3,10 @@ slug: nix_start
 ---
 
 # Nix
-The `elja` cluster exposes `nix` to its users, allowing for non-root installations and sharing of configurations. We use an NUR (nix user repository) for `elja` specific packages.
+*Elja* þyrpingin afhjúpar `nix` til notenda sinna, sem gerir þeim kleift að setja upp hugbúnað án *sudo* réttinda. Við notum NUR (nix user repository) fyrir pakka sérstaklega fyrir *Elju*
 
-If you are not comfortable using `nix`, feel free to open an issue to request a particular package. Additionally, a `nix` to `ml` helper is being designed to aid users more familiar with the `lmod` system.
+If þú treystir þér ekki að nota `nix` skaltu ekki hika við að opna mál til áð að biðja um ákveðinn pakka. Að auki er verið að hanna `nix` í `ml` hjalpartæk til að áðstoðá notendur sem þekkja betur `lmod` kerfið.
 
-## First Steps
+## Fyrstu Skref
 
-We recommend using `nix flakes` for much of the details described in this documentation. Flakes are as yet not part of the standard distribution, but provide native reproducibility advantages over alternatives like `niv`.
+Við mælum með því að nota `nix flakes` fyrir mikið af þeim upplýsnigum sem lýst er í þessum skjölum. Flögur eru enn sem komið er ekki hluti af stöðluðu dreifingunni, en veita innfæððá endurgerðanleika kosti fram yfir valkosti eins og `niv`.
