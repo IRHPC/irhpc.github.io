@@ -19,7 +19,7 @@ Til að sjá hvaða skiptingar eru í boði skaltu slá inn:
 [..]$ sinfo
 ```
 
-Lýsingu á skiptingunum er að finna í [Skilrúm og búnaður](/docs/hardwar/parthardw).
+Lýsingu á skiptingunum er að finna í [Skilrúm og búnaður](/docs/hardware/parthardw).
 
 :::note
 
