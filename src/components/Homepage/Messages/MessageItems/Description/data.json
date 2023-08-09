@@ -1,0 +1,27 @@
+{
+    "Comments": [
+      {
+        "type": "desc",
+        "content": "Icelandic High Performance Computing Centre (IHPC/IREI) provides researchers with free user support and facilities to model complex and difficult real world problems by providing hardware consisting of powerful CPUS, GPUS, fast I/O networking, data storage solutions."
+      },
+      {
+        "type": "desc",
+        "content": "IHPC/IREI is the Icelandic Research e-Infrastructure project, funded by the Icelandic Centre of Research infrastructure fund"
+      }
+    ],
+
+    "Announcements" : [
+      {
+        "type": "announce",
+        "title": "Hello",
+        "author": "Rohit Goswami",
+        "author_title": "Docs wrangler",
+        "author_url": "https://rgoswami.me",
+        "author_image_url": "https://avatars.githubusercontent.com/u/4336207?v=4",
+        "tags": "[admin, announcements]",
+        "content": "This is a test announcement",
+        "date": ""
+      }
+    ]
+  }
+  
