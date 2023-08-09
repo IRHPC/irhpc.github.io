@@ -4,15 +4,16 @@ slug : TensorFlow-GPU
 
 # TensorFlow
 
-## Introduction
+## Inngangur 
 
-TensorFlow with GPU support (TF2-gpu) is available for use on Elja. Read more about TensorFlow on the official [website](https://www.tensorflow.org/).
+TensorFlow með skjákortsstuðning (TF2-gpu) er í boði til notkunar á **Elju**. Lestu meira um TensorFlow á [hér](https://www.tensorflow.org/).
 
 ---
 
 ## Getting started
 
-TF2-gpu is packaged in a conda environment. In order to use the conda environment please follow the **One time setup** instructions provided [here](./02_rcondapython.md). Once your conda setup is complete you can load in the TF2-gpu environment like this
+TF2-gpu er pakkað í conda umhverfi. Til að nota conda umhverfið vinsamlegast fylgdu **uppsetningar** leiðbeiningunum sem gefnar eru [hér](./02_rcondapython.md). Þegar uppsetningu conda er lokið geturðu hlaðið inn í TF2-gpu umhverfið eins og hér:
+
 
 ```bash
 [..]$ module use /hpcapps/libbio-gpu/modules/all/
@@ -22,10 +23,10 @@ TF2-gpu is packaged in a conda environment. In order to use the conda environmen
 
 ---
 
-### Example submit script
+### Dæmi um lotu skrá
 
-It is require to run TF2-gpu on the GPU nodes. A sample SBATCH test script is provided 
-below. In order to run the test you first need to clone this [repository](https://github.com/PrincetonUniversity/slurm_mnist). 
+Það er nauðsynlegt að keyra TF2-gpu á GPU hnútunum. Dæmi um SBATCH prófunar skró er veitt
+hér að neðan. Til að keyra prófið þarftu fyrst að klóna þessa [geymslu](https://github.com/PrincetonUniversity/slurm_mnist).
 
 ```bash
 [..]$ cd $HOME
@@ -33,7 +34,7 @@ below. In order to run the test you first need to clone this [repository](https:
 [..]$ cd slurm_mnist
 ```
 
-Copy the flollowing SBATCH script into the **slurm_mnist** directory
+Afritaðu eftirfarandi SBATCH skriftu inn í **slurm_mnist** möppuna
 
 ```bash
 [..]$ cat submit.slurm
@@ -90,25 +91,22 @@ cp $tdir/* $SLURM_SUBMIT_DIR/
 # IMPORTANT. Delete the temporary directory and all of its content
 rm -rf $tdir
 ```
+Nú getur þú sent lotuna af staf.
 
-Now submit the job
 ```bash
 [..]$ sbatch submit.slurm
 ```
 
 ---
 
-### Interactive run
+### Gagnvirk keyrsla
 
-For this test case make sure you have cloned this [repository](https://github.com/PrincetonUniversity/slurm_mnist) (see the section above).
-
-Start an interactive session on a GPU node.
+Í þessu prófunartilviki, vertu viss um að þú hafir klónað þessa [geymslu](https://github.com/PrincetonUniversity/slurm_mnist) (sjá kaflann hér að ofan).
 
 ```bash
 [..]$ srun --job-name "TF2-gpu" --partition gpu-1xA100 --time 1-00:00:00 --pty bash
 ```
-
-Load in the modules and activate the TF2-gpu environment
+Hlaðið inn í einingarnar og virkjaðu TF2-gpu umhverfið
 
 ```bash
 [..]$ module use /hpcapps/libbio-gpu/modules/all/
@@ -116,13 +114,13 @@ Load in the modules and activate the TF2-gpu environment
 [..]$ conda activate /hpcapps/conda_env/TF2-gpu/2.4.1
 ```
 
-Navigate into the **slurm_mnist** directory
+Farðu inn í **slurm_mnist** möppuna
 
 ```bash 
 [..]$ cd $HOME/slurm_mnist
 ```
+Keyrðu prufu skriftuna
 
-Run the test script
 ```bash
 [..]$ python mnist_classify.py
 ```

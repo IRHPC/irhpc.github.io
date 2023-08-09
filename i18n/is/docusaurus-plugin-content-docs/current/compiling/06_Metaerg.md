@@ -4,20 +4,20 @@ slug : Metaerg
 
 # Metaerg
 
-## 0. Introduction
-***Metaerg*** is a automated pipeline that uses third-party softwares aswell as a large database to annotate genomes or sets of bins from microbial ecosystems. Example of such annotations tasks are feature prediction with ***HMM***, ***BLAST*** and ***DIAMOND***.
+## 0. Inngangur
+***Metaerg*** er sjálfvirk leiðsla sem notar hugbúnað frá þriðja aðila ásamt stórum gagnagrunni til að gera athugasemdir við erfðamengi eða sett af hólfum frá örveruvistkerfum. Dæmi um slík skýringarverkefni eru eiginleikaspá með ***HMM***, ***BLAST*** og ***DIAMOND***.
 
 
-learn more about ***Metaerg*** by reading from their [github repository](https://github.com/xiaoli-dong/metaerg)  and the following [article](https://www.frontiersin.org/articles/10.3389/fgene.2019.00999/full) in [frontiersin](https://www.frontiersin.org/) which was written by the same people who made ***Metaerg***.
+fáðu frekari upplýsingar um ***Metaerg*** með því að lesa úr [github geymslunni](https://github.com/xiaoli-dong/metaerg) og eftirfarandi [grein](https://www.frontiersin.org/ articles/10.3389/fgene.2019.00999/full) í [frontiersin](https://www.frontiersin.org/) sem var skrifað af sömu aðilum og gerðu ***Metaerg***.
 
 ---
 
-## 1. Getting Started
+## 1. Að byrja
 
 
-### 1.1 Installation
-There are many possibilites when it comes to install ***Metaerg***. One way is using [Docker](https://www.docker.com/) which was not used since Elja does not currently provide any container support. Another possibility was to use [Easybuild](https://docs.easybuild.io/) which does not provide the latest version (only provides verison [1.2.3](https://docs.easybuild.io/version-specific/supported-software/#metaerg)) of ***Metaerg***. 
-The third option that was chosen was to mannually install ***Metaerg*** and its other helper programs, starting by cloning [this](https://docs.easybuild.io/version-specific/supported-software/#metaerg) git repository and following its installation instructions and the requirements in the README.md file.
+### 1.1 Uppsetning
+Það eru margir möguleikar þegar kemur að uppsetningu ***Metaerg***. Ein leiðin er að nota [Docker](https://www.docker.com/) sem var ekki notað þar sem Elja veitir ekki gámastuðning eins og er. Annar möguleiki var að nota [Easybuild](https://docs.easybuild.io/) sem veitir ekki nýjustu útgáfuna (veitir aðeins útgáfu [1.2.3](https://docs.easybuild.io/version-specific /studd-software/#metaerg)) af ***Metaerg***.
+Þriðji kosturinn sem var valinn var að setja upp ***Metaerg*** og önnur hjálparforrit þess handvirkt, byrja á því að klóna [þetta](https://docs.easybuild.io/version-specific/supported-software/#metaerg ) git repository og fylgja uppsetningarleiðbeiningum og kröfum í README.md skránni.
 
 ### 1.2 Required Tools and libraries
 
