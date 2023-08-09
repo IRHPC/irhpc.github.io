@@ -7,13 +7,13 @@
       "title": "Zeroing in on Nix",
       "content": "This is a test announcement",
       "date": "2021-05-20",
-      "link": "/announcements"
+      "link": "/"
     },
     "2019-05-29-zero-nix": {
       "title": "Hello",
       "content": "",
       "date": "2019-05-29",
-      "link": "/announcements"
+      "link": "/"
     }
   }
 }
