@@ -3,9 +3,8 @@ import styles from './index.modules.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
 
-
-const iconSizes='2x';
-const iconColors='#FFFFF';
+const iconSizes = '2x';
+const iconColors = '#FFFFFF'; // Corrected value here
 
 function MessageBubble({ text, title, wait, type }) {
   const style = {
@@ -22,7 +21,7 @@ function MessageBubble({ text, title, wait, type }) {
     <section className={className} style={style}>
       {type === 'announce' ? (
         <div className="announcement-content">
-          <FontAwesomeIcon icon={faCircleExclamation } size={iconSizes} color={iconColors} />
+          <FontAwesomeIcon icon={faCircleExclamation} size={iconSizes} color={iconColors} />
           <h3>Announcement: {title}</h3>
           <p className="text"><b>Description:</b> <br/> {text}</p>
         </div>
@@ -36,4 +35,3 @@ function MessageBubble({ text, title, wait, type }) {
 }
 
 export default MessageBubble;
-
