@@ -19,15 +19,5 @@
             <category>admin</category>
             <category>announcements</category>
         </item>
-        <item>
-            <title><![CDATA[Hello]]></title>
-            <link>https://irhpc.github.io/is/announcements/hello-world</link>
-            <guid>https://irhpc.github.io/is/announcements/hello-world</guid>
-            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Welcome to this list of announcements. This list of announcements is created with Docusaurus 2 alpha.]]></description>
-            <content:encoded><![CDATA[<p>Welcome to this list of announcements. This list of announcements is created with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer"><strong>Docusaurus 2 alpha</strong></a>.</p><p>We will make announcements periodically here.</p>]]></content:encoded>
-            <category>admin</category>
-            <category>announcements</category>
-        </item>
     </channel>
 </rss>

@@ -22,18 +22,4 @@
         <category label="admin" term="admin"/>
         <category label="announcements" term="announcements"/>
     </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello]]></title>
-        <id>https://irhpc.github.io/announcements/hello-world</id>
-        <link href="https://irhpc.github.io/announcements/hello-world"/>
-        <updated>2019-05-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Welcome to this list of announcements. This list of announcements is created with Docusaurus 2 alpha.]]></summary>
-        <content type="html"><![CDATA[<p>Welcome to this list of announcements. This list of announcements is created with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer"><strong>Docusaurus 2 alpha</strong></a>.</p><p>We will make announcements periodically here.</p>]]></content>
-        <author>
-            <name>Rohit Goswami</name>
-            <uri>https://rgoswami.me</uri>
-        </author>
-        <category label="admin" term="admin"/>
-        <category label="announcements" term="announcements"/>
-    </entry>
 </feed>

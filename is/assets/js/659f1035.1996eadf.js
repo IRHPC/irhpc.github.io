@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkhpcdocs=self.webpackChunkhpcdocs||[]).push([[2062],{6113:s=>{s.exports=JSON.parse('{"label":"admin","permalink":"/is/announcements/tags/admin","allTagsPath":"/is/announcements/tags","count":2}')}}]);
