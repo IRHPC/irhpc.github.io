@@ -69,3 +69,6 @@ For product information, visit www.mathworks.com.
  
 Hello, Matlab!
 ```
+:::note
+Please type `exit` when you want to close Matlab ctrl+c causes input/output errors.
+:::
