@@ -17,6 +17,11 @@ Algengar grunnskipanir eru teknar saman hér að neðan.
 | `sinfo`                     | Sýnir upplýsingar um hnúta og sneiðar |
 | `scancel` **JOBID**         | Hætta við keyrslu                         |
 
+## Fairshare
+TölvuKlasinn veitir Slurm Fairshare Algrím. Hann skipuleggur hvaða vinnslur í slurm biðröðinni ætti að keyrast á undan og metur það útfrá sanngjörnum hlutdeildarstuðli milli vinnsla sem er reiknað út með ákvðenari jöfnu.
+
+Þessi jafna tekur tillit til margra þátta eins og fjölda hnúta sem notandi óskar er eftir. Nánari upplýsingar um þessa jöfnu er að hægt að finna [hér](https://slurm.schedmd.com/fair_tree.html#fairshare) og [hér](https:/ /slurm.schedmd.com/SLUG19/Priority_and_Fair_Trees.pdf).
+
 ## Lotustörf
 
 Skipunin `sbatch` er notuð til áð senda verk í `SLURM` biðröðina
