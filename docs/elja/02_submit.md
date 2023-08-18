@@ -1,3 +1,4 @@
+
 ---
 slug: submit_jobs
 ---
@@ -16,6 +17,12 @@ Basic common commands are summarized below.
 | `squeue` (-a, -u $USER) | show queue status                    |
 | `sinfo`                     | view info about nodes and partitions |
 | `scancel` **JOBID**         | cancel a job                         |
+
+## Fairshare
+The Cluster provides the Slurm Fairshare Algortihm. It organizes which job that in the slurm queue should run next based of a fairshare factor between jobs by using a floating point value, between 0.0 and 1 that is calculated by an equation. 
+
+This equation takes in account many factors like the number of nodes requested,  More details about this equation can be found [here](https://slurm.schedmd.com/fair_tree.html#fairshare) and [here](https://slurm.schedmd.com/SLUG19/Priority_and_Fair_Trees.pdf). 
+
 
 ## Batch jobs
 
