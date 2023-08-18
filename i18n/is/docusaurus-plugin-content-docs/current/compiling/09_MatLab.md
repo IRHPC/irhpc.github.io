@@ -4,7 +4,7 @@ slug: matlab
 
 # MatLab
 Nú er Matlab fáanlegt sem [Singularity](singularity) gámur.
-Þú munt þurfa að gefa upp [MathWorks](https;//wathworks.com) aðgangs póstfangið sem þú notar fyrir þitt Matlab leyfi.
+Þú munt þurfa að gefa upp [MathWorks](https://Mathworks.com) aðgangs póstfangið sem þú notar fyrir þitt Matlab leyfi.
 
 ## Hlaða inn Matlab
 Matlab er fáanlegt sem eining á **Elju**
