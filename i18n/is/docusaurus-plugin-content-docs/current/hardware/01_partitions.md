@@ -4,22 +4,22 @@ slug: parthardw
 
 # Partitions & SLURM
 
-To view information of the available nodes and partitions use the
-following commands
+Til að fá upplýsingar um lausa hnúða og skilrúm notaðu eftirfarandi skipun:
 
 ```bash
 sinfo
 ```
 
-For more detailed information for a specific partition
+Fyrir efnismeiri upplýsingar fyrir ákveðna skiptingu:
+
 
 ```bash
 scontrol show partition <partition-name>
 ```
 
-The login and control nodes of Elja
-host two compute clusters: HPC-Elja and HTC-Mimir. Partitions and groups
-are used to separate the two.
+Innskráningar og stjórn hnútar Elju hýsa tvær reikniþyrpingar: 
+HPC-Elja and HTC-Mimir. 
+Skilrúm og hópar eru notaðir til að aðskilja þessa tvo.
 
 # Skipting & SLURM
 
