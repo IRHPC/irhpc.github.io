@@ -1,4 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
+
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
 module.exports = {
   title: 'HPC Documentation',
   tagline: 'For Icelandic National Computing resources',
@@ -97,9 +101,10 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/irhpc/irhpc.github.io/edit/main/',
-        },
+          editUrl:'https://github.com/irhpc/irhpc.github.io/edit/main/',
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
+          },
         blog: {
           showReadingTime: true,
           id: 'announcements',
@@ -117,5 +122,14 @@ module.exports = {
       },
       },
     ],
+  ],
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
   ],
 };
