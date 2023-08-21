@@ -122,7 +122,7 @@ Table that lists all the  main dependencies required by AlphaFold to run
 :::note
 **Required:** It is recommended to run AlphaFold on the open-source terminal server tmux to maintain an interactive session. To know how to tmux check on the following page about  [Interactive Sessions](/docs/elja/interactive_session#maintained-interactive-sessions) on Elja.
 
-Alternatively AlphaFold can be run using sbatch and batch sumbission scripts. To submit it as a job to the SLURM queue using sbatch see the following section: [Submitting Batch Jobs](/docs/elja/submit_jobs).
+Alternatively AlphaFold can be run using sbatch and batch sumbission scripts. To submit it as a job to the SLURM queue using sbatch see the following section: [Submitting Batch Jobs](/docs/elja/submit).
 
 AlphaFold will only run efficinetly on the gpu compute nodes!!!
 :::
