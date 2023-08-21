@@ -1,4 +1,3 @@
-
 ---
 slug: submit_jobs
 ---

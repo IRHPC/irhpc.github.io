@@ -20,7 +20,7 @@ Algengar grunnskipanir eru teknar saman hér að neðan.
 ## Fairshare
 TölvuKlasinn veitir Slurm Fairshare Algrím. Hann skipuleggur hvaða vinnslur í slurm biðröðinni ætti að keyrast á undan og metur það útfrá sanngjörnum hlutdeildarstuðli milli vinnsla sem er reiknað út með ákvðenari jöfnu.
 
-Þessi jafna tekur tillit til margra þátta eins og fjölda hnúta sem notandi óskar er eftir. Nánari upplýsingar um þessa jöfnu er að hægt að finna [hér](https://slurm.schedmd.com/fair_tree.html#fairshare) og [hér](https:/ /slurm.schedmd.com/SLUG19/Priority_and_Fair_Trees.pdf).
+Þessi jafna tekur tillit til margra þátta eins og fjölda hnúta sem notandi óskar er eftir. Nánari upplýsingar um þessa jöfnu er að hægt að finna [hér](https://slurm.schedmd.com/fair_tree.html#fairshare) og [hér](https://slurm.schedmd.com/SLUG19/Priority_and_Fair_Trees.pdf).
 
 ## Lotustörf
 
