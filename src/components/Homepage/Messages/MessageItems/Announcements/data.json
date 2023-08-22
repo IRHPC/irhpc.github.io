@@ -1,8 +1,7 @@
 {
   "Blogs": {
   },
-
-  "ExampleBlogs" : {
+  "ExampleBlogs": {
     "2021-05-20-zero-nix": {
       "title": "Zeroing in on Nix",
       "content": "This is a test announcement",

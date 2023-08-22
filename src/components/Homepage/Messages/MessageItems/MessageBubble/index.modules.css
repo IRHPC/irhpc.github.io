@@ -18,7 +18,7 @@
   animation-name: slideInFromRight;
 }
 .announcement-content {
-  width: 100%; /* Set the width to 100% */
+  width: 100%; /*Set the width to 100% */
   display: flex;
   align-items: center;
   justify-content: space-between; /* Align the icon and header to the left and right edges */
@@ -28,11 +28,11 @@
 
 .msgBubble, .announcement {
   display: flex;
-  width: 40rem;
+  max-width: 40rem;
   position: relative;
   color: rgb(255, 255, 255);
   margin-top: 3rem;
-  padding: 1rem 1rem;
+  padding: 1rem;
   overflow: hidden; 
   opacity: 0;
   overflow: hidden;
