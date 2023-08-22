@@ -3,26 +3,26 @@ slug: matlab
 ---
 
 # MatLab
-MatLab runs as a [Singularity](singularity) container. 
-You will need to provide your [MathwWorks](https://mathworks.com) account email to use your individual license.
+Nú er Matlab fáanlegt sem [Singularity](singularity) gámur.
+Þú munt þurfa að gefa upp [MathWorks](https://Mathworks.com) aðgangs póstfangið sem þú notar fyrir þitt Matlab leyfi.
 
-## Loading Matlab
-MatLab is available as a module on **Elja**
+## Hlaða inn Matlab
+Matlab er fáanlegt sem eining á **Elju**
+
 ```bash
 $ ml load Matlab
 ```
 
-
-## Running Matlab
-To run Matlab use the `matlab` command.
+## Keyra Matlab
+Til að keyra Matlab notaðu `matlab` skipunina.
 
 :::note
-You will need to enter an [Interactive Session](../elja/interactive_session) or run  [Batch job](https://irhpc.github.io/docs/elja/submit_jobs) to run matlab. 
+Þú þarft að vera í [Gagnvirkri Lotu](../elja/interactive_session) eða keyra [Lotuverkefni](../elja/submit_jobs) til að nota matlab.
 :::
 
-### Activating your license on Elja
+### Virka Matlab leyfið þitt á Elju
 
-If this is the first time you run Matlab on **Elja** you will be prompted for your MathWorks account email:
+Ef þetta er fyrsta skiptið sem þú keyrir Matlab á **Elju** munt þú vera beðin um MatWorks aðgangs póstfangið þitt:
 
 ```bash
 $ srun --job-name "Matlab Job" --partition any_cpu --cpus-per-task 24 --mem-per-cpu 3900 --time 02:00:00 --pty bash
@@ -31,9 +31,10 @@ MATLAB is selecting SOFTWARE OPENGL rendering.
 Please enter your MathWorks Account email address and press Enter:
 ```
 
-If you are associated with [HI](https://hi.is) you can use your `<uname>@hi.is` email, otherwise you will need to provide an email address with an active license. 
+Ef þú ert stafsmaður eða nemandi [HÍ](https://hi.is) getur þú notað `<uname>@hi.is` póstfangið þitt, annars verður þú að skaffa póstfangi með virku leyfi á.
 
-Once the you have entered your user account email you will be given a one time password.
+Þegar þú hefur slegið inn póstfangið þitt munt þú fá einnota lykilorð sem þú nálgast [hér](https://www.mathworks.com/mwa/otp).
+
 ```bash
 Single-Sign-On(SSO) is not available in this environment. You need a one-time password to sign in to MATLAB.
         Step 1. Visit https://www.mathworks.com/mwa/otp
@@ -42,17 +43,18 @@ Single-Sign-On(SSO) is not available in this environment. You need a one-time pa
 Please enter the one-time password:
 ```
 
-Navigate to the given link and type in the one time password.
-Your license should now be active and you will be able to run MatLab on any partition you want.
+Farðu inn á slóðina og sláðu síðan einnota lykilorðið inn í skipanagluggan.
+Leyfið þitt ætti nú að vera virkt of þú getur notað Matlab á **Elju**
 
 ### Hello, Matlab!
-Create a file called `hello.m`  and add the following lines:
+Búðu til skrá nefnda `hello.m` og bættu við eftirfarandi línuam:
+
 ```bash
 $ touch hello.m
 $ echo "disp("Hello, Matlab!");" > hello.m
 ```
 
-Now we can run the file in our interactive session
+Nú getum við keyrt skrána okkar í gagnvirkri lotu: 
 
 ```bash
 $ matlab -r "run('hello.m')"
@@ -69,6 +71,3 @@ For product information, visit www.mathworks.com.
  
 Hello, Matlab!
 ```
-:::note
-Please type `exit` when you want to close Matlab ctrl+c causes input/output errors.
-:::

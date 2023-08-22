@@ -17,12 +17,25 @@ Algengar grunnskipanir eru teknar saman hér að neðan.
 | `sinfo`                     | Sýnir upplýsingar um hnúta og sneiðar |
 | `scancel` **JOBID**         | Hætta við keyrslu                         |
 
-## Fairshare
+### Fairshare
 TölvuKlasinn veitir Slurm Fairshare Algrím. Hann skipuleggur hvaða vinnslur í slurm biðröðinni ætti að keyrast á undan og metur það útfrá sanngjörnum hlutdeildarstuðli milli vinnsla sem er reiknað út með ákvðenari jöfnu.
 
-Þessi jafna tekur tillit til margra þátta eins og fjölda hnúta sem notandi óskar er eftir. Nánari upplýsingar um þessa jöfnu er að hægt að finna [hér](https://slurm.schedmd.com/fair_tree.html#fairshare) og [hér](https:/ /slurm.schedmd.com/SLUG19/Priority_and_Fair_Trees.pdf).
+Þessi jafna tekur tillit til margra þátta eins og fjölda hnúta sem notandi óskar er eftir. Nánari upplýsingar um þessa jöfnu er að hægt að finna [hér](https://slurm.schedmd.com/fair_tree.html#fairshare). 
 
-## Lotustörf
+Varðandi meiri hvar er hægt að finna fleiri upplýsingar um Fairshare þá er hægt að finna það á  opinberu vefsíðunni þeirra [hér](https://slurm.schedmd.com/fair_tree.html) og [hér](https://slurm.schedmd.com/SLUG19/Priority_and_Fair_Trees.pdf). 
+
+### Job Array
+Það geta komið tilfelli þar sem notandi notar margar nóður sem keyra sama hlutinn nema með öðrum parametrum. Þetta getur valdið því að margir reiknihnútar verða uppteknir sem kemur í vegfyrir að aðrir notendur geti notað nóðurnar sem eru í notkun af þessari keyrslu. Það sem *Job Array* biður upp á er að það getur bæði keyrt og haldið utan um safn af svipuðum vinnslum. Þessar vinnslur geta ver settar inn í biðraðakerfið mjög fljótlega. Eina sem þarf að hafa í huga er að vinnslurnar þurfa að hafa sömu kröfur áður en þær eru keyrðar.  
+
+Til þess að setja þetta upp þá þarf að bæta línunni  yfir í ```#SBATCH --array=... #example --array=1-5 ``` sbatch script-una og einnig þarf ða bæta við  ```$SLURM_ARRAY_TASK_ID```  sem parametri í forritið sem notandi ætlar að keyra dæmi um slíka úitfærslu:
+
+```bash
+mpirun python job.py $SLURM_ARRAY_TASK_ID
+```
+
+Hvernig á að setja upp sbatch skript-u er hægt að finna í [þessum](#lotustörf) kafla
+
+### Lotustörf
 
 Skipunin `sbatch` er notuð til áð senda verk í `SLURM` biðröðina
 
