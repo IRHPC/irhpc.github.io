@@ -17,7 +17,7 @@ $ ml load Matlab
 To run Matlab use the `matlab` command.
 
 :::note
-You will need to enter an [Interactive Session](../elja/interactive_session) or run  [Batch job](../elja/submit_jobs) to run matlab. 
+You will need to enter an [Interactive Session](../elja/interactive_session) or run  [Batch job](https://irhpc.github.io/docs/elja/submit_jobs) to run matlab. 
 :::
 
 ### Activating your license on Elja
@@ -69,3 +69,6 @@ For product information, visit www.mathworks.com.
  
 Hello, Matlab!
 ```
+:::note
+Please type `exit` when you want to close Matlab ctrl+c causes input/output errors.
+:::
