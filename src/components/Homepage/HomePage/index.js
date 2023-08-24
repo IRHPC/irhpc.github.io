@@ -12,5 +12,4 @@ const HomepageItems = () => {
   );
 };
 
-
 export default HomepageItems;
