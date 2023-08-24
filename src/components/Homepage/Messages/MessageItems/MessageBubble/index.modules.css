@@ -1,0 +1,76 @@
+/* Add these styles to your stylesheet */
+
+.msgBubble {
+  border-radius: 0 1rem 1rem 0;
+  align-items: left;
+  background-color: #12648a;
+  padding-left: 2rem;
+  background-image: linear-gradient(to right, rgb(6,57,112) 0, rgb(6,57,112) 1rem, transparent 10px);
+  animation-name: slideInFromLeft;
+}
+
+.announcement {
+  border-radius: 1rem 0 0 1rem;
+  align-items: right;
+  background-color: #2f8588;
+  padding-right: 2rem;
+  background-image: linear-gradient(to left, rgb(43, 98, 119) 0, rgb(43, 98, 119) 1rem, transparent 10px);
+  animation-name: slideInFromRight;
+}
+.announcement-content {
+  width: 100%; /*Set the width to 100% */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align the icon and header to the left and right edges */
+  gap: 10px; /* Add spacing between the icon and header text */
+
+}
+
+.msgBubble, .announcement {
+  display: flex;
+  max-width: 40rem;
+  position: relative;
+  color: rgb(255, 255, 255);
+  margin-top: 3rem;
+  padding: 1rem;
+  overflow: hidden; 
+  opacity: 0;
+  overflow: hidden;
+  animation-duration: 1.0s;
+  animation-fill-mode: forwards;
+}
+
+.text {
+  white-space: pre-line;
+}
+
+/*KEYFRAMES*/
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-120%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Additional styles for meta info */
+.meta-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+

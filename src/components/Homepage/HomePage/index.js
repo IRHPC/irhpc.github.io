@@ -1,6 +1,7 @@
 import React from 'react';
-import HomepageDescription from "../Description";
+import Messages from '../Messages';
 import HomepageFeatures from "../Features";
+
 
 const HTMLcomment1 =<> 
 <strong>I</strong>celandic <strong>H</strong>igh <strong>P</strong>erformance <strong>C</strong>omputing Centre (IHPC/IREI) 

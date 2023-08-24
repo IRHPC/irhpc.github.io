@@ -17,6 +17,21 @@ Basic common commands are summarized below.
 | `sinfo`                     | view info about nodes and partitions |
 | `scancel` **JOBID**         | cancel a job                         |
 
+### Fairshare
+The Cluster provides the Slurm Fairshare Algortihm. It organizes which job in the slurm queue should run next, based of a fairshare factor between jobs, by using a floating point value between 0.0 and 1 that is calculated by an equation. 
+
+This equation takes in account many factors like the number of nodes requested,  More details about this equation can be found [here](https://slurm.schedmd.com/fair_tree.html#fairshare) and more information about Fairshare can be found on the slurm official website [here](https://slurm.schedmd.com/fair_tree.html) and [here](https://slurm.schedmd.com/SLUG19/Priority_and_Fair_Trees.pdf). 
+
+### Job Array
+There can occur an incident where a user requests many slurm jobs that are essentially running the same process wiht different parameters. This can cause many nodes being occupied and halt other users from gaining access to the now occupied nodes. What *Job Array* offers is it submits and manages a collection of similar jobs. These jobs can be submitted very fast. The only requirement for these jobs is that they have to have the same options before running.  
+
+To implement this add this line ```#SBATCH --array=... #example --array=1-5 ``` to the sbatch script and then also add to the sbatch script ```$SLURM_ARRAY_TASK_ID``` as a parameter to the program you want to run, like so:
+```bash
+mpirun python job.py $SLURM_ARRAY_TASK_ID
+```
+
+On how to create an batch submit script you can find that in [this](#batch-jobs) chapter.
+
 ## Batch jobs
 
 The command `sbatch` is used to submit jobs to the `SLURM` queue
