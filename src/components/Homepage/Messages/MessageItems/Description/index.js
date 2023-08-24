@@ -2,11 +2,21 @@ import React from 'react';
 import styles from './index.modules.css';
 import comment from "./data.json";
 import MessageBubble from '../MessageBubble';
+import { useMemo } from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-const comments = comment.Comments;
 
 const Description  = () => {
 
+const { i18n } = useDocusaurusContext();
+
+  let comments = comment.Comments;
+  useMemo(() => {
+    if (i18n.currentLocale === "is"){
+      comments = comment["Comments-IS"];
+    }
+  }, []);
+  
   const waitTime = 750; //0.75 seconds waittime for each bubble 
   let count = 0;
 
