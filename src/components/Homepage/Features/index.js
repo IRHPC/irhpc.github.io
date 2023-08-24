@@ -3,6 +3,8 @@ import clsx from 'clsx';
 import styles from './index.modules.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDatabase, faMicrochip, faComments, faServer, faRocket, faBook } from '@fortawesome/free-solid-svg-icons';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { useEffect, useMemo } from 'react';
 
 
 const iconSizes='4x';
@@ -56,7 +58,7 @@ const FeatureList = [
     logo: <FontAwesomeIcon icon={faComments} size={iconSizes} color={iconColors} />,
     description: (
       <>
-        Contact us by writing a formal application to 
+        Contact us by writing a formal application to<br/>
         <a><strong>help@hi.is</strong></a> and we will write 
         back to you as soon as possible.
         <br></br>
@@ -142,7 +144,7 @@ const FeatureListIS = [
     logo: <FontAwesomeIcon icon={faComments} size={iconSizes} color={iconColors} />,
     description: (
       <>
-        Hafðu samband við okkur með því að skrifa formlega umsókn til
+        Hafðu samband við okkur með því að skrifa formlega umsókn til<br/>
          <a><strong>help@hi.is</strong></a> og við svörum
          þér eins fljótt og auðið er.
          <br></br>
@@ -195,18 +197,26 @@ function Feature({logo, title, description}) {
 }
 
 export default function HomepageFeatures() {
-  const isIS = (window.location.pathname === "/is/");
+
+  const { i18n } = useDocusaurusContext();
+
+  let useList = FeatureList;
+
+
+  useMemo(() => {
+
+    if (i18n.currentLocale === "is"){
+      useList = FeatureListIS;
+    } 
+  }, []);
+
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
 
-          {isIS ?
-          FeatureListIS.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))
-          :
-          FeatureList.map((props, idx) => (
+          {
+          useList?.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))
           }
