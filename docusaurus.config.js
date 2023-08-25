@@ -1,4 +1,7 @@
+const math = require('remark-math');
+const katex = require('rehype-katex');
 const { right } = require('trim');
+
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
