@@ -1,25 +1,25 @@
 {
   "link.title.Docs": {
-    "message": "Docs",
+    "message": "Leiðbeiningar",
     "description": "The title of the footer links column with title=Docs in the footer"
   },
   "link.title.More": {
-    "message": "More",
+    "message": "Meira",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Introduction": {
-    "message": "Introduction",
+    "message": "Inngangur",
     "description": "The label of footer link with label=Introduction linking to /docs/intro"
   },
   "link.item.label.Announcements": {
-    "message": "Announcements",
+    "message": "Tilkynningar",
     "description": "The label of footer link with label=Announcements linking to /announcements"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/irhpc/"
   },
-  "copyright": {
+  "höfundaréttur": {
     "message": "Copyright © 2023 RHnet and RHÍ. Built with Docusaurus.",
     "description": "The footer copyright"
   }
