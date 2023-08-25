@@ -1,8 +1,9 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-
 const math = require('remark-math');
 const katex = require('rehype-katex');
+const { right } = require('trim');
 
+
+/** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'HPC Documentation',
   tagline: 'For Icelandic National Computing resources',
@@ -17,6 +18,10 @@ module.exports = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'is'],
+  },
+  customFields: {
+    titleICE: 'HPC Skjöl',
+    taglineICE: 'Fyrir Íslenskar Ríkistölvuauðlindir',
   },
   themeConfig: {
     navbar: {
@@ -104,7 +109,7 @@ module.exports = {
           editUrl:'https://github.com/irhpc/irhpc.github.io/edit/main/',
           remarkPlugins: [math],
           rehypePlugins: [katex],
-          },
+        },
         blog: {
           showReadingTime: true,
           id: 'announcements',
@@ -123,7 +128,7 @@ module.exports = {
       },
     ],
   ],
-  stylesheets: [
+    stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
       type: 'text/css',

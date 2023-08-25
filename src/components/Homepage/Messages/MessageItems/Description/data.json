@@ -10,6 +10,17 @@
       }
     ],
 
+    "Comments-IS": [
+      {
+        "type": "desc",
+        "content": "Íslenska High Performance Computing Centre (IHPC/IREI) veitir rannsakendum ókeypis notendastuðning og aðstöðu til að móta flókin og erfið raunveruleg vandamál með því ád útvega vélbúnað sem samanstendur af öflugum örgjörvum, skjákortum, hröðu I/O net, og skráarkerfi, ásamt gagnageymslulausnum."
+      },
+      {
+        "type": "desc",
+        "content": "IHPC/IREI er verkefni á vegum Íslenskra rafrænna innviða sem að er styrkt af innviðasjóði Rannís." 
+      }
+    ],
+
     "Announcements" : [
       {
         "type": "announce",

@@ -3,6 +3,7 @@ import Messages from '../Messages';
 import HomepageFeatures from "../Features";
 
 const HomepageItems = () => {
+  
   return (
     <>
       <Messages/>
@@ -10,6 +11,5 @@ const HomepageItems = () => {
     </>
   );
 };
-
 
 export default HomepageItems;

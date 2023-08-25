@@ -3,6 +3,8 @@ import clsx from 'clsx';
 import styles from './index.modules.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDatabase, faMicrochip, faComments, faServer, faRocket, faBook } from '@fortawesome/free-solid-svg-icons';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { useEffect, useMemo } from 'react';
 
 
 const iconSizes='4x';
@@ -28,7 +30,7 @@ const FeatureList = [
     logo: <FontAwesomeIcon icon={faMicrochip} size={iconSizes} color={iconColors} />,
     description: (
       <>
-       In total there are 6528 cores available, including 13 Nvidia A100 Tesla GPU cards. 
+       In total there are 6528 cores available, including 21 Nvidia A100 Tesla GPU cards. 
        It stands currently at 628 tera-flops.
        <br></br>
        <strong>Read more  <a href='/docs/hardware/hardwarespec'> here</a>.</strong>
@@ -56,7 +58,7 @@ const FeatureList = [
     logo: <FontAwesomeIcon icon={faComments} size={iconSizes} color={iconColors} />,
     description: (
       <>
-        Contact us by writing a formal application to 
+        Contact us by writing a formal application to<br/>
         <a><strong>help@hi.is</strong></a> and we will write 
         back to you as soon as possible.
         <br></br>
@@ -93,6 +95,92 @@ const FeatureList = [
   },
 ];
 
+
+const FeatureListIS = [
+  {
+    title: 'Gagnastjórnun',
+    // Svg: require('../../../static/img/undraw_docusaurus_mountain.svg').default,
+    logo:  <FontAwesomeIcon icon={faDatabase} size={iconSizes} color={iconColors} />,
+    description: (
+      <>
+       Aðgangur er veittur að hröðu I/O, öruggu og margskipuðu
+       NFS þjónn fyrir geymslu og greiningu stórra gagna (>TB).
+       <br></br>
+       <strong>Lestu meira <a href='/docs/MIMIR/datatransfer'> hér </a></strong>
+      </>
+    ),
+  },
+  {
+    title: 'Vélbúnaður',
+    // Svg: require('../../../static/img/undraw_docusaurus_mountain.svg').default,
+    logo: <FontAwesomeIcon icon={faMicrochip} size={iconSizes} color={iconColors} />,
+    description: (
+      <>
+        Alls eru 6528 kjarna í boði, þar á meðal 21 Nvidia A100 Tesla GPU kort.
+        Það stendur í 628 tera-flops.
+        <br></br>
+        <strong>Lestu meira <a href='/docs/hardware/hardwarespec'> hér</a>.</strong>
+      </>
+
+    ),
+  },
+  {
+    title: 'Notkun',
+    // Svg: require('../../../static/img/undraw_docusaurus_mountain.svg').default,
+    logo: <FontAwesomeIcon  icon={faServer} size={iconSizes} color={iconColors} />,
+    description: (
+      <>
+      HPC-þyrpingunni er stjórnað af Linux stýrikerfi
+      Bash skelja skriptur og gagnvirkar skipanir eru notaðar
+      til að vinna á þyrpingunni með SLURM biðrað þjónustu.
+      <br></br>
+      <strong>Lestu meira  <a href='/docs/elja/bash'> hér</a>.</strong>
+      </>
+    ),
+  },
+  {
+    title: 'Hafa samband',
+    // Svg: require('../../../static/img/undraw_docusaurus_mountain.svg').default,
+    logo: <FontAwesomeIcon icon={faComments} size={iconSizes} color={iconColors} />,
+    description: (
+      <>
+        Hafðu samband við okkur með því að skrifa formlega umsókn til<br/>
+         <a><strong>help@hi.is</strong></a> og við svörum
+         þér eins fljótt og auðið er.
+         <br></br>
+         <strong>Kröfur til að sækja um er að finna <a href= '/docs/intro'>hér</a></strong>
+       </>
+    ),
+  },
+  {
+    title: 'Hugbúnaður',
+    // Svg: require('../../../static/img/undraw_docusaurus_mountain.svg').default,
+    logo: <FontAwesomeIcon icon={faRocket} size={iconSizes} color={iconColors} />,
+    description: (
+      <>
+        Mikið úrval af þýðendum, tölulegum stöfnum og hugbúnaðarumhverfum
+        eru í boði og er viðhaldið.
+        <br></br>
+       <strong>Lest meira  <a href='/docs/compiling/easybuild'> hér</a>.</strong>
+      </>
+
+    ),
+  },
+  {
+    title: 'Lærðu á kerfið',
+    // Svg: require('../../../static/img/undraw_docusaurus_mountain.svg').default,
+    logo: <FontAwesomeIcon icon={faBook} size={iconSizes} color={iconColors} />,
+    description: (
+      <>
+      Lærðu meira um kerfið með því að lesa leiðbeiningarnar
+       <br></br>
+       <strong>þær byrja<a href='/docs/intro'> hér</a>.</strong>
+      </>
+
+    ),
+  },
+];
+
 function Feature({logo, title, description}) {
   return (
     <div className={clsx('col col--4')}>
@@ -109,13 +197,30 @@ function Feature({logo, title, description}) {
 }
 
 export default function HomepageFeatures() {
+
+  const { i18n } = useDocusaurusContext();
+
+  let useList = FeatureList;
+
+
+  useMemo(() => {
+
+    if (i18n.currentLocale === "is"){
+      useList = FeatureListIS;
+    } 
+  }, []);
+
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
+
+          {
+          useList?.map((props, idx) => (
             <Feature key={idx} {...props} />
-          ))}
+          ))
+          }
+
         </div>
       </div>
     </section>
