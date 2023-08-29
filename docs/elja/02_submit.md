@@ -60,9 +60,9 @@ A batch submit script usually starts like this
 mpirun python job.py
 ```
 
-Here two nodes from the `48mem_192mem` partition is requested, using 48 processors per node for a total of 96 processors. The memory per cpu-core is set to 3900MB RAM. See the [Partitions & Hardware](/docs/hardware/parthardw) for details on the available partitions.
+Here two nodes from the `48mem_192mem` partition is requested, using 48 processors per node for a total of 96 processors. The memory per cpu-core is set to 3900MB RAM. See the [Partitions & Hardware](/docs/hardware/01_partitions.md) for details on the available partitions.
 
-When the `SLURM` scheduler has allocated the resources the subsequent lines are executed in order. First a program environment bash is loaded (see [Program Environment](/docs/compiling/easybuild)), and an `mpirun` instance of a Python script is executed.
+When the `SLURM` scheduler has allocated the resources the subsequent lines are executed in order. First a program environment bash is loaded (see [Program Environment](/docs/software/01_packages.md)), and an `mpirun` instance of a Python script is executed.
 
 Hyper-threading of the intel based CPUs is on by default, hence it is
 is highly recommended to suppress it in your submit (or .bashrc) script
@@ -89,4 +89,4 @@ You can cancel a job using the JOBID number. In this example
 [..]$ scancel 11729
 ```
 
-IF your job requires a lot of input data, or if it generates a lot of output it is advisable to make use of the **/scratch/** disk available on the compute nodes. See the next [section](scratch_disk).
+IF your job requires a lot of input data, or if it generates a lot of output it is advisable to make use of the **/scratch/** disk available on the compute nodes. See the next [section](./03_scratch.md).

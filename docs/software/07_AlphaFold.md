@@ -15,12 +15,12 @@ This section on AlphaFold will go through how to use AlphaFold on Elja.
 
 ## Getting started
 :::note
-Due to *Nvidia* compatibility issues **Elja** now requires you to run AlphaFold in a [Conda](./02_rcondapython.md) environment.
+Due to *Nvidia* compatibility issues **Elja** now requires you to run AlphaFold in a [Conda](./03_rcondapython.md) environment.
 :::
 
 ### Setting up the Conda environment
 
-We start by initializing the conda environment, these are the same steps as seen in [Conda](./02_rcondapython.md):
+We start by initializing the conda environment, these are the same steps as seen in [Conda](./03_rcondapython.md):
 ```bash
 $ module use /hpcapps/lib-mimir/modules/all 
 $ module load Anaconda3/2022.05

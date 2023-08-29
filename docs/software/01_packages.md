@@ -11,7 +11,7 @@ The available EasyBuild stack dependancies are linked against the OS libraries a
 The stacks are managed with the module manager [Lmod](https://docs.easybuild.io/en/latest/). In general it is enough to load a software module to make the software ready for use. Loading in the module correctly append the necessary binary paths and loads all dependencies.
 
 In order to make use of a compiler environment to compile your own software several modules may have to be loaded at once. 
-See [here](./03_devenvironment.md) for compiling / development instructions.
+See [here](./02_devenvironment.md) for compiling / development instructions.
 
 ## Using Lmod
 

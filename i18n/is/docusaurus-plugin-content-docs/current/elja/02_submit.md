@@ -64,7 +64,7 @@ mpirun python job.py
 
 Hér er beðið um tvo hnúta úr `48mem_192mem` skiptingunni, sem notar 48 örgjörva á hvern hnút fyrir samtals 96 örgjörva. Minnið á hvern kjarna er stillt á 3900MB vinnsluminni. Sjá [Skilrúm og búnaður](/docs/hardware/parthardw) fyrir upplýsingar um tiltækar skiptingarnar.
 
-Þegar `SLURM` áætlarinn hefur úthlutað tilföngum eru næstu línur keyrðar í röð. Fyrst er forritunar umhverfið hlaðið inn (sjá [Forritunar Umhverfi](/docs/compiling/easybuild)), og `mpirun` tilvik af Python skriftu er keyrt.
+Þegar `SLURM` áætlarinn hefur úthlutað tilföngum eru næstu línur keyrðar í röð. Fyrst er forritunar umhverfið hlaðið inn (sjá [Forritunar Umhverfi](../software/01_packages.md)), og `mpirun` tilvik af Python skriftu er keyrt.
 
 Ofðráðun (e. Hyper-threading) er sjálfgefið á Intel örgjörvum, og er mælt með því að bæla það niður í lotu (eðá .bashrc) skriftunni þinni (Nema hugbúnaðurinn þinn styðji og sé rétt settur saman með openmp)
 
