@@ -9,7 +9,7 @@ Aðföngin sem Íslenska háafkasta tölvu miðstöðin(e. high performance comp
 Sérfræðinganefnd IHPC/IREI veitir aðgang og hann er veittur með tveimur mismunandi leiðum:
 
 1. Með sammvinnu í gegnum innviðasjóð Rannís (Rannsóknarmiðstöð Íslands).
-2. Eftir umsókn. Formlega umsókn má senda á [help@hi.is](mailto:help@hi.is)i
+2. Eftir umsókn. Formlega umsókn má senda á [help@hi.is](mailto:help@hi.is)
 
 Sjá nánari upplýsingar [hér](./files/rulesandreg-v1-2.pdf). 
 Formleg umsókn ætti að innihalda lýsingu á verkefninu, áætlaðan tíma til að ljúka verkino og tegund hugbúnaðar og tilföngs sem þarf til að ljúka verkefninu.
