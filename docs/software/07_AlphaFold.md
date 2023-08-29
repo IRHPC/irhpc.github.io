@@ -15,7 +15,7 @@ This section on AlphaFold will go through how to use AlphaFold on Elja.
 
 ## Getting started
 :::note
-Due to *Nvidia* compatibility issues **Elja** now requires you to run AlphaFold in a [Conda](./03_rcondapython) environment.
+Due to *Nvidia* compatibility issues **Elja** now requires you to run AlphaFold in a [Conda](./03_rcondapython.md) environment.
 :::
 
 ### Setting up the Conda environment
