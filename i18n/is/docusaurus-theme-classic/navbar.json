@@ -4,15 +4,15 @@
     "description": "The alt text of navbar logo"
   },
   "item.label.User Docs": {
-    "message": "User Docs",
+    "message": "Notenda Leyðbeiningar",
     "description": "Navbar item with label User Docs"
   },
   "item.label.Announcements": {
-    "message": "Announcements",
+    "message": "Tilkynningar",
     "description": "Navbar item with label Announcements"
   },
   "item.label.Older Site": {
-    "message": "Older Site",
+    "message": "Eldri síða",
     "description": "Navbar item with label Older Site"
   }
 }
