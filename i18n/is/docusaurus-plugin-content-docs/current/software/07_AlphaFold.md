@@ -17,12 +17,12 @@ Lestu meira um AlphaFold [hér](https://www.deepmind.com/research/highlighted-re
 
 ## Að byrja
 :::note
-Vegna *Nvidia* samhæfnisvandamála krefst **Elja** þess nú að þú keyrir AlphaFold í [Conda](./02_rcondapython.md) umhverfi.
+Vegna *Nvidia* samhæfnisvandamála krefst **Elja** þess nú að þú keyrir AlphaFold í [Conda](./03_rcondapython.md) umhverfi.
 :::
 
 ### Setting up the Conda environment
 
-Við byrjum á því að frumstilla conda umhverfið, þetta eru sömu skrefin og sjást í [Conda](./02_rcondapython.md):
+Við byrjum á því að frumstilla conda umhverfið, þetta eru sömu skrefin og sjást í [Conda](./03_rcondapython.md):
 
 ```bash
 $ module use /hpcapps/lib-mimir/modules/all 

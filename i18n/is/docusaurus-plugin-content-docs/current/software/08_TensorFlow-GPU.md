@@ -12,7 +12,7 @@ TensorFlow með skjákortsstuðning (TF2-gpu) er í boði til notkunar á **Elju
 
 ## Getting started
 
-TF2-gpu er pakkað í conda umhverfi. Til að nota conda umhverfið vinsamlegast fylgdu **uppsetningar** leiðbeiningunum sem gefnar eru [hér](./02_rcondapython.md). Þegar uppsetningu conda er lokið geturðu hlaðið inn í TF2-gpu umhverfið eins og hér:
+TF2-gpu er pakkað í conda umhverfi. Til að nota conda umhverfið vinsamlegast fylgdu **uppsetningar** leiðbeiningunum sem gefnar eru [hér](./03_rcondapython.md). Þegar uppsetningu conda er lokið geturðu hlaðið inn í TF2-gpu umhverfið eins og hér:
 
 
 ```bash

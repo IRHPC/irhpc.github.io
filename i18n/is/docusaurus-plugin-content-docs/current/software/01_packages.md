@@ -11,7 +11,7 @@ Tiltækar EasyBuild-stafla  eru tengdar við stýrikerfissöfn og rekla(e. drive
 Stöflunum er stjórnað með einingastjóranum [Lmod](https://docs.easybuild.io/en/latest/). Almennt séð er nóg að hlaða hugbúnaðareiningu til að gera hugbúnaðinn tilbúinn til notkunar. Þegar einingu er rétt hlaðið inn bætir hún við nauðsynlegum tvíundaslóðum(e. binary paths) og hleður inn öllum háðum pökkum.
 
 Til þess að nota þýðandaumhverfi til að setja saman þinn eigin hugbúnað gæti þurft að hlaða inn nokkrum einingum í einu.
-Sjá [hér](./03_devenvironment.md) til að setja saman / þróunarleiðbeiningar.
+Sjá [hér](./02_devenvironment.md) til að setja saman / þróunarleiðbeiningar.
 
 ## Notkun Lmod
 

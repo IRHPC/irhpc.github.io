@@ -12,7 +12,7 @@ TensorFlow with GPU support (TF2-gpu) is available for use on Elja. Read more ab
 
 ## Getting started
 
-TF2-gpu is packaged in a conda environment. In order to use the conda environment please follow the **One time setup** instructions provided [here](./02_rcondapython.md). Once your conda setup is complete you can load in the TF2-gpu environment like this
+TF2-gpu is packaged in a conda environment. In order to use the conda environment please follow the **One time setup** instructions provided [here](./03_rcondapython.md). Once your conda setup is complete you can load in the TF2-gpu environment like this
 
 ```bash
 [..]$ module use /hpcapps/libbio-gpu/modules/all/
