@@ -72,21 +72,21 @@ fáðu frekari upplýsingar um ***Metaerg*** með því að lesa úr [github gey
 
 </center>
 
-## 2 Run Metaerg on Elja
+## 2 Keyra Metaerg á Elja
 
 ### 2.1 Loading Metaerg
-Before being able to run ***Metaerg*** on Elja, you will have to load the ***Metaerg*** module. To do this you type these following commands in the terminal:
+Áður en það er hægt að keyra ***Metaerg*** á Elju, þú þarftu að hlaða in ***Metaerg*** módulnum. Til þess að gera það þá þarftu að skrifa eftirfarandi línum í terminal:
 
 ```bash
-[..]$ ml use /hpcapps/libbio-gpu/modules/all
-[..]$ ml load Metaerg´´´
+[..]$ ml use /hpcapps/lib-mimir/modules/all
+[..]$ ml load Metaerg
 ```
 
-### 2.2 Running Metaerg 
-To run ***Metaerg*** you will have to type ```metaerg``` with parameters which you can find [here](https://github.com/kinestetika/MetaErg#usage). An example of a ***Metaerg*** run would look like this:
+### 2.2 Running Metaerg
+Til þess að keyra ***Metaerg***  þá þarft þú að skrifa ```metaerg``` með ðarametrum sem þú getur fundið [hér](https://github.com/kinestetika/MetaErg#usage). Dæmi á ***Metaerg*** keyrslu myndi líta eftirfarandi út:
 
 ```bash
-[..] $ metaerg --contig_file dir-with contig-files --database_dir /AlphaFoldData/MetaergData/ \ --file_extension .fa
+[..] $ metaerg --contig_file dir-with contig-files --database_dir /AlphaFoldData/MetaergData/db/ 
 ```
 
-Note that **--database_dir /AlphaFoldData/MetaergData/** is always necessary as this is the location of the ***Metaerg*** database which the machine learned code is based on.
+Taktu eftir að **--database_dir /AlphaFoldData/MetaergData/** er alltaf nauðsynlegt að hafa þegar það er keyrt **Metaerg** og er vísun á staðsetningu á gagnasafninu sem ***Metaerg*** notar.
