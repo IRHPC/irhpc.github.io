@@ -78,15 +78,15 @@ The third option that was chosen was to mannually install ***Metaerg*** and its 
 Before being able to run ***Metaerg*** on Elja, you will have to load the ***Metaerg*** module. To do this you type these following commands in the terminal:
 
 ```bash
-[..]$ ml use /hpcapps/libbio-gpu/modules/all
-[..]$ ml load Metaerg´´´
+[..]$ ml use /hpcapps/lib-mimir/modules/all
+[..]$ ml load Metaerg
 ```
 
 ### 2.2 Running Metaerg 
 To run ***Metaerg*** you will have to type ```metaerg``` with parameters which you can find [here](https://github.com/kinestetika/MetaErg#usage). An example of a ***Metaerg*** run would look like this:
 
 ```bash
-[..] $ metaerg --contig_file dir-with contig-files --database_dir /AlphaFoldData/MetaergData/ \ --file_extension .fa
+[..] $ metaerg --contig_file dir-with contig-files --database_dir /AlphaFoldData/MetaergData/
 ```
 
 Note that **--database_dir /AlphaFoldData/MetaergData/** is always necessary as this is the location of the ***Metaerg*** database which the machine learned code is based on.
