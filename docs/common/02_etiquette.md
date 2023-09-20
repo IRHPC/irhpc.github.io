@@ -11,7 +11,7 @@ Congratulations on getting an account on one of the IRHPC clusters. The document
 - Never connect to Elja through an unsecure public network (see [here](../connecting/01_general.md))
 
 
-# Login Node
+## Login Node
 
 The login node is a shared resource. This is where all of the users perform tasks to prepare and submit their jobs. 
 
@@ -29,7 +29,7 @@ System administrators will kill processes which are resource intensive.
 :::
 
 
-# Resource Management
+## Resource Management
 
 Your home directory which is associated with your username - **<uname\>** - is hosted on the **nfs-irhpc** NFS server 
 
@@ -41,7 +41,7 @@ The disk space on the NFS server is a shared resource. It is not intended for th
 IF you require disk space to store large amounts of data (more than **1 Tb**) for later jobs, or if your jobs generate a large amount of data that require further processing please contact [support](mailto:help@hi.is). Other solutions can be provided.
 :::
 
-# Scratch Disk
+## Scratch Disk
 
 Each compute node has a dedicated **/scratch/** disk (see [here](../hardware/02_specs.md) for hardware specs). It is a local disk which is intended for the **temporary** storage of data to be processed, and writing of output. This disk facilitates fast **I/O** (input/output) when running jobs. Users have read/write privilages here
 
@@ -56,3 +56,25 @@ See here for instructions on how to make use of the **/scratch/** disks.
 :::caution
 **It is important to make sure you clean up after your job on the /scratch/ disk. IF your job crashes and leaves behind data which you think can be salvaged contact [support](mailto:help@hi.is) as soon as possible. System administrators will delete data on the /scratch/ disks not associated with a running job, without notice.**
 :::
+
+## Data Management and Transfers on The NFS disk
+Like mentioned in the [Scratch Disk section](#scratch-disk) when causing network traffic to the NFS disk it will slow down processes on Elja, resulting in a sluggish behavior for all other Elja users working in their home directory. If you need to transfer data to or from the NFS disk then it is required to set the bandwidth to a **maximum 40000 Kbit/s (5 Megabytes)**. If the user does not set the bandwidth in that range then the system administrators will shut down the process and notify the individual.
+
+Below are different methods on how to apply bandwidth restriction to [rsync](#rsync) and [scp](#scp)
+
+### rsync
+To restrict the bandwidth when using  ```rsync``` you will have to add the parameter ```--bwlimit=40000``` like the following:
+
+```bash 
+$ rsync -av --bwlimit=40000-e "ssh -i /path/to/your/ssh/keyfile" <uname>@elja.hi.is:/users/home/<uname>/../data /path/on/local/computer/ # -av Archive mode with verbose input
+```
+
+This command shows an example for a user who is transferring data that is located in the users home directory on Elja to the location "path/on/local/computer" on the local computer. 
+
+### scp
+To restrict the bandwidth when using ```scp``` you will need to add the parameter ```-l 40000```. An example of such a case is displayed here below
+
+```bash
+$ scp -l 40000 -p -r <uname>@elja.hi.is:/hpcapps/users/home/<uname>/ .
+```
+Here we are transferring data located in a users home directory on Elja to the location on the local machine that the user is currently working in. 
