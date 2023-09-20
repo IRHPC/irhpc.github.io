@@ -58,23 +58,23 @@ See here for instructions on how to make use of the **/scratch/** disks.
 :::
 
 ## Data Management and Transfers on The NFS disk
-Like mentioned in the [Scratch Disk section](#scratch-disk) when causing network traffic the NFS disk will slow down Elja resulting in the same result for every other user. If such a case occurs that you need to transfer data from The NFS disk then it is required to set the  bandwidth to a **maximum 5000 Kbit/s**. If the user does not set the bandwidth in that range then the system administrators will shut down the process and notify the individual.
+Like mentioned in the [Scratch Disk section](#scratch-disk) when causing network traffic the NFS disk will slow down Elja resulting in the same result for every other user. If such a case occurs that you need to transfer data from The NFS disk then it is required to set the  bandwidth to a **maximum 40000 Kbit/s (5 Megabytes)**. If the user does not set the bandwidth in that range then the system administrators will shut down the process and notify the individual.
 
 Here below are different methods on how to implement the bandwidth restriction with [rsync](#rsync) and [scp](#scp)
 
 ### rsync
-To restrict the bandwidth when using  ```rsync``` you will have to add the parameter ```--bwlimit=5000``` like the following:
+To restrict the bandwidth when using  ```rsync``` you will have to add the parameter ```--bwlimit=40000``` like the following:
 
 ```bash 
-$ rsync -av --bwlimit=5000 -e "ssh -i /path/to/your/ssh/keyfile" <uname>@elja.hi.is:/users/home/<uname>/../data /path/on/local/computer/ # -av Archive mode with verbose input
+$ rsync -av --bwlimit=40000-e "ssh -i /path/to/your/ssh/keyfile" <uname>@elja.hi.is:/users/home/<uname>/../data /path/on/local/computer/ # -av Archive mode with verbose input
 ```
 
 This command shows an example that a user is transferring data that is located in your home directory on Elja to the location "path/on/local/computer" on the computer that you are working on. 
 
 ### scp
-To restrict the bandwidth when using ```scp``` you will need to add the parameter ```-l 5000```. An example of such a case is displayed here below
+To restrict the bandwidth when using ```scp``` you will need to add the parameter ```-l 40000```. An example of such a case is displayed here below
 
 ```bash
-$ scp -l 5000 -p -r <uname>@elja.hi.is:/hpcapps/users/home/<uname>/ .
+$ scp -l 40000 -p -r <uname>@elja.hi.is:/hpcapps/users/home/<uname>/ .
 ```
 Here we are transferring data located in your home directory on the elja cluster to the location on your local machine that you are currently using. 
