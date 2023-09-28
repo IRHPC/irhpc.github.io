@@ -34,5 +34,9 @@
   "sidebar.tutorialSidebar.category.Snippets": {
     "message": "Snippets",
     "description": "The label for category Snippets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.User Submitted Programs": {
+    "message": "User Submitted Programs",
+    "description": "Helpful tools our users have created."
   }
 }
