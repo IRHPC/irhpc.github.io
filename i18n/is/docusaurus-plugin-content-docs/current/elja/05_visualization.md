@@ -64,15 +64,16 @@ Veldu **Multiple windows** og smelltu á **Next >** og nýj síða mun birtast s
 á þessari síðu þá þarftu aðeins að smella á **Finish**
 
 ### Setja upp stillingar í PuTTY fyrir X11
-First step would be to open PuTTy and load a session.To do this you should automatically be moved to the **Session** section once you run *PuTTy*. Then click on the *session* and then the **Load** button.
+Fyrsta skrefið er að opna PuTTy og hlaða inn **Session**. Til þess að gera það þá þarftu klikka á *Session* í **Session** flipanum  og smella á **Load** hnappinn.
 
 ![puTTy_config](../../../../../docs/assets/putty_configuration.png)
 
-Go to **Connection** -> **SSH** -> **X11** and  choose **Enable X11 Forwarding** and set the **X dispaly location** to **localhost:0.0** aswell as selecting **MIT-Magic-Cookie-1** in **Remote X11 authentication protocol**. If you've done everything correctly it should look something like this:
+
+Fara yfir **Connection** -> **SSH** -> **X11** og veldu **Enable X11 Forwarding**,setja **X display location** í **localhost:0.0** og að auki velja **MIT-Magic-Cookie-1** í **Remote X11 authentiucation protocol**. Ef þú hefur gert allt á rétt þá ætti þetta að líta eins og má sjá á myndinni hér fyrir neðan.
 
 ![puTTy_x11_settings](../../../../../docs/assets/x11_puTTy_settings.png)
 
 ### Check for Result
-Once you've setup X11 and connected to elja the next step is to check whether it succeeded. To do this simply type in the command line on elja ```xclock```. This command should make a clock appear on your screen like the screenshot shows here below. 
+Þegar þú hefur sett upp X11 og tengst elju þá væri næsta skrefið að athuga hvort að þessi uppsetning hafi tekist. Til þess að gera það þá einfaldlega skrifaðu inn í command línuna á elju ```xclock```. Þessi skipun ætti að birta klukku sem birtir local tímann eins og má sjá á meðflygjandi mynd 
 
 ![xclock](../../../../../docs/assets/x11_xclock.png)
