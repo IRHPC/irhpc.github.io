@@ -79,3 +79,60 @@ Go to **Connection** -> **SSH** -> **X11** and  choose **Enable X11 Forwarding**
 Once you've setup X11 and connected to elja the next step is to check whether it succeeded. To do this simply type in the command line on elja ```xclock```. This command should make a clock appear on your screen like the screenshot shows here below. 
 
 ![xclock](../assets/x11_xclock.png)
+
+
+
+## Using VScode
+Many Users use VScode to connect to Elja but it might be a difficult process to enable visualisation through VScode. Here are instructions to enable xforwarding (visualisation)
+
+### Step 1
+First set up XLaunch to enable xforwarding. You can follow the instructions in this chapter [here](#using-xlaunch) To complete this step.
+
+### Step 2
+Open VScode and click on ```F1``` button and type ```Preferences: Open Settings (UI)```
+
+![pressF1](../assets/PressF1.png)
+
+### Step 3
+Now search for ```terminal.integrated.env.windows``` and click on ```Edit in settings.json``` like shown in the picture below.
+
+![pressF1](../assets/temrinal.integrated.env.windows_step%20-%20Copy.png)
+
+### Step 4
+After step 3 vscode should open a ```settings.json``` file. In there add the following:
+
+
+```bash
+    "terminal.integrated.env.windows": {    
+        "DISPLAY": "127.0.0.1:0.0"
+    },
+```
+then save and exit.
+
+### Step 5 
+In your SSH configuration,varying but mostly common to be in the location ```.ssh/config``` file, add in there the following
+
+```bash
+Host TestX11 #changeable
+  HostName elja.hi.is
+  User <YOUR_USERNAME>
+  ForwardAgent yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  IdentityFile <location of private key>
+```
+### Step 6
+***This step requires the user to have the extension remote-SSH.***
+
+Connect to Elja by clicking on the green button at the button corner and click on *connect to Host...* like the following picture shows.
+
+![Alt text](../assets/Connecting%20to%20Elja.jpg)
+
+and then like in the next picture click on the name of The 'HOST', in this case ```TestX11``` you want to connect to.
+
+![Alt text](SelectHost.jpg)
+
+### Step 7
+Once you've managed to connect to Elja you can check if the xforwarding is working by typing into the terminal ```xclock``` like this picture shows: 
+![Alt text](vscode_xclock.jpg)
+
