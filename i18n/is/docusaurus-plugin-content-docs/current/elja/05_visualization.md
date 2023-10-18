@@ -77,3 +77,58 @@ Fara yfir **Connection** -> **SSH** -> **X11** og veldu **Enable X11 Forwarding*
 Þegar þú hefur sett upp X11 og tengst elju þá væri næsta skrefið að athuga hvort að þessi uppsetning hafi tekist. Til þess að gera það þá einfaldlega skrifaðu inn í command línuna á elju ```xclock```. Þessi skipun ætti að birta klukku sem birtir local tímann eins og má sjá á meðflygjandi mynd 
 
 ![xclock](../../../../../docs/assets/x11_xclock.png)
+
+
+## Xforwarding með VScode
+Margir notendur nota VScode til þess að tengjast Elju en það getur verið erfitt ferli að heimila xforwarding í gegnum VScode. Hér eru leiðbeiningar til þess að setja það upp.
+
+### Skref 1
+Fyrsta skrefið  er að keyra XLaunch til þess að heimila xforwarding. Til þess að setja það upp þá er best að fylgja leiðbeinungunum í þessum kafla [hér](#Nota-XLaunch)
+
+
+### Skref 2
+Byrjaðu á að opna VScode of smella á ```F1``` hnappinn á lyklaborðinu og skrifaðu ```Preferences: Open Settings (UI)```  
+
+![pressF1](../../../../../docs/assets/PressF1.png)
+
+### Skref 3
+Leitaðu núna eftir ```terminal.integrated.env.windows``` og smelltu á ```Edit in settings.json``` eins og er sýnt á myndinni hér fyrir neðan  
+
+![pressF1](../../../../../docs/assets/temrinal.integrated.env.windows_step%20-%20Copy.png)
+
+### Skref 4
+Eftir skref 3 þá ætti vscode að opna skjal sem heitir ```settings.json``` og þar bættu við eftirfarandi línu:
+
+```bash
+    "terminal.integrated.env.windows": {    
+        "DISPLAY": "127.0.0.1:0.0"
+    },
+```
+Vistaðu og lokaðu síðan glugganum
+
+### Skref 5
+Í SSH config skjalinu, staðsetning á því skjali er breytanleg en á oftast til að vera staðsett ```~/.ssh/config``` og bættu eftirfarandi við í skjalið.
+
+```bash
+Host TestX11 #breytilegt
+  HostName elja.hi.is
+  User <Notendanafnið þitt>
+  ForwardAgent yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  IdentityFile <location of private key>
+```
+### Skref 6
+***Þetta skref krefst þess að notandi þarf að bæta við "remote-ssh" extenstion***
+
+Tengdu þig við Elju með því að smella á græna hnappinn sem er staðsett í vinstra horninu á skjánum  og smelltu á *connect to Host...* eins og má sjá í með fylgjandi skjali.
+
+![Alt text](../../../../../docs/assets/Connecting%20to%20Elja.jpg)
+
+og eins og má sjá á næstu mynd smelltu á nafnið á 'HOST', í þessu tilfelli ```TestX11```, sem þú villt tengjast við.
+
+![Alt text](../../../../../docs/assets/SelectHost.jpg)
+
+### Skref 7
+Þegar þú ert tegnajst við Elja athugaðu ef xforwarding er að virka með því að skrifa ```xclock``` í terminal-ið hjá þér eins meðfylgjandi mynd sýnir: 
+![Alt text](../../../../../docs/assets/vscode_xclock.jpg)
