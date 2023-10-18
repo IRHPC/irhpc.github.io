@@ -130,9 +130,9 @@ Connect to Elja by clicking on the green button at the button corner and click o
 
 and then like in the next picture click on the name of The 'HOST', in this case ```TestX11``` you want to connect to.
 
-![Alt text](SelectHost.jpg)
+![Alt text](../assets/SelectHost.jpg)
 
 ### Step 7
 Once you've managed to connect to Elja you can check if the xforwarding is working by typing into the terminal ```xclock``` like this picture shows: 
-![Alt text](vscode_xclock.jpg)
+![Alt text](../assets/vscode_xclock.jpg)
 
