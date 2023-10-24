@@ -5,7 +5,7 @@ slug: Visual studio Code connection
 
 ## Stofna Lykil
 
-Að stofna SSH lykil getur verið mismunandi útfrá hvaða stýrikerfi er verið nota.  Til þess að stofna SSH lykil í gegnum Unix kerfi (Mac og Linux) þá eru leiðbeiningar til þess að gera það [hér](02_Unix.md). Fyrir windows þá eru leiðbeiningar til þess að búa til SSH lykil  [hér](03_windows.md)
+Að stofna SSH lykil getur verið mismunandi útfrá hvaða stýrikerfi er verið nota.  Til þess að stofna SSH lykil í gegnum Unix kerfi (Mac og Linux) þá eru leiðbeiningar til þess að gera það [hér](02_unix.md). Fyrir windows þá eru leiðbeiningar til þess að búa til SSH lykil  [hér](03_windows.md)
 
 ## Uppsetning
 Áður en það er hægt að tengjast Elju í gegnum VScode þá þarf að setja upp "Extension" sem heitir "Remote -SSH". Til þess að geta fengið það extension þá þarf að fara í extensions flipan inn í VScode og skrifa í leitarvélinni "Remote -SSH". Meðfylgjandi mynd sýnir hvernig ferlinu er háttað.
@@ -40,7 +40,7 @@ Eftir að það er búið að smella á ```Connect to Host...``` þá ætti þa�
 
 Núna ætti VScode að gefa upp staðsetninguna á config skránni sem þú settir í ```Settings``` og smelltu á þann valmöguleika. Þetta ætti að opna config skránna. 
 
-![select Specific config file](../../../../../docs/assets/SelectSpecificConfigFile.png)
+![select Specific config file](../../../../../docs/assets/selectSpecificConfigFile.png)
 
 Í configuration skránni þá þarftu að bæta upplýsingum um þjónin sem þú villt tengjast. Þær upplýsingar þurfa að vera nafnið á þjóninum, notendanafnið þitt á þjóninum og staðsetningin á SSH lyklinum þínum sem veitir þér aðgang að þjóninum. 
 
