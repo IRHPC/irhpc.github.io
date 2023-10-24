@@ -37,7 +37,7 @@ Now go Through the whole process again. That is go to ```Connect to Host ->  Con
 
 Select the path that the VScode displays, that is the path to the config file that you placed in the input in the [configure section](#configure-ssh) and click on it, the configuration file should now be open in VScode.
 
-![select Specific config file](../assets/SelectSpecificConfigFile.png)
+![select Specific config file](../assets/selectSpecificConfigFile.png)
 
 In the Configuration file you'll need to add the information of the host, hostname, your username, and the path to the private key that is used to connect to Elja. This should look something like this:
 
