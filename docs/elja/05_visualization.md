@@ -41,14 +41,14 @@ PuTTy also offers a visualisation method when connecting to the server. This is 
 
 ### Using XLaunch
 When you've installed XMing find the application called 'XLaunch' and run it. The following window should pop up.  
+:::note
+Display number does not need to be -1 as in the image above, it can be the default of 0.
+:::
 ![display_settings](../assets/x11_display_settings.png)
-
-
 
 Choose **Multiple windows** and click on '**Next >** and a new page will appear that goes through the **Session Type**.
 
 ![client_startup](../assets/x11_client_startup.png)
-
 
 
 On the **Session Type** choose **start no client** and click on **Next** and you should be prompted to the **Additional parameters** section.
@@ -59,6 +59,10 @@ On the **Session Type** choose **start no client** and click on **Next** and you
 
 
 There choose only the **Clipboard** option and press **Next >** and that will move you to **Finish Configuration**
+:::note
+On newer versions of XLaunch you can only select clipboard and not "Native opengl" it is important that you set the environment variable export LIBGL_ALWAYS_INDIRECT=1.
+You can add it to your .bashrc file with the following command 'echo "export LIBGL_ALWAYS_INDIRECT=1" >> $HOME/.bashrc'
+:::
 
 ![finish_config](../assets/x11_finish_config.png)
 
