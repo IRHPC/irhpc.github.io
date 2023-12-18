@@ -56,7 +56,7 @@ if [ ! -d $tdir ]; then
 fi
 
 # Copy the necessary input files to run your job
-cp $SLURM_SUBMIT_DIR/myinput $tdir/
+scp -l 40000 $SLURM_SUBMIT_DIR/myinput $tdir/
 
 # If the program needs many input files you can add a separate line for each file.
 
@@ -67,7 +67,7 @@ cp $SLURM_SUBMIT_DIR/myinput $tdir/
 myprogram myinput
 
 # After the job is completed make sure to copy the output to your submit directory.
-cp $tdir/myoutputfiles $SLURM_SUBMIT_DIR/
+scp -l 40000 $tdir/myoutputfiles $SLURM_SUBMIT_DIR/
 
 # If the program produces many output files you can add a separate line for each file.
 # Please try to only copy the files that you need.
@@ -122,4 +122,4 @@ $ cp $tdir/myoutputfiles submit_to_scratch_dir/
 $ rm -rf $tdir
 ```
 
-Dæmi um **SBATCH** skriftu fyrir týpískt Python verkefni er að finna [hér](../../../../../docs/files/py_submit.txt). Samskonar skipanir er hægt að nota í [gagnvirkri lotu](interactive_session).
+Dæmi um **SBATCH** skriftu fyrir týpískt Python verkefni er að finna [hér](../../../../../docs/files/py_submit.txt). Samskonar skipanir er hægt að nota í [gagnvirkri lotu](04_interactive.md).

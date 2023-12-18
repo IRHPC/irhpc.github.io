@@ -5,7 +5,7 @@ slug : singularity
 # Singularity
 
 :::note
-Einstaka hugbúnaður mun virka betur í öðrum umhverfm, til dæmis [AlphaFold](AlphaFold)
+Einstaka hugbúnaður mun virka betur í öðrum umhverfm, til dæmis [AlphaFold](07_AlphaFold.md)
 :::
 
 ## Hvad er Singularity?
@@ -21,7 +21,7 @@ Til að nota Singularity á **Elju** verður þú fyrst að hefja gagnvirka lotu
 ```bash
 $ srun --job-name "Singularity Job" --partition 48cpu_192mem --time 01:00:00 --pty bash 
 ```
-Sjáðu [hér](../elja/interactive_session) til að læra meira um gagnvirkar lotur.
+Sjáðu [hér](../elja/04_interactive.md) til að læra meira um gagnvirkar lotur.
 
 ### Að sækja myndir
 
@@ -366,7 +366,7 @@ Gámurinn verður nú fluttur yfir á **Elju** og verðúr aðgengilegur á heim
 
 ### GPU Dæmi
 Fyrst þurfum við að hefja gagnvirka keyrslu og síðan getum við hlaðið niður þeim Singularity myndum sem okkur hentar. Í þessu dæmi er það hello-world.sif:
-[Hvernig á áð hefja gagnvirkar keyrslur](/docs/elja/interactive_session)
+[Hvernig á áð hefja gagnvirkar keyrslur](../elja/04_interactive.md)
 
 ```bash 
 $ srun --job-name "InteractiveGPU" --partition gpu-1xA100 --time 0-01:00 --pty bash

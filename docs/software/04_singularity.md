@@ -5,7 +5,7 @@ slug : singularity
 # Singularity
 
 :::note
-Some software will work better in other environments for example [AlphaFold](AlphaFold)
+Some software will work better in other environments for example [AlphaFold](07_AlphaFold.md)
 :::
 
 ## What is Singularity?
@@ -20,7 +20,7 @@ To use singularity on **Elja** you must first start an interactive session:
 ```bash
 $ srun --job-name "Singularity Job" --partition 48cpu_192mem --time 01:00:00 --pty bash 
 ```
-To learn more about interactive sessions see [here](../elja/interactive_session).
+To learn more about interactive sessions see [here](../elja/04_interactive.md).
 
 ### Getting images
 
@@ -361,7 +361,7 @@ The container will now be available in your home directory on **Elja** and you c
 
 ### GPU example
 First, start an interactive GPU job and then download the Singularity image hello-world.sif:
-[How to start an interactive job](/docs/elja/interactive_session)
+[How to start an interactive job](../elja/04_interactive.md)
 
 ```bash 
 $ srun --job-name "InteractiveGPU" --partition gpu-1xA100 --time 0-01:00 --pty bash
