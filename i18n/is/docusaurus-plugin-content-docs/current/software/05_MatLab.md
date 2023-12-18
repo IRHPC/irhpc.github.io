@@ -3,7 +3,7 @@ slug: matlab
 ---
 
 # MatLab
-Nú er Matlab fáanlegt sem [Singularity](singularity) gámur.
+Nú er Matlab fáanlegt sem [Singularity](04_singularity.md) gámur.
 Þú munt þurfa að gefa upp [MathWorks](https://Mathworks.com) aðgangs póstfangið sem þú notar fyrir þitt Matlab leyfi.
 
 ## Hlaða inn Matlab
@@ -17,7 +17,7 @@ $ ml load Matlab
 Til að keyra Matlab notaðu `matlab` skipunina.
 
 :::note
-Þú þarft að vera í [Gagnvirkri Lotu](../elja/interactive_session) eða keyra [Lotuverkefni](../elja/submit_jobs) til að nota matlab.
+Þú þarft að vera í [Gagnvirkri Lotu](../elja/04_interactive.md) eða keyra [Lotuverkefni](../elja/02_submit.md) til að nota matlab.
 :::
 
 ### Virka Matlab leyfið þitt á Elju

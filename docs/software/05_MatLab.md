@@ -3,7 +3,7 @@ slug: matlab
 ---
 
 # MatLab
-MatLab runs as a [Singularity](singularity) container. 
+MatLab runs as a [Singularity](04_singularity.md) container. 
 You will need to provide your [MathwWorks](https://mathworks.com) account email to use your individual license.
 
 ## Loading Matlab
@@ -17,7 +17,7 @@ $ ml load Matlab
 To run Matlab use the `matlab` command.
 
 :::note
-You will need to enter an [Interactive Session](../elja/interactive_session) or run  [Batch job](https://irhpc.github.io/docs/elja/submit_jobs) to run matlab. 
+You will need to enter an [Interactive Session](../elja/04_interactive.md) or run  [Batch job](../elja/02_submit.md) to run matlab. 
 :::
 
 ### Activating your license on Elja

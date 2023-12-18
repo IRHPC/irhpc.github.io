@@ -31,7 +31,7 @@ Til hamingju! Þú hefur nú skráð þig inn á innskráningarhnút **Elju**.
 
 :::caution
 
-**Ekki gera neitt** án þess að lesa [sameiginlega siðareglur](common/etiquette).
+**Ekki gera neitt** án þess að lesa [sameiginlega siðareglur](common/02_etiquette.md).
 
 :::
 

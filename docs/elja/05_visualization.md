@@ -136,3 +136,24 @@ and then like in the next picture click on the name of The 'HOST', in this case 
 Once you've managed to connect to Elja you can check if the xforwarding is working by typing into the terminal ```xclock``` like this picture shows: 
 ![Alt text](../assets/vscode_xclock.jpg)
 
+# Visualization on computational nodes
+X11 forwarding is available on the compute and GPU nodes of *Elja*.
+To use this feature a few steps must be taken to create a "double tunnel" that looks something like this 
+```bash
+compute-node -> login-node -> local-machine
+```
+
+1. First you must connect with the -XY as stated above or using XLaunch with PuTTy as stated below.
+2. You must allocate a node with slurm 
+:::note Due to a problem with slurm the --x11 flag for srun is not available at the moment. We are working on fixing this issue :::
+
+
+
+```bash
+salloc -n 1 --partition 48cpu_192mem  # This will allocate a node for you, salloc can use the same flags as srun and batch scripts.
+ssh -XY $SLURM_NODELIST               # You will now connect to the compute node with an X11 tunnel.
+```
+
+This will allow you to run graphical interfaces on our compute nodes that you can view on your local machine.
+
+

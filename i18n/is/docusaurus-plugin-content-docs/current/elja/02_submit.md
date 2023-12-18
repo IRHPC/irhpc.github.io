@@ -62,7 +62,7 @@ Lotu skrifta byrjar vanalega svona
 mpirun python job.py
 ```
 
-Hér er beðið um tvo hnúta úr `48mem_192mem` skiptingunni, sem notar 48 örgjörva á hvern hnút fyrir samtals 96 örgjörva. Minnið á hvern kjarna er stillt á 3900MB vinnsluminni. Sjá [Skilrúm og búnaður](/docs/hardware/parthardw) fyrir upplýsingar um tiltækar skiptingarnar.
+Hér er beðið um tvo hnúta úr `48mem_192mem` skiptingunni, sem notar 48 örgjörva á hvern hnút fyrir samtals 96 örgjörva. Minnið á hvern kjarna er stillt á 3900MB vinnsluminni. Sjá [Skilrúm og búnaður](../hardware/01_partitions.md) fyrir upplýsingar um tiltækar skiptingarnar.
 
 Þegar `SLURM` áætlarinn hefur úthlutað tilföngum eru næstu línur keyrðar í röð. Fyrst er forritunar umhverfið hlaðið inn (sjá [Forritunar Umhverfi](../software/01_packages.md)), og `mpirun` tilvik af Python skriftu er keyrt.
 
@@ -88,4 +88,4 @@ JOBID PARTITION     NAME    USER    ST  TIME  NODES NODELIST(REASON)
 [..]$ scancel 11729
 ```
 
-**EF** lotustarfið þitt þarf mikið af inntaks gögnum, eða ef það framkallar mikið úttak, er mælt með því að nota **/scratch/** disk sem er í boði á öllum reiknihnútum. Sjá næsta [lið](scratch_disk).
+**EF** lotustarfið þitt þarf mikið af inntaks gögnum, eða ef það framkallar mikið úttak, er mælt með því að nota **/scratch/** disk sem er í boði á öllum reiknihnútum. Sjá næsta [lið](03_scratch.md).
