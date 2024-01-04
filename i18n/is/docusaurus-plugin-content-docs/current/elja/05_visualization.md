@@ -37,7 +37,7 @@ xclock
 Sem ætti að opna litla klukku sem sýnir staðartíma.
 
 ## Með PuTTy
-PuTTy bíður einnig uppá birta forrit myndrænt inná elju. Þetta er gert með tveimur forritum, PuTTy og Xming sem er hægt að sækja [hér](https://sourceforge.net/projects/xming/files/Xming/6.9.0.31/Xming-6-9-0-31-setup.exe/download), þó það er hægt að nota önnur forrit sem gera sama hlutinn en í þessu tilfelli verður notað Xming.
+PuTTy bíður einnig uppá birta forrit myndrænt inná elju. Þetta er gert með tveimur forritum, PuTTy og Xming sem er hægt að sækja [hér](http://www.straightrunning.com/XmingNotes/), þó það er hægt að nota önnur forrit sem gera sama hlutinn en í þessu tilfelli verður notað Xming.
 
 
 ### Nota XLaunch

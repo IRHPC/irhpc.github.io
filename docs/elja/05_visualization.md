@@ -36,7 +36,7 @@ xclock
 which should open up a small clock gui showing the local time.
 
 ## Using PuTTy
-PuTTy also offers a visualisation method when connecting to the server. This is done by using the Putty application and another software called Xming which can be retrieved [here](https://sourceforge.net/projects/xming/files/Xming/6.9.0.31/Xming-6-9-0-31-setup.exe/download), though othere softwares could also be used but we will be usign Xming for in this case.
+PuTTy also offers a visualisation method when connecting to the server. This is done by using the Putty application and another software called Xming which can be retrieved [here](http://www.straightrunning.com/XmingNotes/), though othere softwares could also be used but we will be usign Xming for in this case.
 
 
 ### Using XLaunch
